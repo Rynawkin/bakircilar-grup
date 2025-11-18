@@ -9,6 +9,9 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
+// Force dynamic rendering for i18n support
+export const dynamic = 'force-dynamic';
+
 export const metadata = {
   title: 'Bakırcılar Ambalaj | Ambalaj Çözümleri',
   description: 'Bakırcılar Ambalaj - Modern ambalaj çözümleri ve üretimi',

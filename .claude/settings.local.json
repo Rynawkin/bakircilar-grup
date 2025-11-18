@@ -3,7 +3,20 @@
     "allow": [
       "Bash(git init:*)",
       "Bash(git config:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(for file in apps/*/tsconfig.json)",
+      "Bash(do)",
+      "Bash(if ! grep -q '\"\"baseUrl\"\"' \"$file\")",
+      "Bash(then)",
+      "Bash(echo:*)",
+      "Bash(fi)",
+      "Bash(done)",
+      "Bash(for site in yazilim ambalaj danismanlik emlak otomotiv yolpilot)",
+      "Bash(do echo 'Checking $site...' grep -r \"from ''''@/\" apps/$site/app/ --include=*.tsx --include=*.ts)",
+      "Bash(for site in yazilim ambalaj danismanlik emlak otomotiv)"
     ],
     "deny": [],
     "ask": []
