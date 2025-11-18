@@ -1,0 +1,183 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Nuestros Servicios",
+    "about": "Sobre Nosotros",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Bakırcılar Inmobiliaria",
+    "subtitle": "Servicios Inmobiliarios",
+    "description": "Encuentre su propiedad soñada con consultoría inmobiliaria profesional y amplio portafolio",
+    "primaryCTA": "Nuestros Servicios",
+    "secondaryCTA": "Contacto"
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Encontramos la propiedad más adecuada para usted con nuestro amplio portafolio",
+    "residential": {
+      "title": "Ventas Residenciales",
+      "description": "Encuentre la casa de sus sueños con nuestro extenso portafolio residencial. Consultoría profesional y apoyo legal.",
+      "feature1": "Amplio Portafolio",
+      "feature2": "Consultoría",
+      "feature3": "Apoyo Legal"
+    },
+    "commercial": {
+      "title": "Bienes Raíces Comerciales",
+      "description": "Oficinas, tiendas y espacios comerciales. Oportunidades inmobiliarias comerciales de alto valor de inversión.",
+      "feature1": "Oficina",
+      "feature2": "Comercio",
+      "feature3": "Inversión"
+    },
+    "management": {
+      "title": "Gestión de Propiedades",
+      "description": "Gestión profesional de propiedades. Búsqueda de inquilinos, mantenimiento y procesos legales.",
+      "feature1": "Gestión",
+      "feature2": "Mantenimiento",
+      "feature3": "Legal"
+    },
+    "investment": {
+      "title": "Consultoría de Inversión",
+      "description": "Consultoría de inversión inmobiliaria. Análisis de mercado y proyecciones de rentabilidad.",
+      "feature1": "Análisis",
+      "feature2": "Rentabilidad",
+      "feature3": "Inversión"
+    }
+  },
+  "features": {
+    "quality": {
+      "title": "Amplio Portafolio",
+      "description": "Miles de propiedades"
+    },
+    "support": {
+      "title": "Equipo Experto",
+      "description": "Consultoría profesional"
+    },
+    "delivery": {
+      "title": "Apoyo Legal",
+      "description": "Transacciones seguras"
+    }
+  },
+  "cta": {
+    "title": "Encuentre su propiedad soñada",
+    "subtitle": "Contáctenos para servicios inmobiliarios profesionales",
+    "button": "Ponerse en Contacto"
+  },
+  "footer": {
+    "description": "Estamos a su lado con consultoría inmobiliaria confiable",
+    "quickLinks": "Enlaces Rápidos",
+    "companies": "Nuestras Empresas",
+    "rights": "Todos los derechos reservados"
+  },
+  "about": {
+    "vision": {
+      "title": "Nuestra Visión"
+    },
+    "mission": {
+      "title": "Nuestra Misión"
+    }
+  },
+  "aboutPage": {
+    "title": "Sobre Nosotros",
+    "subtitle": "Su socio de soluciones de confianza en la industria inmobiliaria desde 2012",
+    "story": {
+      "title": "Nuestra Historia",
+      "paragraph1": "Fundada en 2012, Bakırcılar Inmobiliaria ha estado operando en la industria inmobiliaria durante más de 12 años. Ofrecemos servicios en una amplia gama desde ventas residenciales hasta gestión de bienes raíces comerciales, desde consultoría inmobiliaria hasta servicios de análisis de inversión.",
+      "paragraph2": "Al priorizar la satisfacción del cliente, nos hemos convertido en una marca de confianza en la industria con consultoría confiable y enfoque de servicio profesional. Con nuestros consultores inmobiliarios experimentados y amplio portafolio, proporcionamos soluciones inmobiliarias adecuadas para cada presupuesto.",
+      "paragraph3": "Con nuestro enfoque empresarial transparente, metodología de servicio orientada al cliente y consultoría de inversión inmobiliaria sostenible, actuamos pensando tanto en el presente como en el futuro."
+    },
+    "vision": {
+      "title": "Nuestra Visión",
+      "description": "Convertirse en una empresa líder de consultoría y ventas en la industria inmobiliaria satisfaciendo las demandas inmobiliarias en constante cambio al más alto nivel en el mercado turco y regional."
+    },
+    "mission": {
+      "title": "Nuestra Misión",
+      "description": "Contribuir a alcanzar su propiedad soñada ofreciendo soluciones inmobiliarias profesionales y orientadas al cliente sin comprometer nuestros principios de calidad, transparencia y confiabilidad."
+    },
+    "valuesTitle": "Nuestros Valores",
+    "valuesSubtitle": "Los principios fundamentales que dan forma a nuestros procesos comerciales",
+    "statsSubtitle": "Somos pioneros en la industria con años de experiencia y nuestro sólido equipo",
+    "timelineTag": "Nuestro Viaje",
+    "timelineTitle": "Nuestra Historia de Crecimiento",
+    "statsTitle": "Bakırcılar Inmobiliaria en Números",
+    "visionDetailed": "Convertirse en una empresa líder de consultoría y ventas en la industria inmobiliaria satisfaciendo las demandas inmobiliarias en constante cambio al más alto nivel en el mercado turco y regional.",
+    "missionDetailed": "Contribuir a alcanzar su propiedad soñada ofreciendo soluciones inmobiliarias profesionales y orientadas al cliente sin comprometer nuestros principios de calidad, transparencia y confiabilidad.",
+    "valuesItems": {
+      "quality": {
+        "title": "Garantía de Calidad",
+        "description": "Cumplimos con las expectativas del cliente al más alto nivel con estándares de servicio profesional"
+      },
+      "innovation": {
+        "title": "Innovación y Tecnología",
+        "description": "Ofrecemos soluciones innovadoras en servicios inmobiliarios con tecnologías modernas y plataformas digitales"
+      },
+      "reliability": {
+        "title": "Confiabilidad",
+        "description": "Al priorizar la satisfacción del cliente, nos hemos convertido en una marca de confianza en la industria"
+      },
+      "sustainability": {
+        "title": "Sostenibilidad",
+        "description": "Proporcionamos orientación correcta para inversiones inmobiliarias sostenibles que crean valor a largo plazo"
+      },
+      "humanFocused": {
+        "title": "Enfoque Centrado en las Personas",
+        "description": "Logramos el éxito con nuestros consultores inmobiliarios expertos y apoyamos continuamente la capacitación y el desarrollo"
+      },
+      "excellence": {
+        "title": "Excelencia",
+        "description": "Mantenemos la garantía legal y la seguridad del cliente al más alto nivel en todas nuestras transacciones"
+      }
+    },
+    "timeline": {
+      "milestone1": {
+        "title": "Fundación",
+        "description": "Nuestro viaje en la industria comenzó"
+      },
+      "milestone2": {
+        "title": "Crecimiento",
+        "description": "Fortalecimos nuestra posición en la industria con servicios modernos"
+      },
+      "milestone3": {
+        "title": "Diversificación",
+        "description": "Ampliamos nuestro portafolio de servicios y comenzamos a servir a diferentes sectores"
+      },
+      "milestone4": {
+        "title": "Transformación Digital",
+        "description": "Invertimos en el futuro con soluciones digitales"
+      }
+    }
+  },
+  "stats": {
+    "companies": "Categorías de Propiedades",
+    "employees": "Consultores Inmobiliarios",
+    "experience": "Años de Experiencia",
+    "customers": "Clientes Satisfechos"
+  },
+  "contactPage": {
+    "title": "Contacto",
+    "subtitle": "Contáctenos para sus necesidades inmobiliarias, permítanos encontrarle la propiedad más adecuada",
+    "email": "Correo Electrónico",
+    "phone": "Teléfono",
+    "address": "Dirección",
+    "whatsapp": "WhatsApp",
+    "whatsappMessage": "Mensaje en WhatsApp",
+    "sendMessage": "Enviar Mensaje",
+    "mapPlaceholder": "El mapa se agregará aquí",
+    "workingHours": "Horario de Trabajo",
+    "weekdays": "Días de Semana",
+    "saturday": "Sábado",
+    "sunday": "Domingo",
+    "closed": "Cerrado"
+  },
+  "contactForm": {
+    "name": "Su Nombre Completo",
+    "email": "Su Dirección de Correo Electrónico",
+    "phone": "Su Número de Teléfono",
+    "subject": "Asunto",
+    "message": "Su Mensaje",
+    "submit": "Enviar",
+    "submitting": "Enviando...",
+    "success": "¡Su mensaje ha sido enviado exitosamente!",
+    "error": "Ocurrió un error. Por favor, inténtelo de nuevo."
+  }
+}

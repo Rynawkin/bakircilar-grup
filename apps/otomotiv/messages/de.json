@@ -1,0 +1,191 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "services": "Unsere Dienstleistungen",
+    "about": "Über Uns",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Bakırcılar Automotive",
+    "subtitle": "Automobildienstleistungen",
+    "description": "Zuverlässiger Fahrzeugverkauf und Automobildienstleistungen",
+    "primaryCTA": "Unsere Dienstleistungen",
+    "secondaryCTA": "Kontakt"
+  },
+  "services": {
+    "title": "Unsere Dienstleistungen",
+    "subtitle": "Wir sind mit umfassenden Automobildienstleistungen für Sie da",
+    "sales": {
+      "title": "Fahrzeugverkauf",
+      "description": "Neu- und Gebrauchtwagenverkauf. Breite Fahrzeugauswahl und günstige Preise.",
+      "feature1": "Neu & Gebraucht",
+      "feature2": "Breite Auswahl",
+      "feature3": "Beste Preise"
+    },
+    "rental": {
+      "title": "Fahrzeugvermietung",
+      "description": "Tages-, Monats- und Langzeitfahrzeugvermietung. Wirtschaftlich und komfortabel.",
+      "feature1": "Täglich",
+      "feature2": "Monatlich",
+      "feature3": "Langzeit"
+    },
+    "expertise": {
+      "title": "Fahrzeugbegutachtung",
+      "description": "Professionelle Fahrzeugbegutachtungsdienste. Detaillierte technische und optische Prüfung.",
+      "feature1": "Expertenprüfung",
+      "feature2": "Detailliert",
+      "feature3": "Berichterstattung"
+    },
+    "maintenance": {
+      "title": "Wartung und Reparatur",
+      "description": "Wartung und Reparaturdienste für alle Fahrzeugmarken. Autorisierter Service und Originalteile.",
+      "feature1": "Wartung",
+      "feature2": "Reparatur",
+      "feature3": "Originalteile"
+    }
+  },
+  "features": {
+    "quality": {
+      "title": "Qualitätsgarantie",
+      "description": "Garantierte Fahrzeuge"
+    },
+    "support": {
+      "title": "Kundenzufriedenheit",
+      "description": "Immer für Sie da"
+    },
+    "delivery": {
+      "title": "Schnelle Lieferung",
+      "description": "Sofortige Lieferung"
+    }
+  },
+  "cta": {
+    "title": "Finden Sie Ihr Traumauto",
+    "subtitle": "Kontaktieren Sie uns für zuverlässige Automobildienstleistungen",
+    "button": "Kontakt aufnehmen"
+  },
+  "footer": {
+    "description": "Zuverlässiger Service in der Automobilbranche",
+    "quickLinks": "Schnellzugriff",
+    "companies": "Unsere Unternehmen",
+    "rights": "Alle Rechte vorbehalten"
+  },
+  "about": {
+    "vision": {
+      "title": "Unsere Vision"
+    },
+    "mission": {
+      "title": "Unsere Mission"
+    }
+  },
+  "aboutPage": {
+    "title": "Über Uns",
+    "subtitle": "Ihr vertrauenswürdiger Lösungspartner in der Automobilbranche seit 2015",
+    "story": {
+      "title": "Unsere Geschichte",
+      "paragraph1": "Bakırcılar Automotive wurde 2015 gegründet und ist seit über 10 Jahren in der Automobilbranche tätig. Wir bieten Dienstleistungen in einem breiten Spektrum von Fahrzeugverkauf über Mietservices bis hin zu Begutachtungsdienstleistungen und Wartung und Reparatur.",
+      "paragraph2": "Mit der Priorisierung der Kundenzufriedenheit sind wir zu einer angesehenen Marke in der Branche geworden, mit qualitativ hochwertigen Fahrzeuglösungen und zuverlässigem Service. Mit unseren erfahrenen Automobilexperten und breitem Fahrzeugportfolio bieten wir Lösungen für jeden Bedarf.",
+      "paragraph3": "Mit unserem kundenorientierten Serviceansatz, Qualitätssicherung und Prinzipien der Bereitstellung zuverlässiger Automobildienstleistungen handeln wir mit Blick auf heute und die Zukunft."
+    },
+    "vision": {
+      "title": "Unsere Vision",
+      "description": "Ein führendes Verkaufs- und Serviceunternehmen in der Automobilbranche zu werden, indem wir sich ständig ändernde Kundenanforderungen auf höchstem Niveau auf dem türkischen Automobilmarkt erfüllen."
+    },
+    "mission": {
+      "title": "Unsere Mission",
+      "description": "Zur sicheren Fahrerfahrung unserer Kunden beizutragen, indem wir umfassende und professionelle Automobildienstleistungen anbieten, ohne unsere Prinzipien von Qualität, Vertrauen und Kundenzufriedenheit zu gefährden."
+    },
+    "valuesTitle": "Unsere Werte",
+    "valuesSubtitle": "Die Kernprinzipien, die unsere Geschäftsprozesse prägen",
+    "statsSubtitle": "Wir sind Vorreiter in der Branche mit langjähriger Erfahrung und unserem starken Team",
+    "timelineTag": "Unsere Reise",
+    "timelineTitle": "Unsere Wachstumsgeschichte",
+    "statsTitle": "Bakırcılar Automotive in Zahlen",
+    "visionDetailed": "Ein führendes Verkaufs- und Serviceunternehmen in der Automobilbranche zu werden, indem wir sich ständig ändernde Kundenanforderungen auf höchstem Niveau auf dem türkischen Automobilmarkt erfüllen.",
+    "missionDetailed": "Zur sicheren Fahrerfahrung unserer Kunden beizutragen, indem wir umfassende und professionelle Automobildienstleistungen anbieten, ohne unsere Prinzipien von Qualität, Vertrauen und Kundenzufriedenheit zu gefährden.",
+    "valuesItems": {
+      "quality": {
+        "title": "Qualitätssicherung",
+        "description": "Wir erfüllen Kundenerwartungen mit hohen Qualitätsstandards und zuverlässigem Serviceansatz"
+      },
+      "innovation": {
+        "title": "Innovation & Technologie",
+        "description": "Durch das Verfolgen von Innovationen in der Automobilbranche bieten wir moderne Lösungen und Dienstleistungen an"
+      },
+      "reliability": {
+        "title": "Zuverlässigkeit",
+        "description": "Wir sind zu einer vertrauenswürdigen Marke geworden mit pünktlicher Lieferung und qualitativ hochwertigen Automobildienstleistungen"
+      },
+      "sustainability": {
+        "title": "Nachhaltigkeit",
+        "description": "Wir legen Wert darauf, umweltfreundliche Fahrzeuglösungen und nachhaltige Automobildienstleistungen anzubieten"
+      },
+      "safety": {
+        "title": "Sicherheit",
+        "description": "Wir halten die höchsten Standards in Bezug auf Fahrzeugsicherheit und Kundensicherheit ein"
+      },
+      "customer": {
+        "title": "Kundenfokus",
+        "description": "Durch das Verstehen von Kundenbedürfnissen und -erwartungen streben wir mit personalisierten Automobildienstleistungen 100% Zufriedenheit an"
+      },
+      "humanFocused": {
+        "title": "Menschenorientierter Ansatz",
+        "description": "Wir erzielen Erfolg mit unserem erfahrenen Automobilteam und unterstützen kontinuierlich die berufliche Entwicklung"
+      },
+      "excellence": {
+        "title": "Exzellenz",
+        "description": "Wir streben in jedem Projekt nach Exzellenz und liefern Ergebnisse, die die Erwartungen übertreffen"
+      }
+    },
+    "timeline": {
+      "milestone1": {
+        "title": "Gründung",
+        "description": "Unsere Reise in der Automobilbranche begann als Bakırcılar Automotive"
+      },
+      "milestone2": {
+        "title": "Wachstum",
+        "description": "Wir stärkten unsere Position in der Branche mit breitem Fahrzeugportfolio und qualitativ hochwertigen Dienstleistungen"
+      },
+      "milestone3": {
+        "title": "Innovation",
+        "description": "Wir bereicherten unser Portfolio mit modernen Technologien und digitalen Dienstleistungen"
+      },
+      "milestone4": {
+        "title": "Digitale Transformation",
+        "description": "Wir investieren in die Zukunft mit digitalen Plattformen und fortschrittlichen Dienstleistungen"
+      }
+    }
+  },
+  "stats": {
+    "companies": "Servicebereiche",
+    "employees": "Automobilexperten",
+    "experience": "Jahre Erfahrung",
+    "customers": "Zufriedene Kunden"
+  },
+  "contactPage": {
+    "title": "Kontakt",
+    "subtitle": "Kontaktieren Sie uns für Ihre Automobilbedürfnisse, lassen Sie uns Ihnen die passendste Lösung anbieten",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "address": "Adresse",
+    "whatsapp": "WhatsApp",
+    "whatsappMessage": "Nachricht auf WhatsApp",
+    "sendMessage": "Nachricht senden",
+    "mapPlaceholder": "Karte wird hier hinzugefügt",
+    "workingHours": "Arbeitszeiten",
+    "weekdays": "Wochentage",
+    "saturday": "Samstag",
+    "sunday": "Sonntag",
+    "closed": "Geschlossen"
+  },
+  "contactForm": {
+    "name": "Ihr vollständiger Name",
+    "email": "Ihre E-Mail-Adresse",
+    "phone": "Ihre Telefonnummer",
+    "subject": "Betreff",
+    "message": "Ihre Nachricht",
+    "submit": "Senden",
+    "submitting": "Wird gesendet...",
+    "success": "Ihre Nachricht wurde erfolgreich gesendet!",
+    "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+  }
+}

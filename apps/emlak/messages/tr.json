@@ -1,0 +1,175 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "services": "Hizmetlerimiz",
+    "about": "Hakkımızda",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "title": "Bakırcılar Emlak",
+    "subtitle": "Gayrimenkul Hizmetleri",
+    "description": "Profesyonel gayrimenkul danışmanlığı ve geniş portföy ile hayalinizdeki mülkü bulun",
+    "primaryCTA": "Hizmetlerimiz",
+    "secondaryCTA": "İletişim"
+  },
+  "services": {
+    "title": "Hizmetlerimiz",
+    "subtitle": "Geniş portföyümüz ile size en uygun mülkü buluyoruz",
+    "residential": {
+      "title": "Konut Satışı",
+      "description": "Geniş konut portföyü ile hayalinizdeki evi bulun. Profesyonel danışmanlık ve yasal destek.",
+      "feature1": "Wide Portfolio",
+      "feature2": "Consulting",
+      "feature3": "Legal Support"
+    },
+    "commercial": {
+      "title": "Ticari Gayrimenkul",
+      "description": "Ofis, mağaza ve iş yerleri. Yatırım değeri yüksek ticari gayrimenkul fırsatları.",
+      "feature1": "Office",
+      "feature2": "Retail",
+      "feature3": "Investment"
+    },
+    "management": {
+      "title": "Gayrimenkul Yönetimi",
+      "description": "Profesyonel emlak yönetimi, kiralama ve bakım hizmetleri. Mülkünüz güvende.",
+      "feature1": "Management",
+      "feature2": "Rental",
+      "feature3": "Maintenance"
+    },
+    "investment": {
+      "title": "Yatırım Danışmanlığı",
+      "description": "Gayrimenkul yatırım analizi, pazar değerlendirmesi ve portföy yönetimi.",
+      "feature1": "Analysis",
+      "feature2": "Evaluation",
+      "feature3": "Portfolio"
+    }
+  },
+  "features": {
+    "quality": {
+      "title": "Geniş Portföy",
+      "description": "Binlerce emlak ilanı arasından size en uygununu buluyoruz"
+    },
+    "support": {
+      "title": "7/24 Destek",
+      "description": "Her zaman ulaşılabilir, kesintisiz müşteri desteği sağlıyoruz"
+    },
+    "delivery": {
+      "title": "Hızlı İşlem",
+      "description": "Hızlı ve sorunsuz gayrimenkul işlemleri"
+    }
+  },
+  "cta": {
+    "title": "Bakırcılar Emlak İçin Bize Ulaşın",
+    "subtitle": "Uzman ekibimiz size en uygun çözümü sunmaya hazır",
+    "button": "İletişime Geçin"
+  },
+  "footer": {
+    "description": "Güvenilir gayrimenkul danışmanlığı ile yanınızdayız",
+    "quickLinks": "Hızlı Bağlantılar",
+    "companies": "Şirketlerimiz",
+    "rights": "Tüm hakları saklıdır"
+  },
+  "about": {
+    "vision": {
+      "title": "Vizyonumuz"
+    },
+    "mission": {
+      "title": "Misyonumuz"
+    }
+  },
+  "aboutPage": {
+    "title": "Hakkımızda",
+    "subtitle": "2012'den beri gayrimenkul sektöründe güvenilir çözüm ortağınız",
+    "story": {
+      "title": "Hikayemiz",
+      "paragraph1": "Temelleri 2012 yılında atılan Bakırcılar Emlak, 12 yılı aşkın süredir gayrimenkul sektöründe faaliyet göstermektedir. Konut satışından ticari gayrimenkul yönetimine, emlak danışmanlığından yatırım analizi hizmetlerine kadar geniş bir yelpazede hizmet sunuyoruz.",
+      "paragraph2": "Müşteri memnuniyetini ön planda tutarak, güvenilir danışmanlık ve profesyonel hizmet anlayışı ile sektörde güvenilir bir marka haline geldik. Deneyimli emlak danışmanlarımız ve geniş portföyümüzle, her bütçeye uygun gayrimenkul çözümleri üretiyoruz.",
+      "paragraph3": "Şeffaf iş anlayışımız, müşteri odaklı hizmet yaklaşımımız ve sürdürülebilir gayrimenkul yatırım danışmanlığımızla hem bugünü hem de geleceği düşünerek hareket ediyoruz."
+    },
+    "visionDetailed": "Türkiye ve bölge piyasasında sürekli değişen gayrimenkul taleplerini en üst seviyede karşılayarak, emlak sektöründe lider danışmanlık ve satış firması olmak.",
+    "missionDetailed": "Kalite, şeffaflık ve güvenilirlik ilkelerimizden ödün vermeden, profesyonel ve müşteri odaklı gayrimenkul çözümleri sunarak hayallerinizdeki mülke ulaşmanıza katkı sağlamak.",
+    "valuesTitle": "Değerlerimiz",
+    "valuesSubtitle": "İş süreçlerimizi şekillendiren temel ilkelerimiz",
+    "statsSubtitle": "Yılların deneyimi ve güçlü ekibimizle sektörde öncü konumdayız",
+    "timelineTag": "Yolculuğumuz",
+    "timelineTitle": "Büyüme Hikayemiz",
+    "statsTitle": "Rakamlarla Bakırcılar Emlak",
+    "valuesItems": {
+      "reliability": {
+        "title": "Güvenilirlik",
+        "description": "Müşteri memnuniyetini ön planda tutarak, sektörde güvenilir bir marka olduk"
+      },
+      "humanFocused": {
+        "title": "İnsan Odaklı Yaklaşım",
+        "description": "Uzman emlak danışmanlarımızla başarıya ulaşıyor, sürekli eğitim ve gelişimi destekliyoruz"
+      },
+      "excellence": {
+        "title": "Mükemmellik",
+        "description": "Her işlemde mükemmeli hedefleyerek, en yüksek hizmet kalitesini sağlıyoruz"
+      },
+      "quality": {
+        "title": "Kalite Güvencesi",
+        "description": "Profesyonel hizmet standartlarıyla müşteri beklentilerini en yüksek seviyede karşılıyoruz"
+      },
+      "innovation": {
+        "title": "İnovasyon & Teknoloji",
+        "description": "Modern teknolojiler ve dijital platformlarla gayrimenkul hizmetlerinde yenilikçi çözümler sunuyoruz"
+      },
+      "sustainability": {
+        "title": "Sürdürülebilirlik",
+        "description": "Uzun vadeli değer yaratan, sürdürülebilir gayrimenkul yatırımları için doğru yönlendirmeler yapıyoruz"
+      }
+    },
+    "timeline": {
+      "milestone1": {
+        "title": "Kuruluş",
+        "description": "Sektördeki yolculuğumuz başladı"
+      },
+      "milestone2": {
+        "title": "Büyüme",
+        "description": "Modern hizmetlerimizle sektörde güçlendik"
+      },
+      "milestone3": {
+        "title": "Genişleme",
+        "description": "Hizmet portföyümüzü genişleterek farklı sektörlere hizmet vermeye başladık"
+      },
+      "milestone4": {
+        "title": "Dijitalleşme",
+        "description": "Dijital çözümlerle geleceğe yatırım yapıyoruz"
+      }
+    }
+  },
+  "stats": {
+    "companies": "Emlak Kategorisi",
+    "employees": "Emlak Danışmanı",
+    "experience": "Yıllık Tecrübe",
+    "customers": "Mutlu Müşteri"
+  },
+  "contactPage": {
+    "title": "İletişim",
+    "subtitle": "Gayrimenkul ihtiyaçlarınız için bize ulaşın, size en uygun mülkü bulalım",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "address": "Adres",
+    "whatsapp": "WhatsApp",
+    "whatsappMessage": "WhatsApp'tan Yazın",
+    "sendMessage": "Mesaj Gönderin",
+    "mapPlaceholder": "Harita buraya eklenecek",
+    "workingHours": "Çalışma Saatleri",
+    "weekdays": "Hafta İçi",
+    "saturday": "Cumartesi",
+    "sunday": "Pazar",
+    "closed": "Kapalı"
+  },
+  "contactForm": {
+    "name": "Adınız Soyadınız",
+    "email": "E-posta Adresiniz",
+    "phone": "Telefon Numaranız",
+    "subject": "Konu",
+    "message": "Mesajınız",
+    "submit": "Gönder",
+    "submitting": "Gönderiliyor...",
+    "success": "Mesajınız başarıyla gönderildi!",
+    "error": "Bir hata oluştu. Lütfen tekrar deneyin."
+  }
+}

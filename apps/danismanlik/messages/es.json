@@ -1,0 +1,183 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Nuestros Servicios",
+    "about": "Sobre Nosotros",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Bakırcılar Consultoría",
+    "subtitle": "Consultoría Empresarial",
+    "description": "Haga crecer su negocio con planificación estratégica y consultoría de desarrollo empresarial",
+    "primaryCTA": "Nuestros Servicios",
+    "secondaryCTA": "Contacto"
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Lleve su negocio al siguiente nivel con nuestro equipo experto",
+    "strategy": {
+      "title": "Consultoría Estratégica",
+      "description": "Desarrollo de estrategia corporativa, análisis de mercado y estrategias competitivas. Hoja de ruta para el crecimiento de su negocio.",
+      "feature1": "Estrategia",
+      "feature2": "Análisis",
+      "feature3": "Planificación"
+    },
+    "digital": {
+      "title": "Transformación Digital",
+      "description": "Estrategias de digitalización, optimización de procesos e integración tecnológica. Procesos empresariales modernos.",
+      "feature1": "Digital",
+      "feature2": "Optimización",
+      "feature3": "Integración"
+    },
+    "business": {
+      "title": "Desarrollo Empresarial",
+      "description": "Expansión de mercado, asociaciones y estrategias de ventas. Aumente sus ingresos.",
+      "feature1": "Expansión",
+      "feature2": "Asociaciones",
+      "feature3": "Ventas"
+    },
+    "hr": {
+      "title": "Consultoría de Recursos Humanos",
+      "description": "Gestión de talentos, desarrollo organizacional y programas de capacitación. Invierta en sus empleados.",
+      "feature1": "Talento",
+      "feature2": "Organización",
+      "feature3": "Capacitación"
+    }
+  },
+  "features": {
+    "quality": {
+      "title": "Equipo Experto",
+      "description": "Consultores experimentados"
+    },
+    "support": {
+      "title": "Apoyo Continuo",
+      "description": "Asociaciones a largo plazo"
+    },
+    "delivery": {
+      "title": "Orientado a Resultados",
+      "description": "Éxitos medibles"
+    }
+  },
+  "cta": {
+    "title": "Haga crecer su negocio",
+    "subtitle": "Contáctenos para servicios de consultoría profesional",
+    "button": "Ponerse en Contacto"
+  },
+  "footer": {
+    "description": "Hacemos crecer su negocio con consultoría profesional",
+    "quickLinks": "Enlaces Rápidos",
+    "companies": "Nuestras Empresas",
+    "rights": "Todos los derechos reservados"
+  },
+  "about": {
+    "vision": {
+      "title": "Nuestra Visión"
+    },
+    "mission": {
+      "title": "Nuestra Misión"
+    }
+  },
+  "aboutPage": {
+    "title": "Sobre Nosotros",
+    "subtitle": "Su socio de soluciones de confianza en la industria de consultoría desde 2010",
+    "story": {
+      "title": "Nuestra Historia",
+      "paragraph1": "Fundada en 2010, Bakırcılar Consultoría ha estado operando en la industria de consultoría empresarial durante más de 15 años. Ofrecemos servicios en una amplia gama desde consultoría estratégica hasta transformación digital, desde desarrollo empresarial hasta gestión de recursos humanos.",
+      "paragraph2": "Al priorizar la satisfacción del cliente, nos hemos convertido en una marca de confianza en la industria con estrategias efectivas y servicios de consultoría expertos. Con nuestro equipo de consultores experimentado y metodologías empresariales modernas, proporcionamos soluciones para empresas de todos los tamaños.",
+      "paragraph3": "Con nuestro enfoque de pensamiento estratégico, metodología basada en datos y experiencia en el desarrollo de modelos de negocio sostenibles, actuamos pensando tanto en el presente como en el futuro."
+    },
+    "vision": {
+      "title": "Nuestra Visión",
+      "description": "Convertirse en una empresa líder en la industria de consultoría analizando las dinámicas del mundo empresarial en constante cambio al más alto nivel en el mercado turco y global."
+    },
+    "mission": {
+      "title": "Nuestra Misión",
+      "description": "Contribuir al crecimiento de nuestros clientes ofreciendo soluciones empresariales estratégicas y sostenibles sin comprometer nuestros principios de calidad, velocidad y confiabilidad."
+    },
+    "valuesTitle": "Nuestros Valores",
+    "valuesSubtitle": "Los principios fundamentales que dan forma a nuestros procesos comerciales",
+    "statsSubtitle": "Somos pioneros en la industria con años de experiencia y nuestro sólido equipo",
+    "timelineTag": "Nuestro Viaje",
+    "timelineTitle": "Nuestra Historia de Crecimiento",
+    "statsTitle": "Bakırcılar Consultoría en Números",
+    "visionDetailed": "Convertirse en una empresa líder en la industria de consultoría analizando las dinámicas del mundo empresarial en constante cambio al más alto nivel en el mercado turco y global.",
+    "missionDetailed": "Contribuir al crecimiento de nuestros clientes ofreciendo soluciones empresariales estratégicas y sostenibles sin comprometer nuestros principios de calidad, velocidad y confiabilidad.",
+    "valuesItems": {
+      "quality": {
+        "title": "Garantía de Calidad",
+        "description": "Cumplimos con las expectativas del cliente al más alto nivel con estándares internacionales de consultoría"
+      },
+      "innovation": {
+        "title": "Innovación e I+D",
+        "description": "Producimos estrategias comerciales innovadoras que marcan la diferencia en la industria con investigación y desarrollo continuo"
+      },
+      "reliability": {
+        "title": "Confiabilidad",
+        "description": "Al priorizar la satisfacción del cliente, nos hemos convertido en una marca de confianza en la industria"
+      },
+      "sustainability": {
+        "title": "Sostenibilidad",
+        "description": "Desarrollamos modelos de negocio y estrategias sostenibles que crean valor a largo plazo"
+      },
+      "humanFocused": {
+        "title": "Enfoque Centrado en las Personas",
+        "description": "Logramos el éxito con nuestro equipo de consultores expertos y apoyamos continuamente el desarrollo profesional"
+      },
+      "excellence": {
+        "title": "Excelencia",
+        "description": "Mantenemos los más altos estándares con respecto a la confidencialidad de la información del cliente y la seguridad empresarial"
+      }
+    },
+    "timeline": {
+      "milestone1": {
+        "title": "Fundación",
+        "description": "Nuestro viaje en la industria comenzó"
+      },
+      "milestone2": {
+        "title": "Crecimiento",
+        "description": "Fortalecimos nuestra posición en la industria con servicios modernos"
+      },
+      "milestone3": {
+        "title": "Diversificación",
+        "description": "Ampliamos nuestro portafolio de servicios y comenzamos a servir a diferentes sectores"
+      },
+      "milestone4": {
+        "title": "Transformación Digital",
+        "description": "Invertimos en el futuro con soluciones digitales"
+      }
+    }
+  },
+  "stats": {
+    "companies": "Áreas de Servicio",
+    "employees": "Consultores",
+    "experience": "Años de Experiencia",
+    "customers": "Clientes Satisfechos"
+  },
+  "contactPage": {
+    "title": "Contacto",
+    "subtitle": "Contáctenos para sus necesidades de consultoría, permítanos ofrecerle la solución más adecuada",
+    "email": "Correo Electrónico",
+    "phone": "Teléfono",
+    "address": "Dirección",
+    "whatsapp": "WhatsApp",
+    "whatsappMessage": "Mensaje en WhatsApp",
+    "sendMessage": "Enviar Mensaje",
+    "mapPlaceholder": "El mapa se agregará aquí",
+    "workingHours": "Horario de Trabajo",
+    "weekdays": "Días de Semana",
+    "saturday": "Sábado",
+    "sunday": "Domingo",
+    "closed": "Cerrado"
+  },
+  "contactForm": {
+    "name": "Su Nombre Completo",
+    "email": "Su Dirección de Correo Electrónico",
+    "phone": "Su Número de Teléfono",
+    "subject": "Asunto",
+    "message": "Su Mensaje",
+    "submit": "Enviar",
+    "submitting": "Enviando...",
+    "success": "¡Su mensaje ha sido enviado exitosamente!",
+    "error": "Ocurrió un error. Por favor, inténtelo de nuevo."
+  }
+}

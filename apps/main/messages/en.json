@@ -1,0 +1,218 @@
+{
+  "nav": {
+    "home": "Home",
+    "companies": "Our Companies",
+    "about": "About Us",
+    "news": "News",
+    "careers": "Careers",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Bakırcılar Group",
+    "subtitle": "Multi-Sector Holding",
+    "description": "Building the future with our strong companies operating in different sectors",
+    "primaryCTA": "Our Companies",
+    "secondaryCTA": "Contact"
+  },
+  "stats": {
+    "companies": "Companies",
+    "employees": "Employees",
+    "experience": "Years of Experience",
+    "customers": "Happy Customers"
+  },
+  "companies": {
+    "title": "Our Companies",
+    "subtitle": "We serve with our leading companies in different sectors",
+    "viewWebsite": "Visit Website",
+    "ambalaj": {
+      "name": "Bakırcılar Packaging",
+      "description": "Modern packaging solutions and production"
+    },
+    "yazilim": {
+      "name": "Bakırcılar Software",
+      "description": "Professional software development and consulting"
+    },
+    "danismanlik": {
+      "name": "Bakırcılar Consulting",
+      "description": "Business consulting and strategic planning"
+    },
+    "emlak": {
+      "name": "Bakırcılar Real Estate",
+      "description": "Real estate consulting and investment"
+    },
+    "otomotiv": {
+      "name": "Bakırcılar Automotive",
+      "description": "Vehicle sales and automotive services"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "One of Turkey's trusted holding companies",
+    "description": "As Bakırcılar Group, we aim to provide the highest quality service to our customers with our companies operating in different sectors. With years of experience and our strong team, we are a leader in the industry.",
+    "vision": {
+      "title": "Our Vision",
+      "description": "To be one of Turkey's most trusted and innovative holding companies"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "To provide sustainable and quality services that add value to our customers"
+    },
+    "values": {
+      "title": "Our Values",
+      "description": "Trust, quality, innovation and customer satisfaction"
+    }
+  },
+  "cta": {
+    "title": "Let's Work Together",
+    "subtitle": "Let's get in touch to find the right solution for your projects",
+    "button": "Get in Touch"
+  },
+  "footer": {
+    "description": "Trusted holding company serving with leading companies in different sectors",
+    "quickLinks": "Quick Links",
+    "ourCompanies": "Our Companies",
+    "followUs": "Follow Us",
+    "rights": "All rights reserved",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email"
+  },
+  "companiesPage": {
+    "title": "Our Companies",
+    "subtitle": "We offer comprehensive solutions to our customers with our strong companies operating in different sectors",
+    "ecommerce": {
+      "title": "Our E-Commerce Platform",
+      "description": "Visit our e-commerce site to purchase our products online",
+      "button": "Go to Bankted.com"
+    }
+  },
+  "aboutPage": {
+    "title": "About Us",
+    "subtitle": "Bakırcılar Group is a holding company that adds value to the Turkish economy with its leading companies in different sectors.",
+    "story": {
+      "title": "Our Story",
+      "paragraph1": "Our holding journey, which was founded with Bakırcılar Packaging in 1990, continues for more than 30 years with a sustainable growth and sectoral diversity strategy. With the experience and trust we have gained in the packaging sector since our establishment, we have become a strong group company by investing in different sectors.",
+      "paragraph2": "Today, we operate in a wide range from packaging solutions to software development, business consulting to real estate investments, automotive services to e-commerce platforms. In every sector, we prioritize customer satisfaction and do not compromise on our quality product and service approach.",
+      "paragraph3": "With more than 500 employees, thousands of happy customers and our continuously expanding business network, we continue to add value to the Turkish economy. With our innovative approach, environmentally friendly production mindset and human-centered business model, we are building the future together."
+    },
+    "visionDetailed": "As Turkey's leading multi-sector holding, to reach a leading position in our sectors with sustainable growth and innovative solutions. To be active in international markets and become a global brand.",
+    "missionDetailed": "To add value to society and the economy by providing the highest quality products and services to our customers. To build a sustainable future by investing in the development of our employees and achieve long-term success with our stakeholders.",
+    "valuesTitle": "Our Values",
+    "valuesSubtitle": "Our core values are at the center of our business and guide every decision we make",
+    "statsSubtitle": "We are pioneers in the industry with years of experience and our strong team",
+    "timelineTag": "Our Journey",
+    "timelineTitle": "Our Growth Story",
+    "valuesItems": {
+      "innovation": {
+        "title": "Innovation",
+        "description": "We aim to be a pioneer in our sector with continuous improvement and innovative solutions."
+      },
+      "reliability": {
+        "title": "Reliability",
+        "description": "We are an honest, transparent and reliable business partner to all our stakeholders."
+      },
+      "quality": {
+        "title": "Quality",
+        "description": "We have adopted providing products and services at the highest quality standards."
+      },
+      "sustainability": {
+        "title": "Sustainability",
+        "description": "We develop sustainable business models with environmental and social responsibility awareness."
+      },
+      "humanFocused": {
+        "title": "Human-Focused",
+        "description": "We invest in the development of our employees and prioritize their happiness."
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "We aim for excellence in everything we do and produce results beyond expectations."
+      }
+    },
+    "statsTitle": "Bakırcılar Group in Numbers",
+    "timeline": {
+      "milestone1": {
+        "title": "Foundation",
+        "description": "Our journey in the industry began with Bakırcılar Packaging"
+      },
+      "milestone2": {
+        "title": "Expansion",
+        "description": "Transition to holding structure by investing in new sectors"
+      },
+      "milestone3": {
+        "title": "Diversification",
+        "description": "Entry into software, real estate and automotive sectors"
+      },
+      "milestone4": {
+        "title": "Digital Transformation",
+        "description": "Investment in the future with e-commerce platform and digital services"
+      }
+    }
+  },
+  "careerPage": {
+    "title": "Careers",
+    "subtitle": "Join the Bakırcılar Group family and shape your career with us",
+    "whyJoinUs": {
+      "title": "Why Join Us?",
+      "careerGrowth": {
+        "title": "Career Development",
+        "description": "Continuous development opportunities with training programs and mentorship"
+      },
+      "workEnvironment": {
+        "title": "Work Environment",
+        "description": "Modern offices and flexible working hours"
+      },
+      "projects": {
+        "title": "Projects",
+        "description": "Opportunity to participate in inspiring projects across different sectors"
+      }
+    },
+    "openPositions": "Open Positions",
+    "details": "Details",
+    "spontaneousApplication": {
+      "title": "Didn't Find the Position You're Looking For?",
+      "subtitle": "Share your CV with us through spontaneous application",
+      "button": "Apply Spontaneously"
+    },
+    "jobModal": {
+      "company": "Company",
+      "location": "Location",
+      "type": "Employment Type",
+      "description": "Description",
+      "apply": "Apply"
+    }
+  },
+  "contactPage": {
+    "title": "Contact",
+    "subtitle": "Get in touch with us for your questions, suggestions or business collaborations",
+    "contactInfo": "Contact Information",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "whatsapp": "WhatsApp",
+    "whatsappMessage": "Contact via WhatsApp",
+    "mapPlaceholder": "Google Maps will be added here",
+    "sendMessage": "Send Message",
+    "workingHours": "Working Hours",
+    "weekdays": "Weekdays",
+    "saturday": "Saturday",
+    "sunday": "Sunday",
+    "closed": "Closed"
+  },
+  "newsPage": {
+    "title": "News",
+    "subtitle": "Latest news and developments from Bakırcılar Group",
+    "readMore": "Read More",
+    "image": "Image"
+  },
+  "contactForm": {
+    "name": "Full Name *",
+    "email": "Email *",
+    "phone": "Phone",
+    "subject": "Subject *",
+    "message": "Your Message *",
+    "submit": "Send Message",
+    "submitting": "Sending...",
+    "success": "Your message has been sent successfully. We'll get back to you soon.",
+    "error": "Failed to send message. Please try again later."
+  }
+}

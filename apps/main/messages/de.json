@@ -1,0 +1,218 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "companies": "Unsere Unternehmen",
+    "about": "Über uns",
+    "news": "Nachrichten",
+    "careers": "Karriere",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Bakırcılar Gruppe",
+    "subtitle": "Multisektor-Holding",
+    "description": "Wir bauen die Zukunft mit unseren starken Unternehmen in verschiedenen Sektoren",
+    "primaryCTA": "Unsere Unternehmen",
+    "secondaryCTA": "Kontakt"
+  },
+  "stats": {
+    "companies": "Unternehmen",
+    "employees": "Mitarbeiter",
+    "experience": "Jahre Erfahrung",
+    "customers": "Zufriedene Kunden"
+  },
+  "companies": {
+    "title": "Unsere Unternehmen",
+    "subtitle": "Wir bieten umfassende Lösungen mit unseren führenden Unternehmen in verschiedenen Sektoren",
+    "viewWebsite": "Website besuchen",
+    "ambalaj": {
+      "name": "Bakırcılar Verpackung",
+      "description": "Moderne Verpackungslösungen und Produktion"
+    },
+    "yazilim": {
+      "name": "Bakırcılar Software",
+      "description": "Professionelle Softwareentwicklung und Beratung"
+    },
+    "danismanlik": {
+      "name": "Bakırcılar Beratung",
+      "description": "Unternehmensberatung und strategische Planung"
+    },
+    "emlak": {
+      "name": "Bakırcılar Immobilien",
+      "description": "Immobilienberatung und Investitionen"
+    },
+    "otomotiv": {
+      "name": "Bakırcılar Automotive",
+      "description": "Fahrzeugverkauf und Automobildienstleistungen"
+    }
+  },
+  "about": {
+    "title": "Über uns",
+    "subtitle": "Eine der vertrauenswürdigen Holdinggesellschaften der Türkei",
+    "description": "Als Bakırcılar Gruppe streben wir danach, unseren Kunden mit unseren in verschiedenen Sektoren tätigen Unternehmen den höchsten Qualitätsservice zu bieten. Mit jahrelanger Erfahrung und unserem starken Team sind wir führend in der Branche.",
+    "vision": {
+      "title": "Unsere Vision",
+      "description": "Eine der vertrauenswürdigsten und innovativsten Holdinggesellschaften der Türkei zu sein"
+    },
+    "mission": {
+      "title": "Unsere Mission",
+      "description": "Nachhaltige und qualitativ hochwertige Dienstleistungen anzubieten, die unseren Kunden einen Mehrwert bieten"
+    },
+    "values": {
+      "title": "Unsere Werte",
+      "description": "Vertrauen, Qualität, Innovation und Kundenzufriedenheit"
+    }
+  },
+  "cta": {
+    "title": "Lassen Sie uns zusammenarbeiten",
+    "subtitle": "Kontaktieren Sie uns, um die richtige Lösung für Ihre Projekte zu finden",
+    "button": "Kontakt aufnehmen"
+  },
+  "footer": {
+    "description": "Vertrauenswürdige Holding mit führenden Unternehmen in verschiedenen Sektoren",
+    "quickLinks": "Schnelllinks",
+    "ourCompanies": "Unsere Unternehmen",
+    "followUs": "Folgen Sie uns",
+    "rights": "Alle Rechte vorbehalten",
+    "address": "Adresse",
+    "phone": "Telefon",
+    "email": "E-Mail"
+  },
+  "companiesPage": {
+    "title": "Unsere Unternehmen",
+    "subtitle": "Wir bieten umfassende Lösungen für unsere Kunden mit unseren starken Unternehmen in verschiedenen Sektoren",
+    "ecommerce": {
+      "title": "Unsere E-Commerce-Plattform",
+      "description": "Besuchen Sie unsere E-Commerce-Website, um unsere Produkte online zu kaufen",
+      "button": "Zu Bankted.com gehen"
+    }
+  },
+  "aboutPage": {
+    "title": "Über Uns",
+    "subtitle": "Bakırcılar Gruppe ist eine Holdinggesellschaft, die mit ihren führenden Unternehmen in verschiedenen Sektoren der türkischen Wirtschaft einen Mehrwert bietet.",
+    "story": {
+      "title": "Unsere Geschichte",
+      "paragraph1": "Die Bakırcılar Gruppe wurde 2010 mit jahrelanger Erfahrung und Branchenkenntnissen gegründet. Seit unserer Gründung tragen wir zur türkischen Wirtschaft bei, indem wir starke Marken in verschiedenen Sektoren schaffen.",
+      "paragraph2": "Wir bieten unseren Kunden integrierte Lösungen mit unseren Unternehmen, die in einem breiten Spektrum von Verpackungen bis Software, von Immobilien bis Automobilen tätig sind.",
+      "paragraph3": "Unsere Vision ist es, mit nachhaltigem Wachstum und innovativen Ansätzen zu den angesehensten Holdings der Türkei zu gehören."
+    },
+    "visionDetailed": "Als führende Multi-Sektor-Holding der Türkei mit nachhaltigem Wachstum und innovativen Lösungen eine führende Position in unseren Sektoren erreichen. In internationalen Märkten aktiv sein und eine globale Marke werden.",
+    "missionDetailed": "Der Gesellschaft und der Wirtschaft einen Mehrwert bieten, indem wir unseren Kunden die qualitativ hochwertigsten Produkte und Dienstleistungen anbieten. Eine nachhaltige Zukunft aufbauen, indem wir in die Entwicklung unserer Mitarbeiter investieren und langfristige Erfolge mit unseren Stakeholdern erzielen.",
+    "valuesTitle": "Unsere Werte",
+    "valuesSubtitle": "Unsere Kernwerte stehen im Mittelpunkt unseres Geschäfts und leiten jede Entscheidung, die wir treffen",
+    "statsSubtitle": "Wir sind Vorreiter in der Branche mit langjähriger Erfahrung und unserem starken Team",
+    "timelineTag": "Unsere Reise",
+    "timelineTitle": "Unsere Wachstumsgeschichte",
+    "valuesItems": {
+      "innovation": {
+        "title": "Innovation",
+        "description": "Wir streben danach, mit kontinuierlicher Verbesserung und innovativen Lösungen Vorreiter in unserer Branche zu sein."
+      },
+      "reliability": {
+        "title": "Zuverlässigkeit",
+        "description": "Wir sind ein ehrlicher, transparenter und zuverlässiger Geschäftspartner für alle unsere Stakeholder."
+      },
+      "quality": {
+        "title": "Qualität",
+        "description": "Wir haben uns verpflichtet, Produkte und Dienstleistungen auf höchstem Qualitätsniveau anzubieten."
+      },
+      "sustainability": {
+        "title": "Nachhaltigkeit",
+        "description": "Wir entwickeln nachhaltige Geschäftsmodelle mit Umwelt- und Sozialverantwortungsbewusstsein."
+      },
+      "humanFocused": {
+        "title": "Menschenorientiert",
+        "description": "Wir investieren in die Entwicklung unserer Mitarbeiter und stellen ihr Glück in den Vordergrund."
+      },
+      "excellence": {
+        "title": "Exzellenz",
+        "description": "Wir streben in allem, was wir tun, nach Exzellenz und erzielen Ergebnisse, die die Erwartungen übertreffen."
+      }
+    },
+    "statsTitle": "Bakırcılar Gruppe in Zahlen",
+    "timeline": {
+      "milestone1": {
+        "title": "Gründung",
+        "description": "Unsere Reise in der Branche begann mit Bakırcılar Verpackung"
+      },
+      "milestone2": {
+        "title": "Expansion",
+        "description": "Übergang zur Holdingstruktur durch Investitionen in neue Sektoren"
+      },
+      "milestone3": {
+        "title": "Diversifizierung",
+        "description": "Einstieg in die Software-, Immobilien- und Automobilsektoren"
+      },
+      "milestone4": {
+        "title": "Digitale Transformation",
+        "description": "Investition in die Zukunft mit E-Commerce-Plattform und digitalen Diensten"
+      }
+    }
+  },
+  "careerPage": {
+    "title": "Karriere",
+    "subtitle": "Werden Sie Teil der Bakırcılar Gruppe Familie und gestalten Sie Ihre Karriere mit uns",
+    "whyJoinUs": {
+      "title": "Warum wir?",
+      "careerGrowth": {
+        "title": "Karriereentwicklung",
+        "description": "Kontinuierliche Entwicklungsmöglichkeiten durch Schulungsprogramme und Mentoring"
+      },
+      "workEnvironment": {
+        "title": "Arbeitsumgebung",
+        "description": "Moderne Büros und flexible Arbeitszeiten"
+      },
+      "projects": {
+        "title": "Projekte",
+        "description": "Möglichkeit zur Teilnahme an inspirierenden Projekten in verschiedenen Sektoren"
+      }
+    },
+    "openPositions": "Offene Stellen",
+    "details": "Details",
+    "spontaneousApplication": {
+      "title": "Haben Sie die gesuchte Position nicht gefunden?",
+      "subtitle": "Teilen Sie Ihren Lebenslauf durch eine Initiativbewerbung mit uns",
+      "button": "Initiativ bewerben"
+    },
+    "jobModal": {
+      "company": "Unternehmen",
+      "location": "Standort",
+      "type": "Beschäftigungsart",
+      "description": "Beschreibung",
+      "apply": "Bewerben"
+    }
+  },
+  "contactPage": {
+    "title": "Kontakt",
+    "subtitle": "Kontaktieren Sie uns für Ihre Fragen, Anregungen oder Geschäftskooperationen",
+    "contactInfo": "Kontaktinformationen",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "address": "Adresse",
+    "whatsapp": "WhatsApp",
+    "whatsappMessage": "Kontakt über WhatsApp",
+    "mapPlaceholder": "Google Maps wird hier hinzugefügt",
+    "sendMessage": "Nachricht senden",
+    "workingHours": "Arbeitszeiten",
+    "weekdays": "Wochentage",
+    "saturday": "Samstag",
+    "sunday": "Sonntag",
+    "closed": "Geschlossen"
+  },
+  "newsPage": {
+    "title": "Nachrichten",
+    "subtitle": "Neueste Nachrichten und Entwicklungen von der Bakırcılar Gruppe",
+    "readMore": "Weiterlesen",
+    "image": "Bild"
+  },
+  "contactForm": {
+    "name": "Vollständiger Name *",
+    "email": "E-Mail *",
+    "phone": "Telefon",
+    "subject": "Betreff *",
+    "message": "Ihre Nachricht *",
+    "submit": "Nachricht senden",
+    "submitting": "Wird gesendet...",
+    "success": "Ihre Nachricht wurde erfolgreich gesendet. Wir werden uns bald bei Ihnen melden.",
+    "error": "Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es später erneut."
+  }
+}

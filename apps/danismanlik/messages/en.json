@@ -1,0 +1,189 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Our Services",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Bakırcılar Consulting",
+    "subtitle": "Business Consulting",
+    "description": "Grow your business with strategic planning and business development consulting",
+    "primaryCTA": "Our Services",
+    "secondaryCTA": "Contact"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Take your business to the next level with our expert team",
+    "strategy": {
+      "title": "Strategy Consulting",
+      "description": "Corporate strategy development, market analysis and competitive strategies. Roadmap to grow your business.",
+      "feature1": "Strategy",
+      "feature2": "Analysis",
+      "feature3": "Planning"
+    },
+    "digital": {
+      "title": "Digital Transformation",
+      "description": "Digitalization strategies, process optimization and technology integration. Modern business processes.",
+      "feature1": "Digital",
+      "feature2": "Optimization",
+      "feature3": "Integration"
+    },
+    "business": {
+      "title": "Business Development",
+      "description": "Growth strategies, new market opportunities and business partnerships. Sustainable growth.",
+      "feature1": "Growth",
+      "feature2": "Markets",
+      "feature3": "Partnerships"
+    },
+    "hr": {
+      "title": "Human Resources",
+      "description": "HR strategies, talent management and organizational development. Build strong teams.",
+      "feature1": "HR Strategy",
+      "feature2": "Talent",
+      "feature3": "Development"
+    }
+  },
+  "features": {
+    "quality": {
+      "title": "Expert Team",
+      "description": "We provide the best solutions with our experienced consultants"
+    },
+    "support": {
+      "title": "Continuous Support",
+      "description": "We provide always available, uninterrupted customer support"
+    },
+    "delivery": {
+      "title": "Fast Solution",
+      "description": "We produce fast and effective solutions to your needs"
+    }
+  },
+  "cta": {
+    "title": "Contact Us for Bakırcılar Consulting",
+    "subtitle": "Our expert team is ready to offer you the most suitable solution",
+    "button": "Get in Touch"
+  },
+  "footer": {
+    "description": "We grow your business with professional consulting",
+    "quickLinks": "Quick Links",
+    "companies": "Our Companies",
+    "rights": "All rights reserved"
+  },
+  "about": {
+    "vision": {
+      "title": "Our Vision"
+    },
+    "mission": {
+      "title": "Our Mission"
+    }
+  },
+  "stats": {
+    "companies": "Service Areas",
+    "employees": "Consultants",
+    "experience": "Years of Experience",
+    "customers": "Happy Customers"
+  },
+  "aboutPage": {
+    "title": "About Us",
+    "subtitle": "Your trusted solution partner in the consulting industry since 2010",
+    "story": {
+      "title": "Our Story",
+      "paragraph1": "Founded in 2010, Bakırcılar Consulting has been operating in the business consulting industry for over 15 years. We offer services in a wide range from strategy consulting to digital transformation, from business development to human resources management.",
+      "paragraph2": "By prioritizing customer satisfaction, we have become a trusted brand in the industry with effective strategies and expert consulting services. With our experienced consultant team and modern business methodologies, we provide solutions for companies of all sizes.",
+      "paragraph3": "With our strategic thinking approach, data-driven methodology and expertise in developing sustainable business models, we act thinking about both today and the future."
+    },
+    "visionDetailed": "To become a leading company in the consulting industry by analyzing constantly changing business world dynamics at the highest level in the Turkish and global market.",
+    "missionDetailed": "To contribute to our customers' growth by offering strategic and sustainable business solutions without compromising our principles of quality, speed and reliability.",
+    "valuesTitle": "Our Values",
+    "valuesSubtitle": "The core principles that shape our business processes",
+    "statsTitle": "Bakırcılar Consulting in Numbers",
+    "statsSubtitle": "We are pioneers in the industry with years of experience and our strong team",
+    "timelineTag": "Our Journey",
+    "timelineTitle": "Our Growth Story",
+    "values": {
+      "quality": {
+        "title": "Quality Assurance",
+        "description": "We meet customer expectations at the highest level with international consulting standards"
+      },
+      "innovation": {
+        "title": "Innovation & R&D",
+        "description": "We produce innovative business strategies that make a difference in the industry with continuous research and development"
+      },
+      "reliability": {
+        "title": "Reliability",
+        "description": "We have become a reliable brand with on-time delivery and quality consulting services"
+      },
+      "sustainability": {
+        "title": "Sustainability",
+        "description": "We develop long-term value-creating, sustainable business models and strategies"
+      },
+      "safety": {
+        "title": "Confidentiality and Security",
+        "description": "We maintain the highest standards regarding confidentiality of customer information and business security"
+      },
+      "customer": {
+        "title": "Customer Focus",
+        "description": "By understanding customer goals and demands, we aim for 100% satisfaction with customized solutions"
+      },
+      "humanFocused": {
+        "title": "Human-Focused Approach",
+        "description": "We achieve success with our expert consultant team and continuously support professional development"
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "We aim for excellence in everything we do and deliver results beyond expectations"
+      }
+    },
+    "stats": {
+      "experience": "15+ Years of Experience",
+      "products": "300+ Projects",
+      "customers": "800+ Happy Customers",
+      "delivery": "Expert Team"
+    },
+    "timeline": {
+      "milestone1": {
+        "title": "Foundation",
+        "description": "Our journey in the packaging sector began as Bakırcılar Packaging"
+      },
+      "milestone2": {
+        "title": "Growth",
+        "description": "We strengthened our position in the sector with modern production facilities and wide product range"
+      },
+      "milestone3": {
+        "title": "Diversification",
+        "description": "We expanded our product portfolio and started serving different sectors"
+      },
+      "milestone4": {
+        "title": "Digital Transformation",
+        "description": "We invest in the future with eco-friendly production and digital solutions"
+      }
+    }
+  },
+  "contactPage": {
+    "title": "Contact",
+    "subtitle": "Contact us for your consulting needs, let us offer you the most suitable solution",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "whatsapp": "WhatsApp",
+    "whatsappMessage": "Message on WhatsApp",
+    "sendMessage": "Send Message",
+    "mapPlaceholder": "Map will be added here",
+    "workingHours": "Working Hours",
+    "weekdays": "Weekdays",
+    "saturday": "Saturday",
+    "sunday": "Sunday",
+    "closed": "Closed"
+  },
+  "contactForm": {
+    "name": "Your Full Name",
+    "email": "Your Email Address",
+    "phone": "Your Phone Number",
+    "subject": "Subject",
+    "message": "Your Message",
+    "submit": "Send",
+    "submitting": "Sending...",
+    "success": "Your message has been sent successfully!",
+    "error": "An error occurred. Please try again."
+  }
+}

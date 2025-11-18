@@ -1,0 +1,175 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Our Products",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Bakırcılar Packaging",
+    "subtitle": "Packaging Solutions",
+    "description": "High-quality and environmentally friendly packaging products manufactured with modern technology",
+    "primaryCTA": "Our Products",
+    "secondaryCTA": "Contact"
+  },
+  "products": {
+    "title": "Our Product Categories",
+    "subtitle": "We offer suitable solutions for your needs with our wide product range for different sectors",
+    "cardboard": {
+      "title": "Cardboard Box Packaging",
+      "description": "Custom-designed cardboard box production in all sizes and features. Ideal solutions for e-commerce, food, and industrial applications.",
+      "feature1": "Custom Printing",
+      "feature2": "Durable Material",
+      "feature3": "Fast Delivery"
+    },
+    "flexible": {
+      "title": "Flexible Packaging",
+      "description": "Flexible packaging films that meet food safety standards. Freshness guarantee and protective properties.",
+      "feature1": "Food Safe",
+      "feature2": "UV Protection",
+      "feature3": "Eco-Friendly"
+    },
+    "plastic": {
+      "title": "Plastic Packaging",
+      "description": "Recyclable, durable plastic packaging solutions. Industrial and consumer applications.",
+      "feature1": "Recyclable",
+      "feature2": "Transparent View",
+      "feature3": "Economical"
+    },
+    "printing": {
+      "title": "Printing & Design",
+      "description": "Professional graphic design and high-quality printing services. Make your brand stand out.",
+      "feature1": "4 Color Printing",
+      "feature2": "Custom Design",
+      "feature3": "Fast Production"
+    }
+  },
+  "features": {
+    "quality": {
+      "title": "Quality Assurance",
+      "description": "We guarantee the highest quality with our ISO certified production processes"
+    },
+    "eco": {
+      "title": "Eco-Friendly",
+      "description": "We offer sustainable and recyclable packaging solutions"
+    },
+    "delivery": {
+      "title": "Fast Delivery",
+      "description": "We provide fast and secure delivery service throughout Turkey"
+    }
+  },
+  "cta": {
+    "title": "Contact Us for Your Packaging Needs",
+    "subtitle": "Our expert team is ready to offer you the most suitable solution",
+    "button": "Get in Touch"
+  },
+  "footer": {
+    "description": "We are a leading company in the industry with modern packaging solutions and production.",
+    "quickLinks": "Quick Links",
+    "companies": "Our Companies",
+    "rights": "All rights reserved"
+  },
+  "about": {
+    "vision": {
+      "title": "Our Vision"
+    },
+    "mission": {
+      "title": "Our Mission"
+    }
+  },
+  "aboutPage": {
+    "title": "About Us",
+    "subtitle": "Your trusted solution partner in the packaging industry since 1990",
+    "story": {
+      "title": "Our Story",
+      "paragraph1": "Founded in 1990, Bakırcılar Packaging has been operating in the packaging industry for over 30 years. We offer services in a wide range from packaging products to industrial cleaning products, from stationery products to fast-moving consumer goods.",
+      "paragraph2": "By prioritizing customer satisfaction, we have become a trusted brand in the industry with quality products and on-time delivery guarantee. With our experienced staff and modern production facilities, we provide solutions for projects of all sizes.",
+      "paragraph3": "With our environmentally friendly production approach, use of recyclable materials and sustainable business model, we act thinking about both today and the future."
+    },
+    "visionDetailed": "To become a leading production and supply company in the packaging industry by meeting constantly changing customer demands at the highest level in the Turkish and global market.",
+    "missionDetailed": "To contribute to our customers' success by offering environmentally friendly and innovative packaging solutions without compromising our principles of quality, speed and reliability.",
+    "valuesTitle": "Our Values",
+    "valuesSubtitle": "The core principles that shape our business processes",
+    "statsSubtitle": "We are pioneers in the industry with years of experience and our strong team",
+    "timelineTag": "Our Journey",
+    "timelineTitle": "Our Growth Story",
+    "timeline": {
+      "milestone1": {
+        "title": "Foundation",
+        "description": "Our journey in the packaging industry began as Bakırcılar Packaging"
+      },
+      "milestone2": {
+        "title": "Expansion",
+        "description": "We strengthened our position in the industry with modern production facilities and wide product range"
+      },
+      "milestone3": {
+        "title": "Diversification",
+        "description": "We expanded our product portfolio and started serving different sectors"
+      },
+      "milestone4": {
+        "title": "Innovation",
+        "description": "We invest in the future with environmentally friendly production and digital solutions"
+      }
+    },
+    "valuesItems": {
+      "innovation": {
+        "title": "Innovation & R&D",
+        "description": "We develop innovative products that make a difference in the industry with our R&D studies"
+      },
+      "reliability": {
+        "title": "Reliability",
+        "description": "By prioritizing customer satisfaction, we have become a trusted brand in the industry"
+      },
+      "quality": {
+        "title": "Quality Assurance",
+        "description": "We meet customer expectations at the highest standards with our ISO certified production processes"
+      },
+      "sustainability": {
+        "title": "Sustainability",
+        "description": "We build the future with an environmentally friendly production approach that respects nature and society"
+      },
+      "humanFocused": {
+        "title": "Human-Focused Approach",
+        "description": "We achieve success with our dynamic, innovation-oriented team and support career development"
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "We work with on-time delivery guarantee, aiming for excellence in every project"
+      }
+    },
+    "statsTitle": "Bakırcılar Packaging in Numbers"
+  },
+  "stats": {
+    "companies": "Product Categories",
+    "employees": "Employees",
+    "experience": "Years of Experience",
+    "customers": "Happy Customers"
+  },
+  "contactPage": {
+    "title": "Contact",
+    "subtitle": "Contact us for your packaging needs, let us offer you the most suitable solution",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "whatsapp": "WhatsApp",
+    "whatsappMessage": "Message on WhatsApp",
+    "sendMessage": "Send Message",
+    "mapPlaceholder": "Map will be added here",
+    "workingHours": "Working Hours",
+    "weekdays": "Weekdays",
+    "saturday": "Saturday",
+    "sunday": "Sunday",
+    "closed": "Closed"
+  },
+  "contactForm": {
+    "name": "Your Full Name",
+    "email": "Your Email Address",
+    "phone": "Your Phone Number",
+    "subject": "Subject",
+    "message": "Your Message",
+    "submit": "Send",
+    "submitting": "Sending...",
+    "success": "Your message has been sent successfully!",
+    "error": "An error occurred. Please try again."
+  }
+}

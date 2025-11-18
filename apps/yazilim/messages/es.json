@@ -1,0 +1,184 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Nuestros Servicios",
+    "about": "Sobre Nosotros",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Bakırcılar Software",
+    "subtitle": "Desarrollo de Software",
+    "description": "Soluciones de software personalizadas y servicios de consultoría con tecnologías modernas",
+    "primaryCTA": "Nuestros Servicios",
+    "secondaryCTA": "Contacto"
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Digitalizamos su negocio con tecnologías modernas",
+    "web": {
+      "title": "Desarrollo Web",
+      "description": "Aplicaciones web responsivas y rápidas con React, Next.js y tecnologías modernas. Interfaces amigables con SEO y usuario.",
+      "feature1": "React & Next.js",
+      "feature2": "SEO",
+      "feature3": "Responsive"
+    },
+    "mobile": {
+      "title": "Aplicación Móvil",
+      "description": "Aplicaciones móviles nativas y multiplataforma para iOS y Android. Tecnologías React Native y Flutter.",
+      "feature1": "iOS & Android",
+      "feature2": "Cross-Platform",
+      "feature3": "Native"
+    },
+    "cloud": {
+      "title": "Soluciones en la Nube",
+      "description": "Infraestructura en la nube escalable y segura. Servicios AWS, Azure y Google Cloud.",
+      "feature1": "Escalable",
+      "feature2": "Seguro",
+      "feature3": "Confiable"
+    },
+    "ai": {
+      "title": "IA y Análisis de Datos",
+      "description": "Inteligencia artificial y aprendizaje automático. Análisis y visualización de datos.",
+      "feature1": "IA",
+      "feature2": "Análisis",
+      "feature3": "Predicción"
+    }
+  },
+  "features": {
+    "quality": {
+      "title": "Alta Calidad",
+      "description": "Código limpio, mejores prácticas"
+    },
+    "support": {
+      "title": "Soporte 24/7",
+      "description": "Siempre a su disposición"
+    },
+    "delivery": {
+      "title": "Entrega Puntual",
+      "description": "Proyectos completados a tiempo"
+    }
+  },
+  "cta": {
+    "title": "Hablemos de su proyecto",
+    "subtitle": "Contáctenos para soluciones de software personalizadas",
+    "button": "Ponerse en Contacto"
+  },
+  "footer": {
+    "description": "Digitalizamos su negocio con soluciones de software modernas",
+    "quickLinks": "Enlaces Rápidos",
+    "companies": "Nuestras Empresas",
+    "rights": "Todos los derechos reservados"
+  },
+  "about": {
+    "vision": {
+      "title": "Nuestra Visión"
+    },
+    "mission": {
+      "title": "Nuestra Misión"
+    }
+  },
+  "aboutPage": {
+    "title": "Sobre Nosotros",
+    "subtitle": "Su socio de soluciones de confianza en la industria del software desde 2010",
+    "story": {
+      "title": "Nuestra Historia",
+      "paragraph1": "Fundada en 2010, Bakırcılar Software ha estado operando en la industria del software durante más de 15 años. Ofrecemos servicios en una amplia gama desde aplicaciones web hasta aplicaciones móviles, desde soluciones en la nube hasta integraciones de inteligencia artificial.",
+      "paragraph2": "Al priorizar la satisfacción del cliente, nos hemos convertido en una marca de confianza en la industria con productos de software de calidad y garantía de entrega puntual. Con nuestro equipo de software experimentado y tecnologías modernas, proporcionamos soluciones para proyectos de todos los tamaños.",
+      "paragraph3": "Con nuestro enfoque de tecnología innovadora, cultura de aprendizaje continuo y modelo de desarrollo de software sostenible, actuamos pensando tanto en el presente como en el futuro."
+    },
+    "visionDetailed": "Convertirse en una empresa líder de desarrollo y consultoría en la industria del software satisfaciendo las demandas tecnológicas en constante cambio al más alto nivel en el mercado turco y global.",
+    "missionDetailed": "Contribuir a la transformación digital de nuestros clientes ofreciendo soluciones de software innovadoras y escalables sin comprometer nuestros principios de calidad, velocidad y confiabilidad.",
+    "valuesTitle": "Nuestros Valores",
+    "valuesSubtitle": "Los principios fundamentales que dan forma a nuestros procesos comerciales",
+    "statsSubtitle": "Somos pioneros en la industria con años de experiencia y nuestro sólido equipo",
+    "timelineTag": "Nuestro Viaje",
+    "timelineTitle": "Nuestra Historia de Crecimiento",
+    "valuesItems": {
+      "innovation": {
+        "title": "Innovación e I+D",
+        "description": "Desarrollamos productos de software innovadores que marcan la diferencia en la industria con nuestros estudios de I+D"
+      },
+      "reliability": {
+        "title": "Confiabilidad",
+        "description": "Nos hemos convertido en una marca de confianza con entrega puntual y productos de software de calidad"
+      },
+      "quality": {
+        "title": "Garantía de Calidad",
+        "description": "Cumplimos con las expectativas del cliente al más alto nivel con los mejores estándares de desarrollo de software"
+      },
+      "sustainability": {
+        "title": "Sostenibilidad",
+        "description": "Construimos proyectos duraderos con código limpio, buena documentación y arquitectura de software sostenible"
+      },
+      "humanFocused": {
+        "title": "Enfoque Centrado en las Personas",
+        "description": "Logramos el éxito con nuestro equipo de software dinámico orientado a la innovación y apoyamos el desarrollo continuo"
+      },
+      "excellence": {
+        "title": "Excelencia",
+        "description": "Proporcionamos la más alta calidad de código y estándares de rendimiento, aspirando a la excelencia en cada proyecto"
+      }
+    },
+    "statsTitle": "Bakırcılar Software en Números",
+    "visionDetailed": "Convertirse en una empresa líder de desarrollo y consultoría en la industria del software satisfaciendo las demandas tecnológicas en constante cambio al más alto nivel en el mercado turco y global.",
+    "missionDetailed": "Contribuir a la transformación digital de nuestros clientes ofreciendo soluciones de software innovadoras y escalables sin comprometer nuestros principios de calidad, velocidad y confiabilidad.",
+    "timeline": {
+      "milestone1": {
+        "title": "Fundación",
+        "description": "Nuestro viaje en la industria del software comenzó como Bakırcılar Software"
+      },
+      "milestone2": {
+        "title": "Expansión",
+        "description": "Expandimos nuestros servicios de desarrollo de aplicaciones web y móviles con tecnologías modernas"
+      },
+      "milestone3": {
+        "title": "Innovación",
+        "description": "Enriquecimos nuestro portafolio con soluciones en la nube e integraciones de inteligencia artificial"
+      },
+      "milestone4": {
+        "title": "Visión Futura",
+        "description": "Desarrollamos soluciones de software de próxima generación con tecnologías de AI y ML"
+      }
+    }
+  },
+  "stats": {
+    "companies": "Áreas de Servicio",
+    "employees": "Desarrolladores",
+    "experience": "Años de Experiencia",
+    "customers": "Clientes Satisfechos"
+  },
+  "contactPage": {
+    "title": "Contacto",
+    "subtitle": "Contáctenos para sus necesidades de software, permítanos ofrecerle la solución más adecuada",
+    "channelsTag": "Canales de Contacto",
+    "reachUsTitle": "Contáctenos",
+    "channelsDescription": "Puede contactarnos fácilmente eligiendo el canal de contacto más adecuado para usted",
+    "formDescription": "Puede enviarnos un mensaje completando el formulario. Nos pondremos en contacto con usted lo antes posible.",
+    "email": "Correo Electrónico",
+    "phone": "Teléfono",
+    "address": "Dirección",
+    "whatsapp": "WhatsApp",
+    "whatsappMessage": "Mensaje en WhatsApp",
+    "sendMessage": "Enviar Mensaje",
+    "mapPlaceholder": "El mapa se agregará aquí",
+    "workingHours": "Horario de Trabajo",
+    "workingHoursTitle": "Nuestro Horario de Trabajo",
+    "weekdays": "Días de Semana",
+    "weekdaysHours": "09:00 - 18:00",
+    "saturday": "Sábado",
+    "saturdayHours": "09:00 - 14:00",
+    "sunday": "Domingo",
+    "closed": "Cerrado"
+  },
+  "contactForm": {
+    "name": "Su Nombre Completo",
+    "email": "Su Dirección de Correo Electrónico",
+    "phone": "Su Número de Teléfono",
+    "subject": "Asunto",
+    "message": "Su Mensaje",
+    "submit": "Enviar",
+    "submitting": "Enviando...",
+    "success": "¡Su mensaje ha sido enviado exitosamente!",
+    "error": "Ocurrió un error. Por favor, inténtelo de nuevo."
+  }
+}

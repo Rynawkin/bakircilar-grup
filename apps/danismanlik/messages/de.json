@@ -1,0 +1,183 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "services": "Unsere Dienstleistungen",
+    "about": "Über Uns",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Bakırcılar Beratung",
+    "subtitle": "Unternehmensberatung",
+    "description": "Lassen Sie Ihr Unternehmen mit strategischer Planung und Geschäftsentwicklungsberatung wachsen",
+    "primaryCTA": "Unsere Dienstleistungen",
+    "secondaryCTA": "Kontakt"
+  },
+  "services": {
+    "title": "Unsere Dienstleistungen",
+    "subtitle": "Bringen Sie Ihr Unternehmen mit unserem Expertenteam auf die nächste Stufe",
+    "strategy": {
+      "title": "Strategieberatung",
+      "description": "Unternehmensstrategie-Entwicklung, Marktanalyse und Wettbewerbsstrategien. Fahrplan für Ihr Geschäftswachstum.",
+      "feature1": "Strategie",
+      "feature2": "Analyse",
+      "feature3": "Planung"
+    },
+    "digital": {
+      "title": "Digitale Transformation",
+      "description": "Digitalisierungsstrategien, Prozessoptimierung und Technologieintegration. Moderne Geschäftsprozesse.",
+      "feature1": "Digital",
+      "feature2": "Optimierung",
+      "feature3": "Integration"
+    },
+    "business": {
+      "title": "Geschäftsentwicklung",
+      "description": "Marktexpansion, Partnerschaften und Verkaufsstrategien. Steigern Sie Ihren Umsatz.",
+      "feature1": "Expansion",
+      "feature2": "Partnerschaften",
+      "feature3": "Verkauf"
+    },
+    "hr": {
+      "title": "Personalberatung",
+      "description": "Talentmanagement, Organisationsentwicklung und Schulungsprogramme. Investieren Sie in Ihre Mitarbeiter.",
+      "feature1": "Talent",
+      "feature2": "Organisation",
+      "feature3": "Schulung"
+    }
+  },
+  "features": {
+    "quality": {
+      "title": "Expertenteam",
+      "description": "Erfahrene Berater"
+    },
+    "support": {
+      "title": "Kontinuierliche Unterstützung",
+      "description": "Langfristige Partnerschaften"
+    },
+    "delivery": {
+      "title": "Ergebnisorientiert",
+      "description": "Messbare Erfolge"
+    }
+  },
+  "cta": {
+    "title": "Lassen Sie Ihr Unternehmen wachsen",
+    "subtitle": "Kontaktieren Sie uns für professionelle Beratungsdienstleistungen",
+    "button": "Kontakt aufnehmen"
+  },
+  "footer": {
+    "description": "Wir lassen Ihr Geschäft mit professioneller Beratung wachsen",
+    "quickLinks": "Schnellzugriff",
+    "companies": "Unsere Unternehmen",
+    "rights": "Alle Rechte vorbehalten"
+  },
+  "about": {
+    "vision": {
+      "title": "Unsere Vision"
+    },
+    "mission": {
+      "title": "Unsere Mission"
+    }
+  },
+  "aboutPage": {
+    "title": "Über Uns",
+    "subtitle": "Ihr vertrauenswürdiger Lösungspartner in der Beratungsindustrie seit 2010",
+    "story": {
+      "title": "Unsere Geschichte",
+      "paragraph1": "Bakırcılar Beratung wurde 2010 gegründet und ist seit über 15 Jahren in der Unternehmensberatungsbranche tätig. Wir bieten Dienstleistungen in einem breiten Spektrum von Strategieberatung über digitale Transformation bis hin zu Geschäftsentwicklung und Personalmanagement.",
+      "paragraph2": "Mit der Priorisierung der Kundenzufriedenheit sind wir zu einer vertrauenswürdigen Marke in der Branche geworden, mit effektiven Strategien und professionellen Beratungsdienstleistungen. Mit unserem erfahrenen Beraterteam und modernen Geschäftsmethoden bieten wir Lösungen für Unternehmen jeder Größe.",
+      "paragraph3": "Mit unserem strategischen Denkansatz, datengestützter Methodik und Expertise in der Entwicklung nachhaltiger Geschäftsmodelle handeln wir mit Blick auf heute und die Zukunft."
+    },
+    "vision": {
+      "title": "Unsere Vision",
+      "description": "Ein führendes Unternehmen in der Beratungsbranche zu werden, indem wir sich ständig ändernde Geschäftsweltdynamiken auf höchstem Niveau auf dem türkischen und globalen Markt analysieren."
+    },
+    "mission": {
+      "title": "Unsere Mission",
+      "description": "Zum Wachstum unserer Kunden beizutragen, indem wir strategische und nachhaltige Geschäftslösungen anbieten, ohne unsere Prinzipien von Qualität, Geschwindigkeit und Zuverlässigkeit zu gefährden."
+    },
+    "valuesTitle": "Unsere Werte",
+    "valuesSubtitle": "Die Kernprinzipien, die unsere Geschäftsprozesse prägen",
+    "statsSubtitle": "Wir sind Vorreiter in der Branche mit langjähriger Erfahrung und unserem starken Team",
+    "timelineTag": "Unsere Reise",
+    "timelineTitle": "Unsere Wachstumsgeschichte",
+    "statsTitle": "Bakırcılar Beratung in Zahlen",
+    "visionDetailed": "Ein führendes Unternehmen in der Beratungsbranche zu werden, indem wir sich ständig ändernde Geschäftsweltdynamiken auf höchstem Niveau auf dem türkischen und globalen Markt analysieren.",
+    "missionDetailed": "Zum Wachstum unserer Kunden beizutragen, indem wir strategische und nachhaltige Geschäftslösungen anbieten, ohne unsere Prinzipien von Qualität, Geschwindigkeit und Zuverlässigkeit zu gefährden.",
+    "valuesItems": {
+      "quality": {
+        "title": "Qualitätssicherung",
+        "description": "Wir erfüllen Kundenerwartungen auf höchstem Niveau mit internationalen Beratungsstandards"
+      },
+      "innovation": {
+        "title": "Innovation & F&E",
+        "description": "Wir produzieren innovative Geschäftsstrategien, die mit kontinuierlicher Forschung und Entwicklung einen Unterschied in der Branche machen"
+      },
+      "reliability": {
+        "title": "Zuverlässigkeit",
+        "description": "Mit Priorisierung der Kundenzufriedenheit sind wir zu einer vertrauenswürdigen Marke in der Branche geworden"
+      },
+      "sustainability": {
+        "title": "Nachhaltigkeit",
+        "description": "Wir entwickeln langfristig wertschöpfende, nachhaltige Geschäftsmodelle und Strategien"
+      },
+      "humanFocused": {
+        "title": "Menschenorientierter Ansatz",
+        "description": "Wir erzielen Erfolg mit unserem erfahrenen Beraterteam und unterstützen kontinuierlich die berufliche Entwicklung"
+      },
+      "excellence": {
+        "title": "Exzellenz",
+        "description": "Wir halten die höchsten Standards in Bezug auf Vertraulichkeit von Kundeninformationen und Geschäftssicherheit ein"
+      }
+    },
+    "timeline": {
+      "milestone1": {
+        "title": "Gründung",
+        "description": "Unsere Reise in der Branche begann"
+      },
+      "milestone2": {
+        "title": "Wachstum",
+        "description": "Wir stärkten unsere Position in der Branche mit modernen Dienstleistungen"
+      },
+      "milestone3": {
+        "title": "Diversifizierung",
+        "description": "Wir erweiterten unser Dienstleistungsportfolio und begannen, verschiedene Branchen zu bedienen"
+      },
+      "milestone4": {
+        "title": "Digitale Transformation",
+        "description": "Wir investieren in die Zukunft mit digitalen Lösungen"
+      }
+    }
+  },
+  "stats": {
+    "companies": "Servicebereiche",
+    "employees": "Berater",
+    "experience": "Jahre Erfahrung",
+    "customers": "Zufriedene Kunden"
+  },
+  "contactPage": {
+    "title": "Kontakt",
+    "subtitle": "Kontaktieren Sie uns für Ihre Beratungsbedürfnisse, lassen Sie uns Ihnen die passendste Lösung anbieten",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "address": "Adresse",
+    "whatsapp": "WhatsApp",
+    "whatsappMessage": "Nachricht auf WhatsApp",
+    "sendMessage": "Nachricht senden",
+    "mapPlaceholder": "Karte wird hier hinzugefügt",
+    "workingHours": "Arbeitszeiten",
+    "weekdays": "Wochentage",
+    "saturday": "Samstag",
+    "sunday": "Sonntag",
+    "closed": "Geschlossen"
+  },
+  "contactForm": {
+    "name": "Ihr vollständiger Name",
+    "email": "Ihre E-Mail-Adresse",
+    "phone": "Ihre Telefonnummer",
+    "subject": "Betreff",
+    "message": "Ihre Nachricht",
+    "submit": "Senden",
+    "submitting": "Wird gesendet...",
+    "success": "Ihre Nachricht wurde erfolgreich gesendet!",
+    "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Our Services",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Bakırcılar Automotive",
+    "subtitle": "Automotive Services",
+    "description": "Reliable vehicle sales and automotive services",
+    "primaryCTA": "Our Services",
+    "secondaryCTA": "Contact"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "We are with you with comprehensive automotive services",
+    "sales": {
+      "title": "Vehicle Sales",
+      "description": "New and used vehicle sales. Wide vehicle options and advantageous prices.",
+      "feature1": "New & Used",
+      "feature2": "Wide Selection",
+      "feature3": "Best Prices"
+    },
+    "rental": {
+      "title": "Vehicle Rental",
+      "description": "Daily, monthly and long-term vehicle rental services. Economical and comfortable.",
+      "feature1": "Daily",
+      "feature2": "Monthly",
+      "feature3": "Long-term"
+    },
+    "expertise": {
+      "title": "Expertise Service",
+      "description": "Professional vehicle expertise and appraisal services. Safe shopping.",
+      "feature1": "Professional",
+      "feature2": "Detailed",
+      "feature3": "Reliable"
+    },
+    "maintenance": {
+      "title": "Maintenance & Repair",
+      "description": "Authorized service quality maintenance and repair services. Original spare parts.",
+      "feature1": "Maintenance",
+      "feature2": "Repair",
+      "feature3": "Original Parts"
+    }
+  },
+  "features": {
+    "quality": {
+      "title": "Reliable Service",
+      "description": "We provide reliable service with our professional team"
+    },
+    "support": {
+      "title": "24/7 Support",
+      "description": "We provide always available, uninterrupted customer support"
+    },
+    "delivery": {
+      "title": "Fast Service",
+      "description": "Fast and professional service"
+    }
+  },
+  "cta": {
+    "title": "Contact Us for Your Automotive Needs",
+    "subtitle": "Our expert team is ready to offer you the most suitable solution",
+    "button": "Get in Touch"
+  },
+  "footer": {
+    "description": "Reliable service in the automotive industry",
+    "quickLinks": "Quick Links",
+    "companies": "Our Companies",
+    "rights": "All rights reserved"
+  },
+  "about": {
+    "vision": {
+      "title": "Our Vision"
+    },
+    "mission": {
+      "title": "Our Mission"
+    }
+  },
+  "stats": {
+    "companies": "Service Points",
+    "employees": "Automotive Experts",
+    "experience": "Years of Experience",
+    "customers": "Happy Customers"
+  },
+  "aboutPage": {
+    "title": "About Us",
+    "subtitle": "Your trusted solution partner in the automotive industry since 2015",
+    "story": {
+      "title": "Our Story",
+      "paragraph1": "Founded in 2015, Bakırcılar Automotive has been operating in the automotive industry for over 10 years. We offer services in a wide range from vehicle sales to rental services, from expertise services to maintenance and repair.",
+      "paragraph2": "By prioritizing customer satisfaction, we have become a respected brand in the industry with quality vehicle solutions and reliable service approach. With our experienced automotive experts and wide vehicle portfolio, we provide solutions suitable for every need.",
+      "paragraph3": "With our customer-oriented service approach, quality assurance and principles of providing reliable automotive solutions, we act thinking about both today and the future."
+    },
+    "visionDetailed": "To become a leading sales and service company in the automotive industry by meeting constantly changing customer demands at the highest level in the Turkish automotive market.",
+    "missionDetailed": "To contribute to our customers' safe driving experience by offering comprehensive and professional automotive solutions without compromising our principles of quality, trust and customer satisfaction.",
+    "valuesTitle": "Our Values",
+    "valuesSubtitle": "The core principles that shape our business processes",
+    "statsSubtitle": "We are pioneers in the industry with years of experience and our strong team",
+    "timelineTag": "Our Journey",
+    "timelineTitle": "Our Growth Story",
+    "statsTitle": "Bakırcılar Automotive in Numbers",
+    "timeline": {
+      "milestone1": {
+        "title": "Foundation",
+        "description": "Our journey in the automotive industry began as Bakırcılar Automotive"
+      },
+      "milestone2": {
+        "title": "Growth",
+        "description": "We expanded our vehicle portfolio and service quality with comprehensive automotive solutions"
+      },
+      "milestone3": {
+        "title": "Innovation",
+        "description": "We enhanced our expertise and maintenance services with modern technologies"
+      },
+      "milestone4": {
+        "title": "Digital",
+        "description": "We invest in the future with digital platforms and customer-focused services"
+      }
+    },
+    "valuesItems": {
+      "quality": {
+        "title": "Quality Assurance",
+        "description": "We meet customer expectations with high quality standards and reliable service approach"
+      },
+      "innovation": {
+        "title": "Innovation & Technology",
+        "description": "By following innovations in the automotive industry, we offer modern solutions and services"
+      },
+      "sustainability": {
+        "title": "Sustainability",
+        "description": "We care about offering environmentally friendly vehicle solutions and sustainable automotive services"
+      },
+      "safety": {
+        "title": "Safety",
+        "description": "We maintain the highest standards regarding vehicle safety and customer security"
+      },
+      "customer": {
+        "title": "Customer Focus",
+        "description": "By understanding customer needs and expectations, we aim for 100% satisfaction with personalized automotive solutions"
+      },
+      "team": {
+        "title": "Human-Focused Approach",
+        "description": "We achieve success with our expert automotive team and continuously support professional development"
+      }
+    },
+    "values": {
+      "quality": {
+        "title": "Quality Assurance",
+        "description": "We meet customer expectations with high quality standards and reliable service approach"
+      },
+      "innovation": {
+        "title": "Innovation & Technology",
+        "description": "By following innovations in the automotive industry, we offer modern solutions and services"
+      },
+      "sustainability": {
+        "title": "Sustainability",
+        "description": "We care about offering environmentally friendly vehicle solutions and sustainable automotive services"
+      },
+      "safety": {
+        "title": "Safety",
+        "description": "We maintain the highest standards regarding vehicle safety and customer security"
+      },
+      "customer": {
+        "title": "Customer Focus",
+        "description": "By understanding customer needs and expectations, we aim for 100% satisfaction with personalized automotive solutions"
+      },
+      "team": {
+        "title": "Human-Focused Approach",
+        "description": "We achieve success with our expert automotive team and continuously support professional development"
+      }
+    }
+  },
+  "contactPage": {
+    "title": "Contact",
+    "subtitle": "Contact us for your automotive needs, let us offer you the most suitable solution",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "whatsapp": "WhatsApp",
+    "whatsappMessage": "Message on WhatsApp",
+    "sendMessage": "Send Message",
+    "mapPlaceholder": "Map will be added here",
+    "workingHours": "Working Hours",
+    "weekdays": "Weekdays",
+    "saturday": "Saturday",
+    "sunday": "Sunday",
+    "closed": "Closed"
+  },
+  "contactForm": {
+    "name": "Your Full Name",
+    "email": "Your Email Address",
+    "phone": "Your Phone Number",
+    "subject": "Subject",
+    "message": "Your Message",
+    "submit": "Send",
+    "submitting": "Sending...",
+    "success": "Your message has been sent successfully!",
+    "error": "An error occurred. Please try again."
+  }
+}

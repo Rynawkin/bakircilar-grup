@@ -1,0 +1,183 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "services": "Unsere Dienstleistungen",
+    "about": "Über Uns",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Bakırcılar Immobilien",
+    "subtitle": "Immobiliendienstleistungen",
+    "description": "Finden Sie Ihre Traumimmobilie mit professioneller Immobilienberatung und breitem Portfolio",
+    "primaryCTA": "Unsere Dienstleistungen",
+    "secondaryCTA": "Kontakt"
+  },
+  "services": {
+    "title": "Unsere Dienstleistungen",
+    "subtitle": "Wir finden die passendste Immobilie für Sie mit unserem breiten Portfolio",
+    "residential": {
+      "title": "Wohnimmobilien",
+      "description": "Finden Sie Ihr Traumhaus mit unserem umfangreichen Wohnimmobilien-Portfolio. Professionelle Beratung und rechtliche Unterstützung.",
+      "feature1": "Breites Portfolio",
+      "feature2": "Beratung",
+      "feature3": "Rechtliche Unterstützung"
+    },
+    "commercial": {
+      "title": "Gewerbeimmobilien",
+      "description": "Büros, Geschäfte und Gewerbeflächen. Gewerbeimmobilien mit hohem Investitionswert.",
+      "feature1": "Büro",
+      "feature2": "Einzelhandel",
+      "feature3": "Investition"
+    },
+    "management": {
+      "title": "Immobilienverwaltung",
+      "description": "Professionelle Immobilienverwaltung. Mietersuche, Instandhaltung und rechtliche Prozesse.",
+      "feature1": "Verwaltung",
+      "feature2": "Instandhaltung",
+      "feature3": "Rechtlich"
+    },
+    "investment": {
+      "title": "Anlageberatung",
+      "description": "Immobilieninvestitionsberatung. Marktanalyse und Renditeprognosen.",
+      "feature1": "Analyse",
+      "feature2": "Rendite",
+      "feature3": "Investition"
+    }
+  },
+  "features": {
+    "quality": {
+      "title": "Breites Portfolio",
+      "description": "Tausende von Immobilien"
+    },
+    "support": {
+      "title": "Expertenteam",
+      "description": "Professionelle Beratung"
+    },
+    "delivery": {
+      "title": "Rechtliche Unterstützung",
+      "description": "Sichere Transaktionen"
+    }
+  },
+  "cta": {
+    "title": "Finden Sie Ihre Traumimmobilie",
+    "subtitle": "Kontaktieren Sie uns für professionelle Immobiliendienstleistungen",
+    "button": "Kontakt aufnehmen"
+  },
+  "footer": {
+    "description": "Wir sind an Ihrer Seite mit zuverlässiger Immobilienberatung",
+    "quickLinks": "Schnellzugriff",
+    "companies": "Unsere Unternehmen",
+    "rights": "Alle Rechte vorbehalten"
+  },
+  "about": {
+    "vision": {
+      "title": "Unsere Vision"
+    },
+    "mission": {
+      "title": "Unsere Mission"
+    }
+  },
+  "aboutPage": {
+    "title": "Über Uns",
+    "subtitle": "Ihr vertrauenswürdiger Lösungspartner in der Immobilienbranche seit 2012",
+    "story": {
+      "title": "Unsere Geschichte",
+      "paragraph1": "Bakırcılar Immobilien wurde 2012 gegründet und ist seit über 12 Jahren in der Immobilienbranche tätig. Wir bieten Dienstleistungen in einem breiten Spektrum von Wohnimmobilienverkauf über Gewerbeverwaltung bis hin zu Immobilienberatung und Investitionsanalyse.",
+      "paragraph2": "Mit der Priorisierung der Kundenzufriedenheit sind wir zu einer vertrauenswürdigen Marke in der Branche geworden, mit zuverlässiger Beratung und professionellem Service. Mit unseren erfahrenen Immobilienberatern und breitem Portfolio bieten wir Immobilienlösungen für jedes Budget.",
+      "paragraph3": "Mit unserem transparenten Geschäftsansatz, kundenorientierter Servicemethodik und nachhaltiger Immobilieninvestitionsberatung handeln wir mit Blick auf heute und die Zukunft."
+    },
+    "vision": {
+      "title": "Unsere Vision",
+      "description": "Ein führendes Beratungs- und Verkaufsunternehmen in der Immobilienbranche zu werden, indem wir sich ständig ändernde Immobilienanforderungen auf höchstem Niveau auf dem türkischen und regionalen Markt erfüllen."
+    },
+    "mission": {
+      "title": "Unsere Mission",
+      "description": "Dazu beizutragen, Ihre Traumimmobilie zu erreichen, indem wir professionelle und kundenorientierte Immobilienlösungen anbieten, ohne unsere Prinzipien von Qualität, Transparenz und Zuverlässigkeit zu gefährden."
+    },
+    "valuesTitle": "Unsere Werte",
+    "valuesSubtitle": "Die Kernprinzipien, die unsere Geschäftsprozesse prägen",
+    "statsSubtitle": "Wir sind Vorreiter in der Branche mit langjähriger Erfahrung und unserem starken Team",
+    "timelineTag": "Unsere Reise",
+    "timelineTitle": "Unsere Wachstumsgeschichte",
+    "statsTitle": "Bakırcılar Immobilien in Zahlen",
+    "visionDetailed": "Ein führendes Beratungs- und Verkaufsunternehmen in der Immobilienbranche zu werden, indem wir sich ständig ändernde Immobilienanforderungen auf höchstem Niveau auf dem türkischen und regionalen Markt erfüllen.",
+    "missionDetailed": "Dazu beizutragen, Ihre Traumimmobilie zu erreichen, indem wir professionelle und kundenorientierte Immobilienlösungen anbieten, ohne unsere Prinzipien von Qualität, Transparenz und Zuverlässigkeit zu gefährden.",
+    "valuesItems": {
+      "quality": {
+        "title": "Qualitätssicherung",
+        "description": "Wir erfüllen Kundenerwartungen auf höchstem Niveau mit professionellen Servicestandards"
+      },
+      "innovation": {
+        "title": "Innovation & Technologie",
+        "description": "Wir bieten innovative Lösungen in Immobiliendienstleistungen mit modernen Technologien und digitalen Plattformen"
+      },
+      "reliability": {
+        "title": "Zuverlässigkeit",
+        "description": "Mit Priorisierung der Kundenzufriedenheit sind wir zu einer vertrauenswürdigen Marke in der Branche geworden"
+      },
+      "sustainability": {
+        "title": "Nachhaltigkeit",
+        "description": "Wir bieten richtige Beratung für langfristig wertschöpfende, nachhaltige Immobilieninvestitionen"
+      },
+      "humanFocused": {
+        "title": "Menschenorientierter Ansatz",
+        "description": "Wir erzielen Erfolg mit unseren erfahrenen Immobilienberatern und unterstützen kontinuierliche Schulung und Entwicklung"
+      },
+      "excellence": {
+        "title": "Exzellenz",
+        "description": "Wir halten rechtliche Sicherheit und Kundensicherheit in allen unseren Transaktionen auf höchstem Niveau"
+      }
+    },
+    "timeline": {
+      "milestone1": {
+        "title": "Gründung",
+        "description": "Unsere Reise in der Branche begann"
+      },
+      "milestone2": {
+        "title": "Wachstum",
+        "description": "Wir stärkten unsere Position in der Branche mit modernen Dienstleistungen"
+      },
+      "milestone3": {
+        "title": "Diversifizierung",
+        "description": "Wir erweiterten unser Dienstleistungsportfolio und begannen, verschiedene Branchen zu bedienen"
+      },
+      "milestone4": {
+        "title": "Digitale Transformation",
+        "description": "Wir investieren in die Zukunft mit digitalen Lösungen"
+      }
+    }
+  },
+  "stats": {
+    "companies": "Immobilienkategorien",
+    "employees": "Immobilienberater",
+    "experience": "Jahre Erfahrung",
+    "customers": "Zufriedene Kunden"
+  },
+  "contactPage": {
+    "title": "Kontakt",
+    "subtitle": "Kontaktieren Sie uns für Ihre Immobilienbedürfnisse, lassen Sie uns Ihnen die passendste Immobilie finden",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "address": "Adresse",
+    "whatsapp": "WhatsApp",
+    "whatsappMessage": "Nachricht auf WhatsApp",
+    "sendMessage": "Nachricht senden",
+    "mapPlaceholder": "Karte wird hier hinzugefügt",
+    "workingHours": "Arbeitszeiten",
+    "weekdays": "Wochentage",
+    "saturday": "Samstag",
+    "sunday": "Sonntag",
+    "closed": "Geschlossen"
+  },
+  "contactForm": {
+    "name": "Ihr vollständiger Name",
+    "email": "Ihre E-Mail-Adresse",
+    "phone": "Ihre Telefonnummer",
+    "subject": "Betreff",
+    "message": "Ihre Nachricht",
+    "submit": "Senden",
+    "submitting": "Wird gesendet...",
+    "success": "Ihre Nachricht wurde erfolgreich gesendet!",
+    "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "products": "Ürünlerimiz",
+    "about": "Hakkımızda",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "title": "Bakırcılar Ambalaj",
+    "subtitle": "Ambalaj Çözümleri",
+    "description": "Modern teknoloji ile üretilen, kaliteli ve çevre dostu ambalaj ürünleri",
+    "primaryCTA": "Ürünlerimiz",
+    "secondaryCTA": "İletişim"
+  },
+  "products": {
+    "title": "Ürün Gruplarımız",
+    "subtitle": "Farklı sektörlere yönelik geniş ürün yelpazemiz ile ihtiyaçlarınıza uygun çözümler sunuyoruz",
+    "cardboard": {
+      "title": "Karton Kutu Ambalaj",
+      "description": "Her boyut ve özelliklerde özel tasarım karton kutu üretimi. E-ticaret, gıda ve endüstriyel uygulamalar için ideal çözümler.",
+      "feature1": "Özel Baskı",
+      "feature2": "Dayanıklı Malzeme",
+      "feature3": "Hızlı Teslimat"
+    },
+    "flexible": {
+      "title": "Esnek Ambalaj",
+      "description": "Gıda güvenliği standartlarında esnek ambalaj filmleri. Taze kalma garantisi ve koruma özellikleri.",
+      "feature1": "Gıda Uyumlu",
+      "feature2": "UV Koruma",
+      "feature3": "Çevre Dostu"
+    },
+    "plastic": {
+      "title": "Plastik Ambalaj",
+      "description": "Geri dönüştürülebilir, dayanıklı plastik ambalaj çözümleri. Endüstriyel ve tüketici uygulamaları.",
+      "feature1": "Geri Dönüşümlü",
+      "feature2": "Şeffaf Görünüm",
+      "feature3": "Ekonomik"
+    },
+    "printing": {
+      "title": "Baskı & Tasarım",
+      "description": "Profesyonel grafik tasarım ve yüksek kalite baskı hizmetleri. Markanızı öne çıkarın.",
+      "feature1": "4 Renk Baskı",
+      "feature2": "Özel Tasarım",
+      "feature3": "Hızlı Üretim"
+    }
+  },
+  "features": {
+    "quality": {
+      "title": "Kalite Güvencesi",
+      "description": "ISO sertifikalı üretim süreçlerimiz ile en yüksek kaliteyi garanti ediyoruz"
+    },
+    "eco": {
+      "title": "Çevre Dostu",
+      "description": "Sürdürülebilir ve geri dönüştürülebilir ambalaj çözümleri sunuyoruz"
+    },
+    "delivery": {
+      "title": "Hızlı Teslimat",
+      "description": "Türkiye genelinde hızlı ve güvenli teslimat hizmeti sağlıyoruz"
+    }
+  },
+  "cta": {
+    "title": "Ambalaj İhtiyaçlarınız İçin Bize Ulaşın",
+    "subtitle": "Uzman ekibimiz size en uygun çözümü sunmaya hazır",
+    "button": "İletişime Geçin"
+  },
+  "footer": {
+    "description": "Modern ambalaj çözümleri ve üretimi ile sektörde öncü firmayız.",
+    "quickLinks": "Hızlı Bağlantılar",
+    "companies": "Şirketlerimiz",
+    "rights": "Tüm hakları saklıdır"
+  },
+  "about": {
+    "vision": {
+      "title": "Vizyonumuz"
+    },
+    "mission": {
+      "title": "Misyonumuz"
+    }
+  },
+  "aboutPage": {
+    "title": "Hakkımızda",
+    "subtitle": "1990'dan beri ambalaj sektöründe güvenilir çözüm ortağınız",
+    "story": {
+      "title": "Hikayemiz",
+      "paragraph1": "Temelleri 1990 yılında atılan Bakırcılar Ambalaj, 30 yılı aşkın süredir ambalaj sektöründe faaliyet göstermektedir. Ambalaj ürünlerinden endüstriyel temizlik ürünlerine, kırtasiye ürünlerinden hızlı tüketim ürünlerine kadar geniş bir yelpazede hizmet sunuyoruz.",
+      "paragraph2": "Müşteri memnuniyetini ön planda tutarak, kaliteli ürünler ve zamanında teslimat garantisi ile sektörde güvenilir bir marka haline geldik. Deneyimli kadromuz ve modern üretim tesislerimizle, her ölçekte projeye çözüm üretiyoruz.",
+      "paragraph3": "Çevre dostu üretim anlayışımız, geri dönüşümlü malzeme kullanımı ve sürdürülebilir iş modelimizle hem bugünü hem de geleceği düşünerek hareket ediyoruz."
+    },
+    "visionDetailed": "Türkiye ve dünya piyasasında sürekli değişen müşteri taleplerini en üst seviyede karşılayarak, ambalaj sektöründe lider üretim ve tedarik firması olmak.",
+    "missionDetailed": "Kalite, hız ve güvenilirlik ilkelerimizden ödün vermeden, çevre dostu ve yenilikçi ambalaj çözümleri sunarak müşterilerimizin başarısına katkı sağlamak.",
+    "valuesTitle": "Değerlerimiz",
+    "valuesSubtitle": "İş süreçlerimizi şekillendiren temel ilkelerimiz",
+    "statsSubtitle": "Yılların deneyimi ve güçlü ekibimizle sektörde öncü konumdayız",
+    "timelineTag": "Yolculuğumuz",
+    "timelineTitle": "Büyüme Hikayemiz",
+    "valuesItems": {
+      "innovation": {
+        "title": "İnovasyon & AR-GE",
+        "description": "Ar-Ge çalışmalarımızla sektörde fark yaratan, yenilikçi ürünler geliştiriyoruz"
+      },
+      "reliability": {
+        "title": "Güvenilirlik",
+        "description": "Müşteri memnuniyetini ön planda tutarak, sektörde güvenilir bir marka olduk"
+      },
+      "quality": {
+        "title": "Kalite Güvencesi",
+        "description": "ISO sertifikalı üretim süreçlerimizle müşteri beklentilerini en yüksek standartlarda karşılıyoruz"
+      },
+      "sustainability": {
+        "title": "Sürdürülebilirlik",
+        "description": "Doğaya ve topluma saygılı, çevre dostu üretim anlayışıyla geleceği inşa ediyoruz"
+      },
+      "humanFocused": {
+        "title": "İnsan Odaklı Yaklaşım",
+        "description": "Dinamik, yeniliklere açık ekibimizle başarıya ulaşıyor, kariyer gelişimini destekliyoruz"
+      },
+      "excellence": {
+        "title": "Mükemmellik",
+        "description": "Her projede mükemmeli hedefleyerek, zamanında teslimat garantisi ile çalışıyoruz"
+      }
+    },
+    "statsTitle": "Rakamlarla Bakırcılar Ambalaj",
+    "timeline": {
+      "milestone1": {
+        "title": "Kuruluş",
+        "description": "Bakırcılar Ambalaj olarak ambalaj sektöründeki yolculuğumuz başladı"
+      },
+      "milestone2": {
+        "title": "Büyüme",
+        "description": "Modern üretim tesisleri ve geniş ürün gamımızla sektörde güçlendik"
+      },
+      "milestone3": {
+        "title": "Genişleme",
+        "description": "Ürün portföyümüzü genişleterek farklı sektörlere hizmet vermeye başladık"
+      },
+      "milestone4": {
+        "title": "Dijitalleşme",
+        "description": "Çevre dostu üretim ve dijital çözümlerle geleceğe yatırım yapıyoruz"
+      }
+    }
+  },
+  "stats": {
+    "companies": "Ürün Kategorisi",
+    "employees": "Çalışan",
+    "experience": "Yıllık Tecrübe",
+    "customers": "Mutlu Müşteri"
+  },
+  "contactPage": {
+    "title": "İletişim",
+    "subtitle": "Ambalaj ihtiyaçlarınız için bize ulaşın, size en uygun çözümü sunalım",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "address": "Adres",
+    "whatsapp": "WhatsApp",
+    "whatsappMessage": "WhatsApp'tan Yazın",
+    "sendMessage": "Mesaj Gönderin",
+    "mapPlaceholder": "Harita buraya eklenecek",
+    "workingHours": "Çalışma Saatleri",
+    "weekdays": "Hafta İçi",
+    "saturday": "Cumartesi",
+    "sunday": "Pazar",
+    "closed": "Kapalı"
+  },
+  "contactForm": {
+    "name": "Adınız Soyadınız",
+    "email": "E-posta Adresiniz",
+    "phone": "Telefon Numaranız",
+    "subject": "Konu",
+    "message": "Mesajınız",
+    "submit": "Gönder",
+    "submitting": "Gönderiliyor...",
+    "success": "Mesajınız başarıyla gönderildi!",
+    "error": "Bir hata oluştu. Lütfen tekrar deneyin."
+  }
+}

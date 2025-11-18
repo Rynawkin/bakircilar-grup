@@ -1,0 +1,72 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "services": "Hizmetlerimiz",
+    "about": "Hakkımızda",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "title": "Yolpilot",
+    "subtitle": "Akıllı Navigasyon",
+    "description": "Gelişmiş navigasyon teknolojisi ile her yolculuğunuzda yanınızda",
+    "primaryCTA": "Hizmetlerimiz",
+    "secondaryCTA": "İletişim"
+  },
+  "services": {
+    "title": "Hizmetlerimiz",
+    "subtitle": "Akıllı navigasyon özellikleri ile yolculuğunuzu kolaylaştırın",
+    "navigation": {
+      "title": "GPS Navigasyon",
+      "description": "Gelişmiş GPS teknolojisi ile hassas konum belirleme ve rota planlama. Gerçek zamanlı navigasyon.",
+      "feature1": "Precise GPS",
+      "feature2": "Real-time",
+      "feature3": "Smart Routes"
+    },
+    "optimization": {
+      "title": "Rota Optimizasyonu",
+      "description": "Yapay zeka destekli rota optimizasyonu. En hızlı ve ekonomik güzergah.",
+      "feature1": "AI-Powered",
+      "feature2": "Fast",
+      "feature3": "Economical"
+    },
+    "traffic": {
+      "title": "Trafik Takibi",
+      "description": "Canlı trafik bilgileri ve alternatif güzergah önerileri. Trafikten kaçının.",
+      "feature1": "Live Traffic",
+      "feature2": "Alternatives",
+      "feature3": "Updates"
+    },
+    "assistant": {
+      "title": "Sürücü Asistanı",
+      "description": "Sesli komutlar, hız uyarıları ve güvenli sürüş asistanı. Konforlu yolculuk.",
+      "feature1": "Voice Control",
+      "feature2": "Warnings",
+      "feature3": "Safety"
+    }
+  },
+  "features": {
+    "quality": {
+      "title": "Gelişmiş Teknoloji",
+      "description": "En son GPS ve AI teknolojileri ile donatıldık"
+    },
+    "support": {
+      "title": "7/24 Destek",
+      "description": "Her zaman ulaşılabilir, kesintisiz müşteri desteği sağlıyoruz"
+    },
+    "delivery": {
+      "title": "Gerçek Zamanlı",
+      "description": "Anlık trafik güncellemeleri ve bildirimler"
+    }
+  },
+  "cta": {
+    "title": "Yolpilot İçin Bize Ulaşın",
+    "subtitle": "Uzman ekibimiz size en uygun çözümü sunmaya hazır",
+    "button": "İletişime Geçin"
+  },
+  "footer": {
+    "description": "Akıllı navigasyon ile her yolculuk keyifli",
+    "quickLinks": "Hızlı Bağlantılar",
+    "companies": "Şirketlerimiz",
+    "rights": "Tüm hakları saklıdır"
+  }
+}

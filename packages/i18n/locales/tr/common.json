@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "companies": "Şirketlerimiz",
+    "services": "Hizmetlerimiz",
+    "products": "Ürünlerimiz",
+    "news": "Haberler",
+    "career": "Kariyer",
+    "contact": "İletişim"
+  },
+  "footer": {
+    "quickLinks": "Hızlı Bağlantılar",
+    "companies": "Şirketlerimiz",
+    "contact": "İletişim",
+    "followUs": "Bizi Takip Edin",
+    "allRightsReserved": "Tüm hakları saklıdır"
+  },
+  "contact": {
+    "title": "İletişim",
+    "subtitle": "Bizimle iletişime geçin",
+    "name": "Ad Soyad",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "subject": "Konu",
+    "message": "Mesajınız",
+    "send": "Gönder",
+    "sending": "Gönderiliyor...",
+    "success": "Mesajınız başarıyla gönderildi",
+    "error": "Bir hata oluştu, lütfen tekrar deneyin"
+  },
+  "common": {
+    "learnMore": "Daha Fazla",
+    "readMore": "Devamını Oku",
+    "viewAll": "Tümünü Gör",
+    "backToHome": "Ana Sayfaya Dön"
+  }
+}

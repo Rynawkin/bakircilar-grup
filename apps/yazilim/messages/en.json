@@ -1,0 +1,182 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Our Services",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Bakırcılar Software",
+    "subtitle": "Software Development",
+    "description": "Custom software solutions and consulting services with modern technologies",
+    "primaryCTA": "Our Services",
+    "secondaryCTA": "Contact"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "We bring your business into the digital world with modern technologies",
+    "web": {
+      "title": "Web Development",
+      "description": "Responsive and fast web applications with React, Next.js and modern technologies. SEO-friendly, user-friendly interfaces.",
+      "feature1": "React & Next.js",
+      "feature2": "SEO",
+      "feature3": "Responsive"
+    },
+    "mobile": {
+      "title": "Mobile Application",
+      "description": "Native and cross-platform mobile applications for iOS and Android. React Native and Flutter technologies.",
+      "feature1": "iOS & Android",
+      "feature2": "Cross-Platform",
+      "feature3": "Native"
+    },
+    "cloud": {
+      "title": "Cloud Solutions",
+      "description": "Scalable, secure cloud infrastructures on AWS, Google Cloud and Azure. DevOps and CI/CD.",
+      "feature1": "AWS & Azure",
+      "feature2": "Scalable",
+      "feature3": "Secure"
+    },
+    "ai": {
+      "title": "Artificial Intelligence",
+      "description": "Machine Learning and AI integrations. Data analysis, natural language processing and automation.",
+      "feature1": "ML",
+      "feature2": "NLP",
+      "feature3": "Automation"
+    }
+  },
+  "features": {
+    "quality": {
+      "title": "Quality Code",
+      "description": "We write clean, maintainable code with best practices"
+    },
+    "support": {
+      "title": "24/7 Support",
+      "description": "We provide always available, uninterrupted customer support"
+    },
+    "delivery": {
+      "title": "On-Time Delivery",
+      "description": "We guarantee fast project delivery with Agile methodology"
+    }
+  },
+  "cta": {
+    "title": "Contact Us for Your Software Needs",
+    "subtitle": "Our expert team is ready to offer you the most suitable solution",
+    "button": "Get in Touch"
+  },
+  "footer": {
+    "description": "We bring your business into the digital world with modern software solutions",
+    "quickLinks": "Quick Links",
+    "companies": "Our Companies",
+    "rights": "All rights reserved"
+  },
+  "about": {
+    "vision": {
+      "title": "Our Vision"
+    },
+    "mission": {
+      "title": "Our Mission"
+    }
+  },
+  "aboutPage": {
+    "title": "About Us",
+    "subtitle": "Your trusted solution partner in the software industry since 2010",
+    "story": {
+      "title": "Our Story",
+      "paragraph1": "Founded in 2010, Bakırcılar Software has been operating in the software industry for over 15 years. We offer services in a wide range from web applications to mobile applications, from cloud solutions to artificial intelligence integrations.",
+      "paragraph2": "By prioritizing customer satisfaction, we have become a trusted brand in the industry with quality software products and on-time delivery guarantee. With our experienced software team and modern technologies, we provide solutions for projects of all sizes.",
+      "paragraph3": "With our innovative technology approach, continuous learning culture and sustainable software development model, we act thinking about both today and the future."
+    },
+    "visionDetailed": "To become a leading development and consulting company in the software industry by meeting constantly changing technology demands at the highest level in the Turkish and global market.",
+    "missionDetailed": "To contribute to our customers' digital transformation by offering innovative and scalable software solutions without compromising our principles of quality, speed and reliability.",
+    "valuesTitle": "Our Values",
+    "valuesSubtitle": "The core principles that shape our business processes",
+    "statsSubtitle": "We are pioneers in the industry with years of experience and our strong team",
+    "timelineTag": "Our Journey",
+    "timelineTitle": "Our Growth Story",
+    "timeline": {
+      "milestone1": {
+        "title": "Foundation",
+        "description": "Our journey in the software industry began as Bakırcılar Software"
+      },
+      "milestone2": {
+        "title": "Growth",
+        "description": "We expanded our web and mobile application development services with modern technologies"
+      },
+      "milestone3": {
+        "title": "Innovation",
+        "description": "We enriched our portfolio with cloud solutions and artificial intelligence integrations"
+      },
+      "milestone4": {
+        "title": "AI Era",
+        "description": "We develop next-generation software solutions with AI and ML technologies"
+      }
+    },
+    "valuesItems": {
+      "innovation": {
+        "title": "Innovation & R&D",
+        "description": "We develop innovative software products that make a difference in the industry with our R&D studies"
+      },
+      "reliability": {
+        "title": "Reliability",
+        "description": "We have become a trusted brand with on-time delivery and quality software products"
+      },
+      "quality": {
+        "title": "Quality Assurance",
+        "description": "We meet customer expectations at the highest level with the best software development standards"
+      },
+      "sustainability": {
+        "title": "Sustainability",
+        "description": "We build long-lasting projects with clean code, good documentation and sustainable software architecture"
+      },
+      "humanFocused": {
+        "title": "Human-Focused Approach",
+        "description": "We achieve success with our dynamic, innovation-oriented software team and support continuous development"
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "We provide the highest code quality and performance standards, aiming for excellence in every project"
+      }
+    },
+    "statsTitle": "Bakırcılar Software in Numbers"
+  },
+  "stats": {
+    "companies": "Service Areas",
+    "employees": "Developers",
+    "experience": "Years of Experience",
+    "customers": "Happy Customers"
+  },
+  "contactPage": {
+    "title": "Contact",
+    "subtitle": "Contact us for your software needs, let us offer you the most suitable solution",
+    "channelsTag": "Contact Channels",
+    "reachUsTitle": "Reach Us",
+    "channelsDescription": "You can easily reach us by choosing the most suitable contact channel for you",
+    "formDescription": "You can send us a message by filling out the form. We will get back to you as soon as possible.",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "whatsapp": "WhatsApp",
+    "whatsappMessage": "Message on WhatsApp",
+    "sendMessage": "Send Message",
+    "mapPlaceholder": "Map will be added here",
+    "workingHours": "Working Hours",
+    "workingHoursTitle": "Our Working Hours",
+    "weekdays": "Weekdays",
+    "weekdaysHours": "09:00 AM - 06:00 PM",
+    "saturday": "Saturday",
+    "saturdayHours": "09:00 AM - 02:00 PM",
+    "sunday": "Sunday",
+    "closed": "Closed"
+  },
+  "contactForm": {
+    "name": "Your Full Name",
+    "email": "Your Email Address",
+    "phone": "Your Phone Number",
+    "subject": "Subject",
+    "message": "Your Message",
+    "submit": "Send",
+    "submitting": "Sending...",
+    "success": "Your message has been sent successfully!",
+    "error": "An error occurred. Please try again."
+  }
+}

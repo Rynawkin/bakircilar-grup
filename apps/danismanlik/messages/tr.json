@@ -1,0 +1,175 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "services": "Hizmetlerimiz",
+    "about": "Hakkımızda",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "title": "Bakırcılar Danışmanlık",
+    "subtitle": "İş Danışmanlığı",
+    "description": "Stratejik planlama ve iş geliştirme danışmanlığı ile işinizi büyütün",
+    "primaryCTA": "Hizmetlerimiz",
+    "secondaryCTA": "İletişim"
+  },
+  "services": {
+    "title": "Hizmetlerimiz",
+    "subtitle": "Uzman ekibimizle işinizi bir üst seviyeye taşıyın",
+    "strategy": {
+      "title": "Strateji Danışmanlığı",
+      "description": "Kurumsal strateji geliştirme, pazar analizi ve rekabet stratejileri. İşinizi büyütmek için yol haritası.",
+      "feature1": "Strategy",
+      "feature2": "Analysis",
+      "feature3": "Planning"
+    },
+    "digital": {
+      "title": "Dijital Dönüşüm",
+      "description": "Dijitalleşme stratejileri, süreç optimizasyonu ve teknoloji entegrasyonu. Modern iş süreçleri.",
+      "feature1": "Digital",
+      "feature2": "Optimization",
+      "feature3": "Integration"
+    },
+    "business": {
+      "title": "İş Geliştirme",
+      "description": "Büyüme stratejileri, yeni pazar fırsatları ve iş ortaklıkları. Sürdürülebilir büyüme.",
+      "feature1": "Growth",
+      "feature2": "Markets",
+      "feature3": "Partnerships"
+    },
+    "hr": {
+      "title": "İnsan Kaynakları",
+      "description": "İK stratejileri, yetenek yönetimi ve organizasyon geliştirme. Güçlü ekipler kurun.",
+      "feature1": "HR Strategy",
+      "feature2": "Talent",
+      "feature3": "Development"
+    }
+  },
+  "features": {
+    "quality": {
+      "title": "Uzman Kadro",
+      "description": "Deneyimli danışmanlarımızla en iyi çözümleri sunuyoruz"
+    },
+    "support": {
+      "title": "7/24 Destek",
+      "description": "Her zaman ulaşılabilir, kesintisiz müşteri desteği sağlıyoruz"
+    },
+    "delivery": {
+      "title": "Hızlı Çözüm",
+      "description": "İhtiyaçlarınıza hızlı ve etkili çözümler üretiyoruz"
+    }
+  },
+  "cta": {
+    "title": "Bakırcılar Danışmanlık İçin Bize Ulaşın",
+    "subtitle": "Uzman ekibimiz size en uygun çözümü sunmaya hazır",
+    "button": "İletişime Geçin"
+  },
+  "footer": {
+    "description": "Profesyonel danışmanlık ile işinizi büyütüyoruz",
+    "quickLinks": "Hızlı Bağlantılar",
+    "companies": "Şirketlerimiz",
+    "rights": "Tüm hakları saklıdır"
+  },
+  "about": {
+    "vision": {
+      "title": "Vizyonumuz"
+    },
+    "mission": {
+      "title": "Misyonumuz"
+    }
+  },
+  "aboutPage": {
+    "title": "Hakkımızda",
+    "subtitle": "2010'dan beri danışmanlık sektöründe güvenilir çözüm ortağınız",
+    "story": {
+      "title": "Hikayemiz",
+      "paragraph1": "Temelleri 2010 yılında atılan Bakırcılar Danışmanlık, 15 yılı aşkın süredir iş danışmanlığı sektöründe faaliyet göstermektedir. Strateji danışmanlığından dijital dönüşüme, iş geliştirmeden insan kaynakları yönetimine kadar geniş bir yelpazede hizmet sunuyoruz.",
+      "paragraph2": "Müşteri memnuniyetini ön planda tutarak, etkili stratejiler ve uzman danışmanlık hizmetleri ile sektörde güvenilir bir marka haline geldik. Deneyimli danışman kadromuz ve modern iş metodolojileri ile, her ölçekte şirkete çözüm üretiyoruz.",
+      "paragraph3": "Stratejik düşünme anlayışımız, veri odaklı yaklaşımımız ve sürdürülebilir iş modelleri geliştirme uzmanlığımızla hem bugünü hem de geleceği düşünerek hareket ediyoruz."
+    },
+    "visionDetailed": "Türkiye ve dünya piyasasında sürekli değişen iş dünyası dinamiklerini en üst seviyede analiz ederek, danışmanlık sektöründe lider firma olmak.",
+    "missionDetailed": "Kalite, hız ve güvenilirlik ilkelerimizden ödün vermeden, stratejik ve sürdürülebilir iş çözümleri sunarak müşterilerimizin büyümesine katkı sağlamak.",
+    "valuesTitle": "Değerlerimiz",
+    "valuesSubtitle": "İş süreçlerimizi şekillendiren temel ilkelerimiz",
+    "statsSubtitle": "Yılların deneyimi ve güçlü ekibimizle sektörde öncü konumdayız",
+    "timelineTag": "Yolculuğumuz",
+    "timelineTitle": "Büyüme Hikayemiz",
+    "statsTitle": "Rakamlarla Bakırcılar Danışmanlık",
+    "valuesItems": {
+      "reliability": {
+        "title": "Güvenilirlik",
+        "description": "Müşteri memnuniyetini ön planda tutarak, sektörde güvenilir bir marka olduk"
+      },
+      "humanFocused": {
+        "title": "İnsan Odaklı Yaklaşım",
+        "description": "Uzman danışman kadromuzla başarıya ulaşıyor, mesleki gelişimi sürekli destekliyoruz"
+      },
+      "excellence": {
+        "title": "Mükemmellik",
+        "description": "Her projede mükemmeli hedefleyerek, en yüksek kalite standartlarını sağlıyoruz"
+      },
+      "quality": {
+        "title": "Kalite Güvencesi",
+        "description": "Uluslararası danışmanlık standartlarıyla müşteri beklentilerini en yüksek seviyede karşılıyoruz"
+      },
+      "innovation": {
+        "title": "İnovasyon & AR-GE",
+        "description": "Sürekli araştırma ve geliştirme ile sektörde fark yaratan, yenilikçi iş stratejileri üretiyoruz"
+      },
+      "sustainability": {
+        "title": "Sürdürülebilirlik",
+        "description": "Uzun vadeli değer yaratan, sürdürülebilir iş modelleri ve stratejiler geliştiriyoruz"
+      }
+    },
+    "timeline": {
+      "milestone1": {
+        "title": "Kuruluş",
+        "description": "Sektördeki yolculuğumuz başladı"
+      },
+      "milestone2": {
+        "title": "Büyüme",
+        "description": "Modern hizmetlerimizle sektörde güçlendik"
+      },
+      "milestone3": {
+        "title": "Genişleme",
+        "description": "Hizmet portföyümüzü genişleterek farklı sektörlere hizmet vermeye başladık"
+      },
+      "milestone4": {
+        "title": "Dijitalleşme",
+        "description": "Dijital çözümlerle geleceğe yatırım yapıyoruz"
+      }
+    }
+  },
+  "stats": {
+    "companies": "Danışmanlık Alanı",
+    "employees": "Uzman Danışman",
+    "experience": "Yıllık Tecrübe",
+    "customers": "Mutlu Müşteri"
+  },
+  "contactPage": {
+    "title": "İletişim",
+    "subtitle": "Danışmanlık ihtiyaçlarınız için bize ulaşın, size en uygun çözümü sunalım",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "address": "Adres",
+    "whatsapp": "WhatsApp",
+    "whatsappMessage": "WhatsApp'tan Yazın",
+    "sendMessage": "Mesaj Gönderin",
+    "mapPlaceholder": "Harita buraya eklenecek",
+    "workingHours": "Çalışma Saatleri",
+    "weekdays": "Hafta İçi",
+    "saturday": "Cumartesi",
+    "sunday": "Pazar",
+    "closed": "Kapalı"
+  },
+  "contactForm": {
+    "name": "Adınız Soyadınız",
+    "email": "E-posta Adresiniz",
+    "phone": "Telefon Numaranız",
+    "subject": "Konu",
+    "message": "Mesajınız",
+    "submit": "Gönder",
+    "submitting": "Gönderiliyor...",
+    "success": "Mesajınız başarıyla gönderildi!",
+    "error": "Bir hata oluştu. Lütfen tekrar deneyin."
+  }
+}

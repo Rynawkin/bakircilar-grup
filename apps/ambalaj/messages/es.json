@@ -1,0 +1,177 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "products": "Nuestros Productos",
+    "about": "Sobre Nosotros",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Bakırcılar Embalaje",
+    "subtitle": "Soluciones de Embalaje",
+    "description": "Productos de embalaje de alta calidad y respetuosos con el medio ambiente fabricados con tecnología moderna",
+    "primaryCTA": "Nuestros Productos",
+    "secondaryCTA": "Contacto"
+  },
+  "products": {
+    "title": "Nuestras Categorías de Productos",
+    "subtitle": "Ofrecemos soluciones adecuadas para sus necesidades con nuestra amplia gama de productos para diferentes sectores",
+    "cardboard": {
+      "title": "Embalaje de Caja de Cartón",
+      "description": "Producción de cajas de cartón de diseño personalizado en todos los tamaños y características. Soluciones ideales para comercio electrónico, alimentos y aplicaciones industriales.",
+      "feature1": "Impresión Personalizada",
+      "feature2": "Material Duradero",
+      "feature3": "Entrega Rápida"
+    },
+    "flexible": {
+      "title": "Embalaje Flexible",
+      "description": "Películas de embalaje flexible que cumplen con los estándares de seguridad alimentaria. Garantía de frescura y propiedades protectoras.",
+      "feature1": "Apto para Alimentos",
+      "feature2": "Protección UV",
+      "feature3": "Ecológico"
+    },
+    "plastic": {
+      "title": "Embalaje de Plástico",
+      "description": "Soluciones de embalaje de plástico reciclables y duraderas. Aplicaciones industriales y de consumo.",
+      "feature1": "Reciclable",
+      "feature2": "Vista Transparente",
+      "feature3": "Económico"
+    },
+    "printing": {
+      "title": "Impresión y Diseño",
+      "description": "Servicios profesionales de diseño gráfico e impresión de alta calidad. Haga que su marca destaque.",
+      "feature1": "Impresión a 4 Colores",
+      "feature2": "Diseño Personalizado",
+      "feature3": "Producción Rápida"
+    }
+  },
+  "features": {
+    "quality": {
+      "title": "Garantía de Calidad",
+      "description": "Garantizamos la más alta calidad con nuestros procesos de producción certificados ISO"
+    },
+    "eco": {
+      "title": "Ecológico",
+      "description": "Ofrecemos soluciones de embalaje sostenibles y reciclables"
+    },
+    "delivery": {
+      "title": "Entrega Rápida",
+      "description": "Proporcionamos servicio de entrega rápida y segura en toda Turquía"
+    }
+  },
+  "cta": {
+    "title": "Contáctenos para Sus Necesidades de Embalaje",
+    "subtitle": "Nuestro equipo de expertos está listo para ofrecerle la solución más adecuada",
+    "button": "Ponerse en Contacto"
+  },
+  "footer": {
+    "description": "Somos una empresa líder en la industria con soluciones de embalaje modernas y producción.",
+    "quickLinks": "Enlaces Rápidos",
+    "companies": "Nuestras Empresas",
+    "rights": "Todos los derechos reservados"
+  },
+  "about": {
+    "vision": {
+      "title": "Nuestra Visión"
+    },
+    "mission": {
+      "title": "Nuestra Misión"
+    }
+  },
+  "aboutPage": {
+    "title": "Sobre Nosotros",
+    "subtitle": "Su socio de soluciones de confianza en la industria del embalaje desde 1990",
+    "story": {
+      "title": "Nuestra Historia",
+      "paragraph1": "Fundada en 1990, Bakırcılar Embalaje ha estado operando en la industria del embalaje durante más de 30 años. Ofrecemos servicios en una amplia gama desde productos de embalaje hasta productos de limpieza industrial, desde productos de papelería hasta bienes de consumo de rápido movimiento.",
+      "paragraph2": "Al priorizar la satisfacción del cliente, nos hemos convertido en una marca de confianza en la industria con productos de calidad y garantía de entrega puntual. Con nuestro personal experimentado e instalaciones de producción modernas, proporcionamos soluciones para proyectos de todos los tamaños.",
+      "paragraph3": "Con nuestro enfoque de producción respetuoso con el medio ambiente, uso de materiales reciclables y modelo de negocio sostenible, actuamos pensando tanto en el presente como en el futuro."
+    },
+    "visionDetailed": "Convertirse en una empresa líder de producción y suministro en la industria del embalaje satisfaciendo las demandas de clientes en constante cambio al más alto nivel en el mercado turco y global.",
+    "missionDetailed": "Contribuir al éxito de nuestros clientes ofreciendo soluciones de embalaje respetuosas con el medio ambiente e innovadoras sin comprometer nuestros principios de calidad, velocidad y confiabilidad.",
+    "valuesTitle": "Nuestros Valores",
+    "valuesSubtitle": "Los principios fundamentales que dan forma a nuestros procesos comerciales",
+    "statsSubtitle": "Somos pioneros en la industria con años de experiencia y nuestro sólido equipo",
+    "timelineTag": "Nuestro Viaje",
+    "timelineTitle": "Nuestra Historia de Crecimiento",
+    "valuesItems": {
+      "innovation": {
+        "title": "Innovación e I+D",
+        "description": "Desarrollamos productos innovadores que marcan la diferencia en la industria con nuestros estudios de I+D"
+      },
+      "reliability": {
+        "title": "Confiabilidad",
+        "description": "Al priorizar la satisfacción del cliente, nos hemos convertido en una marca de confianza en la industria"
+      },
+      "quality": {
+        "title": "Garantía de Calidad",
+        "description": "Cumplimos con las expectativas del cliente en los más altos estándares con nuestros procesos de producción certificados ISO"
+      },
+      "sustainability": {
+        "title": "Sostenibilidad",
+        "description": "Construimos el futuro con un enfoque de producción respetuoso con el medio ambiente que respeta la naturaleza y la sociedad"
+      },
+      "humanFocused": {
+        "title": "Enfoque Centrado en las Personas",
+        "description": "Logramos el éxito con nuestro equipo dinámico orientado a la innovación y apoyamos el desarrollo profesional"
+      },
+      "excellence": {
+        "title": "Excelencia",
+        "description": "Trabajamos con garantía de entrega puntual, aspirando a la excelencia en cada proyecto"
+      }
+    },
+    "statsTitle": "Bakırcılar Embalaje en Números",
+    "visionDetailed": "Convertirse en una empresa líder de producción y suministro en la industria del embalaje satisfaciendo las demandas de clientes en constante cambio al más alto nivel en el mercado turco y global.",
+    "missionDetailed": "Contribuir al éxito de nuestros clientes ofreciendo soluciones de embalaje respetuosas con el medio ambiente e innovadoras sin comprometer nuestros principios de calidad, velocidad y confiabilidad.",
+    "timeline": {
+      "milestone1": {
+        "title": "Fundación",
+        "description": "Nuestro viaje en la industria del embalaje comenzó como Bakırcılar Embalaje"
+      },
+      "milestone2": {
+        "title": "Crecimiento",
+        "description": "Fortalecimos nuestra posición en la industria con instalaciones de producción modernas y amplia gama de productos"
+      },
+      "milestone3": {
+        "title": "Diversificación",
+        "description": "Ampliamos nuestro portafolio de productos y comenzamos a servir a diferentes sectores"
+      },
+      "milestone4": {
+        "title": "Transformación Digital",
+        "description": "Invertimos en el futuro con producción respetuosa con el medio ambiente y soluciones digitales"
+      }
+    }
+  },
+  "stats": {
+    "companies": "Categorías de Productos",
+    "employees": "Empleados",
+    "experience": "Años de Experiencia",
+    "customers": "Clientes Satisfechos"
+  },
+  "contactPage": {
+    "title": "Contacto",
+    "subtitle": "Contáctenos para sus necesidades de embalaje, permítanos ofrecerle la solución más adecuada",
+    "email": "Correo Electrónico",
+    "phone": "Teléfono",
+    "address": "Dirección",
+    "whatsapp": "WhatsApp",
+    "whatsappMessage": "Mensaje en WhatsApp",
+    "sendMessage": "Enviar Mensaje",
+    "mapPlaceholder": "El mapa se agregará aquí",
+    "workingHours": "Horario de Trabajo",
+    "weekdays": "Días de Semana",
+    "saturday": "Sábado",
+    "sunday": "Domingo",
+    "closed": "Cerrado"
+  },
+  "contactForm": {
+    "name": "Su Nombre Completo",
+    "email": "Su Dirección de Correo Electrónico",
+    "phone": "Su Número de Teléfono",
+    "subject": "Asunto",
+    "message": "Su Mensaje",
+    "submit": "Enviar",
+    "submitting": "Enviando...",
+    "success": "¡Su mensaje ha sido enviado exitosamente!",
+    "error": "Ocurrió un error. Por favor, inténtelo de nuevo."
+  }
+}

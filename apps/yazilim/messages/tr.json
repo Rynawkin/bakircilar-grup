@@ -1,0 +1,182 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "services": "Hizmetlerimiz",
+    "about": "Hakkımızda",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "title": "Bakırcılar Yazılım",
+    "subtitle": "Yazılım Geliştirme",
+    "description": "Modern teknolojilerle özel yazılım çözümleri ve danışmanlık hizmetleri",
+    "primaryCTA": "Hizmetlerimiz",
+    "secondaryCTA": "İletişim"
+  },
+  "services": {
+    "title": "Hizmetlerimiz",
+    "subtitle": "Modern teknolojilerle işinizi dijitale taşıyoruz",
+    "web": {
+      "title": "Web Geliştirme",
+      "description": "React, Next.js ve modern teknolojilerle responsive ve hızlı web uygulamaları. SEO uyumlu, kullanıcı dostu arayüzler.",
+      "feature1": "React & Next.js",
+      "feature2": "SEO",
+      "feature3": "Responsive"
+    },
+    "mobile": {
+      "title": "Mobil Uygulama",
+      "description": "iOS ve Android için native ve cross-platform mobil uygulamalar. React Native ve Flutter teknolojileri.",
+      "feature1": "iOS & Android",
+      "feature2": "Cross-Platform",
+      "feature3": "Native"
+    },
+    "cloud": {
+      "title": "Bulut Çözümleri",
+      "description": "AWS, Google Cloud ve Azure üzerinde ölçeklenebilir, güvenli bulut altyapıları. DevOps ve CI/CD.",
+      "feature1": "AWS & Azure",
+      "feature2": "Scalable",
+      "feature3": "Secure"
+    },
+    "ai": {
+      "title": "Yapay Zeka",
+      "description": "Machine Learning ve AI entegrasyonları. Veri analizi, doğal dil işleme ve otomasyon.",
+      "feature1": "ML",
+      "feature2": "NLP",
+      "feature3": "Automation"
+    }
+  },
+  "features": {
+    "quality": {
+      "title": "Kaliteli Kod",
+      "description": "En iyi pratiklerle temiz, sürdürülebilir kod yazıyoruz"
+    },
+    "support": {
+      "title": "7/24 Destek",
+      "description": "Her zaman ulaşılabilir, kesintisiz müşteri desteği sağlıyoruz"
+    },
+    "delivery": {
+      "title": "Zamanında Teslimat",
+      "description": "Agile metodoloji ile hızlı proje teslimi garanti ediyoruz"
+    }
+  },
+  "cta": {
+    "title": "Bakırcılar Yazılım İçin Bize Ulaşın",
+    "subtitle": "Uzman ekibimiz size en uygun çözümü sunmaya hazır",
+    "button": "İletişime Geçin"
+  },
+  "footer": {
+    "description": "Modern yazılım çözümleri ile işinizi dijitale taşıyoruz",
+    "quickLinks": "Hızlı Bağlantılar",
+    "companies": "Şirketlerimiz",
+    "rights": "Tüm hakları saklıdır"
+  },
+  "about": {
+    "vision": {
+      "title": "Vizyonumuz"
+    },
+    "mission": {
+      "title": "Misyonumuz"
+    }
+  },
+  "aboutPage": {
+    "title": "Hakkımızda",
+    "subtitle": "2010'dan beri yazılım sektöründe güvenilir çözüm ortağınız",
+    "story": {
+      "title": "Hikayemiz",
+      "paragraph1": "Temelleri 2010 yılında atılan Bakırcılar Yazılım, 15 yılı aşkın süredir yazılım sektöründe faaliyet göstermektedir. Web uygulamalarından mobil uygulamalara, bulut çözümlerinden yapay zeka entegrasyonlarına kadar geniş bir yelpazede hizmet sunuyoruz.",
+      "paragraph2": "Müşteri memnuniyetini ön planda tutarak, kaliteli yazılım ürünleri ve zamanında teslimat garantisi ile sektörde güvenilir bir marka haline geldik. Deneyimli yazılım ekibimiz ve modern teknolojilerle, her ölçekte projeye çözüm üretiyoruz.",
+      "paragraph3": "Yenilikçi teknoloji anlayışımız, sürekli öğrenme kültürümüz ve sürdürülebilir yazılım geliştirme modelimizle hem bugünü hem de geleceği düşünerek hareket ediyoruz."
+    },
+    "visionDetailed": "Türkiye ve dünya piyasasında sürekli değişen teknoloji taleplerini en üst seviyede karşılayarak, yazılım sektöründe lider geliştirme ve danışmanlık firması olmak.",
+    "missionDetailed": "Kalite, hız ve güvenilirlik ilkelerimizden ödün vermeden, yenilikçi ve ölçeklenebilir yazılım çözümleri sunarak müşterilerimizin dijital dönüşümüne katkı sağlamak.",
+    "valuesTitle": "Değerlerimiz",
+    "valuesSubtitle": "İş süreçlerimizi şekillendiren temel ilkelerimiz",
+    "statsSubtitle": "Yılların deneyimi ve güçlü ekibimizle sektörde öncü konumdayız",
+    "timelineTag": "Yolculuğumuz",
+    "timelineTitle": "Büyüme Hikayemiz",
+    "valuesItems": {
+      "innovation": {
+        "title": "İnovasyon & AR-GE",
+        "description": "Ar-Ge çalışmalarımızla sektörde fark yaratan, yenilikçi yazılım ürünleri geliştiriyoruz"
+      },
+      "reliability": {
+        "title": "Güvenilirlik",
+        "description": "Zamanında teslimat ve kaliteli yazılım ürünleriyle güvenilir bir marka olduk"
+      },
+      "quality": {
+        "title": "Kalite Güvencesi",
+        "description": "En iyi yazılım geliştirme standartlarıyla müşteri beklentilerini en yüksek seviyede karşılıyoruz"
+      },
+      "sustainability": {
+        "title": "Sürdürülebilirlik",
+        "description": "Temiz kod, iyi dokümantasyon ve sürdürülebilir yazılım mimarisi ile uzun ömürlü projeler inşa ediyoruz"
+      },
+      "humanFocused": {
+        "title": "İnsan Odaklı Yaklaşım",
+        "description": "Dinamik, yeniliklere açık yazılım ekibimizle başarıya ulaşıyor, sürekli gelişimi destekliyoruz"
+      },
+      "excellence": {
+        "title": "Mükemmellik",
+        "description": "Her projede mükemmeli hedefleyerek, en yüksek kod kalitesi ve performans standartlarını sağlıyoruz"
+      }
+    },
+    "statsTitle": "Rakamlarla Bakırcılar Yazılım",
+    "timeline": {
+      "milestone1": {
+        "title": "Kuruluş",
+        "description": "Bakırcılar Yazılım olarak yazılım sektöründeki yolculuğumuz başladı"
+      },
+      "milestone2": {
+        "title": "Genişleme",
+        "description": "Modern teknolojilerle web ve mobil uygulama geliştirme hizmetlerimizi genişlettik"
+      },
+      "milestone3": {
+        "title": "Yenilik",
+        "description": "Bulut çözümleri ve yapay zeka entegrasyonlarıyla portföyümüzü zenginleştirdik"
+      },
+      "milestone4": {
+        "title": "Geleceğe Bakış",
+        "description": "AI ve ML teknolojileriyle gelecek nesil yazılım çözümleri geliştiriyoruz"
+      }
+    }
+  },
+  "stats": {
+    "companies": "Hizmet Alanı",
+    "employees": "Geliştirici",
+    "experience": "Yıllık Tecrübe",
+    "customers": "Mutlu Müşteri"
+  },
+  "contactPage": {
+    "title": "İletişim",
+    "subtitle": "Yazılım ihtiyaçlarınız için bize ulaşın, size en uygun çözümü sunalım",
+    "channelsTag": "İletişim Kanalları",
+    "reachUsTitle": "Bize Ulaşın",
+    "channelsDescription": "Size en uygun iletişim kanalını seçerek bize kolayca ulaşabilirsiniz",
+    "formDescription": "Formu doldurarak bize mesaj gönderebilirsiniz. En kısa sürede size dönüş yapacağız.",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "address": "Adres",
+    "whatsapp": "WhatsApp",
+    "whatsappMessage": "WhatsApp'tan Yazın",
+    "sendMessage": "Mesaj Gönderin",
+    "mapPlaceholder": "Harita buraya eklenecek",
+    "workingHours": "Çalışma Saatleri",
+    "workingHoursTitle": "Çalışma Saatlerimiz",
+    "weekdays": "Hafta İçi",
+    "weekdaysHours": "09:00 - 18:00",
+    "saturday": "Cumartesi",
+    "saturdayHours": "09:00 - 14:00",
+    "sunday": "Pazar",
+    "closed": "Kapalı"
+  },
+  "contactForm": {
+    "name": "Adınız Soyadınız",
+    "email": "E-posta Adresiniz",
+    "phone": "Telefon Numaranız",
+    "subject": "Konu",
+    "message": "Mesajınız",
+    "submit": "Gönder",
+    "submitting": "Gönderiliyor...",
+    "success": "Mesajınız başarıyla gönderildi!",
+    "error": "Bir hata oluştu. Lütfen tekrar deneyin."
+  }
+}

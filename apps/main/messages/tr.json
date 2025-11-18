@@ -1,0 +1,218 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "companies": "Şirketlerimiz",
+    "about": "Hakkımızda",
+    "news": "Haberler",
+    "careers": "Kariyer",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "title": "Bakırcılar Grup",
+    "subtitle": "Çok Sektörlü Holding",
+    "description": "Farklı sektörlerde faaliyet gösteren güçlü şirketlerimizle geleceği inşa ediyoruz",
+    "primaryCTA": "Şirketlerimiz",
+    "secondaryCTA": "İletişim"
+  },
+  "stats": {
+    "companies": "Şirket",
+    "employees": "Çalışan",
+    "experience": "Yıllık Tecrübe",
+    "customers": "Mutlu Müşteri"
+  },
+  "companies": {
+    "title": "Şirketlerimiz",
+    "subtitle": "Farklı sektörlerde lider şirketlerimizle hizmet veriyoruz",
+    "viewWebsite": "Web Sitesine Git",
+    "ambalaj": {
+      "name": "Bakırcılar Ambalaj",
+      "description": "Modern ambalaj çözümleri ve üretimi"
+    },
+    "yazilim": {
+      "name": "Bakırcılar Yazılım",
+      "description": "Profesyonel yazılım geliştirme ve danışmanlık"
+    },
+    "danismanlik": {
+      "name": "Bakırcılar Danışmanlık",
+      "description": "İş danışmanlığı ve stratejik planlama"
+    },
+    "emlak": {
+      "name": "Bakırcılar Emlak",
+      "description": "Gayrimenkul danışmanlığı ve yatırım"
+    },
+    "otomotiv": {
+      "name": "Bakırcılar Otomotiv",
+      "description": "Araç alım-satım ve otomotiv hizmetleri"
+    }
+  },
+  "about": {
+    "title": "Hakkımızda",
+    "subtitle": "Türkiye'nin güvenilir holding şirketlerinden biri",
+    "description": "Bakırcılar Grup olarak, farklı sektörlerde faaliyet gösteren şirketlerimizle müşterilerimize en kaliteli hizmeti sunmayı hedefliyoruz. Yılların deneyimi ve güçlü ekibimizle sektörde öncü konumdayız.",
+    "vision": {
+      "title": "Vizyonumuz",
+      "description": "Türkiye'nin en güvenilir ve yenilikçi holding şirketlerinden biri olmak"
+    },
+    "mission": {
+      "title": "Misyonumuz",
+      "description": "Müşterilerimize değer katan, sürdürülebilir ve kaliteli hizmetler sunmak"
+    },
+    "values": {
+      "title": "Değerlerimiz",
+      "description": "Güven, kalite, yenilikçilik ve müşteri memnuniyeti"
+    }
+  },
+  "cta": {
+    "title": "Birlikte Çalışalım",
+    "subtitle": "Projeleriniz için doğru çözümü bulmak üzere sizinle iletişime geçelim",
+    "button": "İletişime Geçin"
+  },
+  "footer": {
+    "description": "Farklı sektörlerde lider şirketlerimizle hizmet veren güvenilir holding",
+    "quickLinks": "Hızlı Bağlantılar",
+    "ourCompanies": "Şirketlerimiz",
+    "followUs": "Bizi Takip Edin",
+    "rights": "Tüm hakları saklıdır",
+    "address": "Adres",
+    "phone": "Telefon",
+    "email": "E-posta"
+  },
+  "companiesPage": {
+    "title": "Şirketlerimiz",
+    "subtitle": "Farklı sektörlerde faaliyet gösteren güçlü şirketlerimizle müşterilerimize kapsamlı çözümler sunuyoruz",
+    "ecommerce": {
+      "title": "E-Ticaret Platformumuz",
+      "description": "Ürünlerimizi online olarak satın almak için e-ticaret sitemizi ziyaret edin",
+      "button": "Bankted.com'a Git"
+    }
+  },
+  "aboutPage": {
+    "title": "Hakkımızda",
+    "subtitle": "Bakırcılar Grup, farklı sektörlerde öncü şirketleriyle Türkiye ekonomisine değer katan bir holdingdir.",
+    "story": {
+      "title": "Hikayemiz",
+      "paragraph1": "Temelleri 1990 yılında Bakırcılar Ambalaj ile atılan holding yolculuğumuz, 30 yılı aşkın süredir sürdürülebilir büyüme ve sektörel çeşitlilik stratejisiyle devam ediyor. Kuruluşumuzdan bu yana ambalaj sektöründe edindiğimiz tecrübe ve güvenle, farklı sektörlere yatırım yaparak güçlü bir grup şirketi haline geldik.",
+      "paragraph2": "Bugün ambalaj çözümlerinden yazılım geliştirmeye, iş danışmanlığından gayrimenkul yatırımlarına, otomotiv hizmetlerinden e-ticaret platformlarına kadar geniş bir yelpazede faaliyet gösteriyoruz. Her sektörde müşteri memnuniyetini ön planda tutarak, kaliteli ürün ve hizmet anlayışımızdan ödün vermiyoruz.",
+      "paragraph3": "500'den fazla çalışanımız, binlerce mutlu müşterimiz ve sürekli genişleyen iş ağımızla Türkiye ekonomisine değer katmaya devam ediyoruz. Yenilikçi yaklaşımımız, çevre dostu üretim anlayışımız ve insan odaklı iş modelimizle geleceği birlikte inşa ediyoruz."
+    },
+    "visionDetailed": "Türkiye'nin önde gelen çok sektörlü holdingi olarak, sürdürülebilir büyüme ve yenilikçi çözümlerle sektörlerimizde lider konuma ulaşmak. Uluslararası pazarlarda etkin olmak ve küresel bir marka haline gelmek.",
+    "missionDetailed": "Müşterilerimize en kaliteli ürün ve hizmetleri sunarak, topluma ve ekonomiye değer katmak. Çalışanlarımızın gelişimine yatırım yaparak, sürdürülebilir bir gelecek inşa etmek ve paydaşlarımızla uzun vadeli başarılar elde etmek.",
+    "valuesTitle": "Değerlerimiz",
+    "valuesSubtitle": "Temel değerlerimiz işimizin merkezinde yer alır ve her kararımıza yön verir",
+    "statsSubtitle": "Yılların deneyimi ve güçlü ekibimizle sektörde öncü konumdayız",
+    "timelineTag": "Yolculuğumuz",
+    "timelineTitle": "Büyüme Hikayemiz",
+    "valuesItems": {
+      "innovation": {
+        "title": "Yenilikçilik",
+        "description": "Sürekli gelişim ve yenilikçi çözümlerle sektörümüzde öncü olmayı hedefliyoruz."
+      },
+      "reliability": {
+        "title": "Güvenilirlik",
+        "description": "Tüm paydaşlarımıza karşı dürüst, şeffaf ve güvenilir bir iş ortağı oluyoruz."
+      },
+      "quality": {
+        "title": "Kalite",
+        "description": "En yüksek kalite standartlarında ürün ve hizmet sunmayı ilke edindik."
+      },
+      "sustainability": {
+        "title": "Sürdürülebilirlik",
+        "description": "Çevre ve toplum sorumluluğu bilinciyle sürdürülebilir iş modelleri geliştiriyoruz."
+      },
+      "humanFocused": {
+        "title": "İnsan Odaklılık",
+        "description": "Çalışanlarımızın gelişimine yatırım yapıyor, mutluluklarını ön planda tutuyoruz."
+      },
+      "excellence": {
+        "title": "Mükemmellik",
+        "description": "Her işimizde mükemmeli hedefleyerek, beklentilerin ötesinde sonuçlar üretiyoruz."
+      }
+    },
+    "statsTitle": "Rakamlarla Bakırcılar Grup",
+    "timeline": {
+      "milestone1": {
+        "title": "Kuruluş",
+        "description": "Bakırcılar Ambalaj ile sektördeki yolculuğumuz başladı"
+      },
+      "milestone2": {
+        "title": "Genişleme",
+        "description": "Yeni sektörlere yatırım yaparak holding yapısına geçiş"
+      },
+      "milestone3": {
+        "title": "Çeşitlendirme",
+        "description": "Yazılım, emlak ve otomotiv sektörlerine giriş"
+      },
+      "milestone4": {
+        "title": "Dijital Dönüşüm",
+        "description": "E-ticaret platformu ve dijital hizmetlerle geleceğe yatırım"
+      }
+    }
+  },
+  "careerPage": {
+    "title": "Kariyer",
+    "subtitle": "Bakırcılar Grup ailesine katılın ve kariyerinizi bizimle şekillendirin",
+    "whyJoinUs": {
+      "title": "Neden Biz?",
+      "careerGrowth": {
+        "title": "Kariyer Gelişimi",
+        "description": "Eğitim programları ve mentorluk ile sürekli gelişim fırsatı"
+      },
+      "workEnvironment": {
+        "title": "Çalışma Ortamı",
+        "description": "Modern ofisler ve esnek çalışma saatleri"
+      },
+      "projects": {
+        "title": "Projeler",
+        "description": "Farklı sektörlerde ilham verici projelerde yer alma şansı"
+      }
+    },
+    "openPositions": "Açık Pozisyonlar",
+    "details": "Detaylar",
+    "spontaneousApplication": {
+      "title": "Aradığınız Pozisyonu Bulamadınız mı?",
+      "subtitle": "Açık başvuru yaparak CV'nizi bizimle paylaşın",
+      "button": "Açık Başvuru Yap"
+    },
+    "jobModal": {
+      "company": "Şirket",
+      "location": "Lokasyon",
+      "type": "Çalışma Şekli",
+      "description": "Açıklama",
+      "apply": "Başvur"
+    }
+  },
+  "contactPage": {
+    "title": "İletişim",
+    "subtitle": "Sorularınız, önerileriniz veya iş birlikleri için bizimle iletişime geçin",
+    "contactInfo": "İletişim Bilgileri",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "address": "Adres",
+    "whatsapp": "WhatsApp",
+    "whatsappMessage": "WhatsApp ile iletişime geç",
+    "mapPlaceholder": "Google Maps buraya eklenecek",
+    "sendMessage": "Mesaj Gönderin",
+    "workingHours": "Çalışma Saatleri",
+    "weekdays": "Hafta İçi",
+    "saturday": "Cumartesi",
+    "sunday": "Pazar",
+    "closed": "Kapalı"
+  },
+  "newsPage": {
+    "title": "Haberler",
+    "subtitle": "Bakırcılar Grup'tan son haberler ve gelişmeler",
+    "readMore": "Devamını Oku",
+    "image": "Görsel"
+  },
+  "contactForm": {
+    "name": "Ad Soyad *",
+    "email": "E-posta *",
+    "phone": "Telefon",
+    "subject": "Konu *",
+    "message": "Mesajınız *",
+    "submit": "Mesaj Gönder",
+    "submitting": "Gönderiliyor...",
+    "success": "Mesajınız başarıyla gönderildi. En kısa sürede size dönüş yapacağız.",
+    "error": "Mesaj gönderilemedi. Lütfen daha sonra tekrar deneyin."
+  }
+}

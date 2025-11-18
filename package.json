@@ -1,0 +1,34 @@
+{
+  "name": "bakircilar-grup",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "npm@10.0.0",
+  "description": "Bakırcılar Grup - Corporate Websites Monorepo",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "backend",
+    "admin"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean",
+    "dev:main": "npm run dev --workspace=apps/main",
+    "dev:ambalaj": "npm run dev --workspace=apps/ambalaj",
+    "dev:yazilim": "npm run dev --workspace=apps/yazilim",
+    "dev:danismanlik": "npm run dev --workspace=apps/danismanlik",
+    "dev:emlak": "npm run dev --workspace=apps/emlak",
+    "dev:otomotiv": "npm run dev --workspace=apps/otomotiv",
+    "dev:yolpilot": "npm run dev --workspace=apps/yolpilot",
+    "dev:backend": "npm run dev --workspace=backend",
+    "dev:admin": "npm run dev --workspace=admin"
+  },
+  "devDependencies": {
+    "turbo": "^2.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

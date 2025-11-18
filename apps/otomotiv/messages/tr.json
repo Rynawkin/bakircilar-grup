@@ -1,0 +1,189 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "services": "Hizmetlerimiz",
+    "about": "Hakkımızda",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "title": "Bakırcılar Otomotiv",
+    "subtitle": "Otomotiv Hizmetleri",
+    "description": "Güvenilir araç alım satım ve otomotiv hizmetleri",
+    "primaryCTA": "Hizmetlerimiz",
+    "secondaryCTA": "İletişim"
+  },
+  "services": {
+    "title": "Hizmetlerimiz",
+    "subtitle": "Kapsamlı otomotiv hizmetleri ile yanınızdayız",
+    "sales": {
+      "title": "Araç Alım-Satım",
+      "description": "Sıfır ve ikinci el araç alım satımı. Geniş araç seçenekleri ve avantajlı fiyatlar.",
+      "feature1": "New & Used",
+      "feature2": "Wide Selection",
+      "feature3": "Best Prices"
+    },
+    "rental": {
+      "title": "Araç Kiralama",
+      "description": "Günlük, aylık ve uzun dönem araç kiralama hizmetleri. Ekonomik ve konforlu.",
+      "feature1": "Daily",
+      "feature2": "Monthly",
+      "feature3": "Long-term"
+    },
+    "expertise": {
+      "title": "Ekspertiz Hizmeti",
+      "description": "Profesyonel araç ekspertizi ve değerlendirme hizmetleri. Güvenli alışveriş.",
+      "feature1": "Professional",
+      "feature2": "Detailed",
+      "feature3": "Reliable"
+    },
+    "maintenance": {
+      "title": "Bakım-Onarım",
+      "description": "Yetkili servis kalitesinde bakım ve onarım hizmetleri. Orjinal yedek parça.",
+      "feature1": "Maintenance",
+      "feature2": "Repair",
+      "feature3": "Original Parts"
+    }
+  },
+  "features": {
+    "quality": {
+      "title": "Güvenilir Hizmet",
+      "description": "Profesyonel ekibimizle güvenilir hizmet veriyoruz"
+    },
+    "support": {
+      "title": "7/24 Destek",
+      "description": "Her zaman ulaşılabilir, kesintisiz müşteri desteği sağlıyoruz"
+    },
+    "delivery": {
+      "title": "Hızlı Servis",
+      "description": "Hızlı ve profesyonel servis hizmeti"
+    }
+  },
+  "cta": {
+    "title": "Bakırcılar Otomotiv İçin Bize Ulaşın",
+    "subtitle": "Uzman ekibimiz size en uygun çözümü sunmaya hazır",
+    "button": "İletişime Geçin"
+  },
+  "footer": {
+    "description": "Otomotiv sektöründe güvenilir hizmet",
+    "quickLinks": "Hızlı Bağlantılar",
+    "companies": "Şirketlerimiz",
+    "rights": "Tüm hakları saklıdır"
+  },
+  "about": {
+    "vision": {
+      "title": "Vizyonumuz"
+    },
+    "mission": {
+      "title": "Misyonumuz"
+    }
+  },
+  "stats": {
+    "companies": "Hizmet Noktası",
+    "employees": "Otomotiv Uzmanı",
+    "experience": "Yıllık Tecrübe",
+    "customers": "Mutlu Müşteri"
+  },
+  "aboutPage": {
+    "title": "Hakkımızda",
+    "subtitle": "2015'ten beri otomotiv sektöründe güvenilir çözüm ortağınız",
+    "story": {
+      "title": "Hikayemiz",
+      "paragraph1": "Temelleri 2015 yılında atılan Bakırcılar Otomotiv, 10 yılı aşkın süredir otomotiv sektöründe faaliyet göstermektedir. Araç alım satımından kiralama hizmetlerine, ekspertiz hizmetlerinden bakım ve onarıma kadar geniş bir yelpazede hizmet sunuyoruz.",
+      "paragraph2": "Müşteri memnuniyetini ön planda tutarak, kaliteli araç çözümleri ve güvenilir hizmet anlayışı ile sektörde saygın bir marka haline geldik. Deneyimli otomotiv uzmanlarımız ve geniş araç portföyümüzle, her ihtiyaca uygun çözümler üretiyoruz.",
+      "paragraph3": "Müşteri odaklı hizmet anlayışımız, kalite güvencemiz ve güvenilir otomotiv çözümleri sunma prensiplerimizle hem bugünü hem de geleceği düşünerek hareket ediyoruz."
+    },
+    "visionDetailed": "Türkiye otomotiv piyasasında sürekli değişen müşteri taleplerini en üst seviyede karşılayarak, otomotiv sektöründe lider satış ve hizmet firması olmak.",
+    "missionDetailed": "Kalite, güven ve müşteri memnuniyeti ilkelerimizden ödün vermeden, kapsamlı ve profesyonel otomotiv çözümleri sunarak müşterilerimizin güvenli sürüş deneyimine katkı sağlamak.",
+    "valuesTitle": "Değerlerimiz",
+    "valuesSubtitle": "İş süreçlerimizi şekillendiren temel ilkelerimiz",
+    "statsTitle": "Rakamlarla Bakırcılar Otomotiv",
+    "statsSubtitle": "Yılların deneyimi ve güçlü ekibimizle sektörde öncü konumdayız",
+    "timelineTag": "Yolculuğumuz",
+    "timelineTitle": "Büyüme Hikayemiz",
+    "values": {
+      "quality": {
+        "title": "Kalite Güvencesi",
+        "description": "Yüksek kalite standartları ve güvenilir hizmet anlayışıyla müşteri beklentilerini karşılıyoruz"
+      },
+      "innovation": {
+        "title": "İnovasyon & Teknoloji",
+        "description": "Otomotiv sektöründeki yenilikleri takip ederek, modern çözümler ve hizmetler sunuyoruz"
+      },
+      "reliability": {
+        "title": "Güvenilirlik",
+        "description": "Zamanında teslimat ve kaliteli otomotiv hizmetleriyle güvenilir bir marka olduk"
+      },
+      "sustainability": {
+        "title": "Sürdürülebilirlik",
+        "description": "Çevre dostu araç çözümleri ve sürdürülebilir otomotiv hizmetleri sunmaya önem veriyoruz"
+      },
+      "safety": {
+        "title": "Güvenlik",
+        "description": "Araç güvenliği ve müşteri güvenliği konusunda en yüksek standartları koruyoruz"
+      },
+      "customer": {
+        "title": "Müşteri Odaklılık",
+        "description": "Müşteri ihtiyaç ve beklentilerini anlayarak, kişiye özel otomotiv çözümleriyle %100 memnuniyet hedefliyoruz"
+      },
+      "humanFocused": {
+        "title": "İnsan Odaklı Yaklaşım",
+        "description": "Uzman otomotiv ekibimizle başarıya ulaşıyor, mesleki gelişimi sürekli destekliyoruz"
+      },
+      "excellence": {
+        "title": "Mükemmellik",
+        "description": "Her projede mükemmeli hedefleyerek, beklentilerin ötesinde sonuçlar sunuyoruz"
+      }
+    },
+    "stats": {
+      "experience": "10+ Yıl Tecrübe",
+      "products": "200+ Araç/Ay",
+      "customers": "2000+ Mutlu Müşteri",
+      "delivery": "Kaliteli Hizmet"
+    },
+    "timeline": {
+      "milestone1": {
+        "title": "Kuruluş",
+        "description": "Bakırcılar Otomotiv olarak otomotiv sektöründeki yolculuğumuz başladı"
+      },
+      "milestone2": {
+        "title": "Büyüme",
+        "description": "Geniş araç portföyü ve kaliteli hizmetlerimizle sektörde güçlendik"
+      },
+      "milestone3": {
+        "title": "İnovasyon",
+        "description": "Modern teknolojiler ve dijital hizmetlerle portföyümüzü zenginleştirdik"
+      },
+      "milestone4": {
+        "title": "Dijital Dönüşüm",
+        "description": "Dijital platformlar ve gelişmiş hizmetlerle geleceğe yatırım yapıyoruz"
+      }
+    }
+  },
+  "contactPage": {
+    "title": "İletişim",
+    "subtitle": "Otomotiv ihtiyaçlarınız için bize ulaşın, size en uygun çözümü sunalım",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "address": "Adres",
+    "whatsapp": "WhatsApp",
+    "whatsappMessage": "WhatsApp'tan Yazın",
+    "sendMessage": "Mesaj Gönderin",
+    "mapPlaceholder": "Harita buraya eklenecek",
+    "workingHours": "Çalışma Saatleri",
+    "weekdays": "Hafta İçi",
+    "saturday": "Cumartesi",
+    "sunday": "Pazar",
+    "closed": "Kapalı"
+  },
+  "contactForm": {
+    "name": "Adınız Soyadınız",
+    "email": "E-posta Adresiniz",
+    "phone": "Telefon Numaranız",
+    "subject": "Konu",
+    "message": "Mesajınız",
+    "submit": "Gönder",
+    "submitting": "Gönderiliyor...",
+    "success": "Mesajınız başarıyla gönderildi!",
+    "error": "Bir hata oluştu. Lütfen tekrar deneyin."
+  }
+}

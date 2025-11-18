@@ -1,0 +1,177 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "products": "Unsere Produkte",
+    "about": "Über Uns",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Bakırcılar Verpackung",
+    "subtitle": "Verpackungslösungen",
+    "description": "Hochwertige und umweltfreundliche Verpackungsprodukte, hergestellt mit moderner Technologie",
+    "primaryCTA": "Unsere Produkte",
+    "secondaryCTA": "Kontakt"
+  },
+  "products": {
+    "title": "Unsere Produktkategorien",
+    "subtitle": "Wir bieten geeignete Lösungen für Ihre Bedürfnisse mit unserem breiten Produktsortiment für verschiedene Branchen",
+    "cardboard": {
+      "title": "Kartonverpackungen",
+      "description": "Individuell gestaltete Kartonproduktion in allen Größen und Ausführungen. Ideale Lösungen für E-Commerce, Lebensmittel und industrielle Anwendungen.",
+      "feature1": "Individueller Druck",
+      "feature2": "Langlebiges Material",
+      "feature3": "Schnelle Lieferung"
+    },
+    "flexible": {
+      "title": "Flexible Verpackung",
+      "description": "Flexible Verpackungsfolien, die Lebensmittelsicherheitsstandards entsprechen. Frischegarantie und Schutzeigenschaften.",
+      "feature1": "Lebensmittelecht",
+      "feature2": "UV-Schutz",
+      "feature3": "Umweltfreundlich"
+    },
+    "plastic": {
+      "title": "Kunststoffverpackung",
+      "description": "Recycelbare, langlebige Kunststoffverpackungslösungen. Industrielle und Verbraucheranwendungen.",
+      "feature1": "Recycelbar",
+      "feature2": "Transparente Ansicht",
+      "feature3": "Wirtschaftlich"
+    },
+    "printing": {
+      "title": "Druck & Design",
+      "description": "Professionelles Grafikdesign und hochwertige Druckdienstleistungen. Heben Sie Ihre Marke hervor.",
+      "feature1": "4-Farben-Druck",
+      "feature2": "Individuelles Design",
+      "feature3": "Schnelle Produktion"
+    }
+  },
+  "features": {
+    "quality": {
+      "title": "Qualitätssicherung",
+      "description": "Wir garantieren höchste Qualität mit unseren ISO-zertifizierten Produktionsprozessen"
+    },
+    "eco": {
+      "title": "Umweltfreundlich",
+      "description": "Wir bieten nachhaltige und recycelbare Verpackungslösungen"
+    },
+    "delivery": {
+      "title": "Schnelle Lieferung",
+      "description": "Wir bieten schnellen und sicheren Lieferservice in der gesamten Türkei"
+    }
+  },
+  "cta": {
+    "title": "Kontaktieren Sie uns für Ihre Verpackungsbedürfnisse",
+    "subtitle": "Unser Expertenteam ist bereit, Ihnen die passendste Lösung anzubieten",
+    "button": "Kontakt aufnehmen"
+  },
+  "footer": {
+    "description": "Wir sind ein führendes Unternehmen in der Branche mit modernen Verpackungslösungen und Produktion.",
+    "quickLinks": "Schnellzugriff",
+    "companies": "Unsere Unternehmen",
+    "rights": "Alle Rechte vorbehalten"
+  },
+  "about": {
+    "vision": {
+      "title": "Unsere Vision"
+    },
+    "mission": {
+      "title": "Unsere Mission"
+    }
+  },
+  "aboutPage": {
+    "title": "Über Uns",
+    "subtitle": "Ihr vertrauenswürdiger Lösungspartner in der Verpackungsindustrie seit 1990",
+    "story": {
+      "title": "Unsere Geschichte",
+      "paragraph1": "Bakırcılar Verpackung wurde 1990 gegründet und ist seit über 30 Jahren in der Verpackungsindustrie tätig. Wir bieten Dienstleistungen in einem breiten Spektrum von Verpackungsprodukten über industrielle Reinigungsprodukte bis hin zu Büroartikeln und schnelldrehenden Konsumgütern.",
+      "paragraph2": "Mit der Priorisierung der Kundenzufriedenheit sind wir zu einer vertrauenswürdigen Marke in der Branche geworden, mit Qualitätsprodukten und pünktlicher Liefergarantie. Mit unserem erfahrenen Personal und modernen Produktionsanlagen bieten wir Lösungen für Projekte jeder Größe.",
+      "paragraph3": "Mit unserem umweltfreundlichen Produktionsansatz, der Verwendung recycelbarer Materialien und einem nachhaltigen Geschäftsmodell handeln wir mit Blick auf heute und die Zukunft."
+    },
+    "visionDetailed": "Ein führendes Produktions- und Versorgungsunternehmen in der Verpackungsindustrie zu werden, indem wir sich ständig ändernde Kundenanforderungen auf höchstem Niveau auf dem türkischen und globalen Markt erfüllen.",
+    "missionDetailed": "Zum Erfolg unserer Kunden beizutragen, indem wir umweltfreundliche und innovative Verpackungslösungen anbieten, ohne unsere Prinzipien von Qualität, Geschwindigkeit und Zuverlässigkeit zu gefährden.",
+    "valuesTitle": "Unsere Werte",
+    "valuesSubtitle": "Die Kernprinzipien, die unsere Geschäftsprozesse prägen",
+    "statsSubtitle": "Wir sind Vorreiter in der Branche mit langjähriger Erfahrung und unserem starken Team",
+    "timelineTag": "Unsere Reise",
+    "timelineTitle": "Unsere Wachstumsgeschichte",
+    "valuesItems": {
+      "innovation": {
+        "title": "Innovation & F&E",
+        "description": "Wir entwickeln innovative Produkte, die mit unseren F&E-Studien einen Unterschied in der Branche machen"
+      },
+      "reliability": {
+        "title": "Zuverlässigkeit",
+        "description": "Mit Priorisierung der Kundenzufriedenheit sind wir zu einer vertrauenswürdigen Marke in der Branche geworden"
+      },
+      "quality": {
+        "title": "Qualitätssicherung",
+        "description": "Wir erfüllen Kundenerwartungen auf höchstem Niveau mit unseren ISO-zertifizierten Produktionsprozessen"
+      },
+      "sustainability": {
+        "title": "Nachhaltigkeit",
+        "description": "Wir bauen die Zukunft mit einem umweltfreundlichen Produktionsansatz, der Natur und Gesellschaft respektiert"
+      },
+      "humanFocused": {
+        "title": "Menschenorientierter Ansatz",
+        "description": "Wir erzielen Erfolg mit unserem dynamischen, innovationsorientierten Team und unterstützen die Karriereentwicklung"
+      },
+      "excellence": {
+        "title": "Exzellenz",
+        "description": "Wir arbeiten mit pünktlicher Liefergarantie und streben in jedem Projekt nach Exzellenz"
+      }
+    },
+    "statsTitle": "Bakırcılar Verpackung in Zahlen",
+    "visionDetailed": "Ein führendes Produktions- und Versorgungsunternehmen in der Verpackungsindustrie zu werden, indem wir sich ständig ändernde Kundenanforderungen auf höchstem Niveau auf dem türkischen und globalen Markt erfüllen.",
+    "missionDetailed": "Zum Erfolg unserer Kunden beizutragen, indem wir umweltfreundliche und innovative Verpackungslösungen anbieten, ohne unsere Prinzipien von Qualität, Geschwindigkeit und Zuverlässigkeit zu gefährden.",
+    "timeline": {
+      "milestone1": {
+        "title": "Gründung",
+        "description": "Unsere Reise in der Verpackungsindustrie begann als Bakırcılar Verpackung"
+      },
+      "milestone2": {
+        "title": "Wachstum",
+        "description": "Wir stärkten unsere Position in der Branche mit modernen Produktionsanlagen und breitem Produktsortiment"
+      },
+      "milestone3": {
+        "title": "Diversifizierung",
+        "description": "Wir erweiterten unser Produktportfolio und begannen, verschiedene Branchen zu bedienen"
+      },
+      "milestone4": {
+        "title": "Digitale Transformation",
+        "description": "Wir investieren in die Zukunft mit umweltfreundlicher Produktion und digitalen Lösungen"
+      }
+    }
+  },
+  "stats": {
+    "companies": "Produktkategorien",
+    "employees": "Mitarbeiter",
+    "experience": "Jahre Erfahrung",
+    "customers": "Zufriedene Kunden"
+  },
+  "contactPage": {
+    "title": "Kontakt",
+    "subtitle": "Kontaktieren Sie uns für Ihre Verpackungsbedürfnisse, lassen Sie uns Ihnen die passendste Lösung anbieten",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "address": "Adresse",
+    "whatsapp": "WhatsApp",
+    "whatsappMessage": "Nachricht auf WhatsApp",
+    "sendMessage": "Nachricht senden",
+    "mapPlaceholder": "Karte wird hier hinzugefügt",
+    "workingHours": "Arbeitszeiten",
+    "weekdays": "Wochentage",
+    "saturday": "Samstag",
+    "sunday": "Sonntag",
+    "closed": "Geschlossen"
+  },
+  "contactForm": {
+    "name": "Ihr vollständiger Name",
+    "email": "Ihre E-Mail-Adresse",
+    "phone": "Ihre Telefonnummer",
+    "subject": "Betreff",
+    "message": "Ihre Nachricht",
+    "submit": "Senden",
+    "submitting": "Wird gesendet...",
+    "success": "Ihre Nachricht wurde erfolgreich gesendet!",
+    "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+  }
+}

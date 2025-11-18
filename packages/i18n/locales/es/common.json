@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre nosotros",
+    "companies": "Nuestras empresas",
+    "services": "Servicios",
+    "products": "Productos",
+    "news": "Noticias",
+    "career": "Carrera",
+    "contact": "Contacto"
+  },
+  "footer": {
+    "quickLinks": "Enlaces rápidos",
+    "companies": "Nuestras empresas",
+    "contact": "Contacto",
+    "followUs": "Síguenos",
+    "allRightsReserved": "Todos los derechos reservados"
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Póngase en contacto con nosotros",
+    "name": "Nombre completo",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "subject": "Asunto",
+    "message": "Su mensaje",
+    "send": "Enviar",
+    "sending": "Enviando...",
+    "success": "Su mensaje ha sido enviado exitosamente",
+    "error": "Ocurrió un error, por favor intente nuevamente"
+  },
+  "common": {
+    "learnMore": "Saber más",
+    "readMore": "Leer más",
+    "viewAll": "Ver todo",
+    "backToHome": "Volver al inicio"
+  }
+}

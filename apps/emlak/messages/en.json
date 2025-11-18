@@ -1,0 +1,201 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Our Services",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Bakırcılar Real Estate",
+    "subtitle": "Real Estate Services",
+    "description": "Find your dream property with professional real estate consulting and wide portfolio",
+    "primaryCTA": "Our Services",
+    "secondaryCTA": "Contact"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "We find the most suitable property for you with our wide portfolio",
+    "residential": {
+      "title": "Residential Sales",
+      "description": "Find your dream home with our extensive residential portfolio. Professional consulting and legal support.",
+      "feature1": "Wide Portfolio",
+      "feature2": "Consulting",
+      "feature3": "Legal Support"
+    },
+    "commercial": {
+      "title": "Commercial Real Estate",
+      "description": "Offices, stores and commercial spaces. High investment value commercial real estate opportunities.",
+      "feature1": "Office",
+      "feature2": "Retail",
+      "feature3": "Investment"
+    },
+    "management": {
+      "title": "Property Management",
+      "description": "Professional property management, rental and maintenance services. Your property is safe.",
+      "feature1": "Management",
+      "feature2": "Rental",
+      "feature3": "Maintenance"
+    },
+    "investment": {
+      "title": "Investment Consulting",
+      "description": "Real estate investment analysis, market evaluation and portfolio management.",
+      "feature1": "Analysis",
+      "feature2": "Evaluation",
+      "feature3": "Portfolio"
+    }
+  },
+  "features": {
+    "quality": {
+      "title": "Wide Portfolio",
+      "description": "We find the most suitable one for you among thousands of real estate listings"
+    },
+    "support": {
+      "title": "24/7 Support",
+      "description": "We provide always available, uninterrupted customer support"
+    },
+    "delivery": {
+      "title": "Fast Process",
+      "description": "Fast and hassle-free real estate transactions"
+    }
+  },
+  "cta": {
+    "title": "Contact Us for Your Real Estate Needs",
+    "subtitle": "Our expert team is ready to offer you the most suitable solution",
+    "button": "Get in Touch"
+  },
+  "footer": {
+    "description": "We are with you with reliable real estate consulting",
+    "quickLinks": "Quick Links",
+    "companies": "Our Companies",
+    "rights": "All rights reserved"
+  },
+  "about": {
+    "vision": {
+      "title": "Our Vision"
+    },
+    "mission": {
+      "title": "Our Mission"
+    }
+  },
+  "stats": {
+    "companies": "Service Areas",
+    "employees": "Consultants",
+    "experience": "Years of Experience",
+    "customers": "Happy Customers"
+  },
+  "aboutPage": {
+    "title": "About Us",
+    "subtitle": "Your trusted solution partner in the real estate industry since 2012",
+    "story": {
+      "title": "Our Story",
+      "paragraph1": "Founded in 2012, Bakırcılar Real Estate has been operating in the real estate industry for over 12 years. We offer services in a wide range from residential sales to commercial real estate management, from real estate consulting to investment analysis services.",
+      "paragraph2": "By prioritizing customer satisfaction, we have become a trusted brand in the industry with reliable consulting and professional service approach. With our experienced real estate consultants and wide portfolio, we provide real estate solutions suitable for every budget.",
+      "paragraph3": "With our transparent business approach, customer-oriented service methodology and sustainable real estate investment consulting, we act thinking about both today and the future."
+    },
+    "visionDetailed": "To become a leading consulting and sales company in the real estate industry by meeting constantly changing real estate demands at the highest level in the Turkish and regional market.",
+    "missionDetailed": "To contribute to reaching your dream property by offering professional and customer-oriented real estate solutions without compromising our principles of quality, transparency and reliability.",
+    "valuesTitle": "Our Values",
+    "valuesSubtitle": "The core principles that shape our business processes",
+    "statsSubtitle": "We are pioneers in the industry with years of experience and our strong team",
+    "timelineTag": "Our Journey",
+    "timelineTitle": "Our Growth Story",
+    "statsTitle": "Bakırcılar Real Estate in Numbers",
+    "timeline": {
+      "milestone1": {
+        "title": "Foundation",
+        "description": "Our journey in the real estate industry began as Bakırcılar Real Estate"
+      },
+      "milestone2": {
+        "title": "Growth",
+        "description": "We strengthened our position in the industry with professional consulting and wide property portfolio"
+      },
+      "milestone3": {
+        "title": "Expansion",
+        "description": "We expanded our service areas and started offering comprehensive real estate solutions"
+      },
+      "milestone4": {
+        "title": "Digital",
+        "description": "We invest in the future with digital platforms and modern real estate technologies"
+      }
+    },
+    "valuesItems": {
+      "quality": {
+        "title": "Quality Assurance",
+        "description": "We meet customer expectations at the highest level with professional service standards"
+      },
+      "innovation": {
+        "title": "Innovation & Technology",
+        "description": "We offer innovative solutions in real estate services with modern technologies and digital platforms"
+      },
+      "sustainability": {
+        "title": "Sustainability",
+        "description": "We provide right guidance for long-term value-creating, sustainable real estate investments"
+      },
+      "safety": {
+        "title": "Trust and Security",
+        "description": "We maintain legal assurance and customer security at the highest level in all our transactions"
+      },
+      "customer": {
+        "title": "Customer Focus",
+        "description": "By understanding customer needs and expectations, we aim for 100% satisfaction with personalized solutions"
+      },
+      "team": {
+        "title": "Human-Focused Approach",
+        "description": "We achieve success with our expert real estate consultants and support continuous training and development"
+      }
+    },
+    "values": {
+      "quality": {
+        "title": "Quality Assurance",
+        "description": "We meet customer expectations at the highest level with professional service standards"
+      },
+      "innovation": {
+        "title": "Innovation & Technology",
+        "description": "We offer innovative solutions in real estate services with modern technologies and digital platforms"
+      },
+      "sustainability": {
+        "title": "Sustainability",
+        "description": "We provide right guidance for long-term value-creating, sustainable real estate investments"
+      },
+      "safety": {
+        "title": "Trust and Security",
+        "description": "We maintain legal assurance and customer security at the highest level in all our transactions"
+      },
+      "customer": {
+        "title": "Customer Focus",
+        "description": "By understanding customer needs and expectations, we aim for 100% satisfaction with personalized solutions"
+      },
+      "team": {
+        "title": "Human-Focused Approach",
+        "description": "We achieve success with our expert real estate consultants and support continuous training and development"
+      }
+    }
+  },
+  "contactPage": {
+    "title": "Contact",
+    "subtitle": "Contact us for your real estate needs, let us find you the most suitable property",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "whatsapp": "WhatsApp",
+    "whatsappMessage": "Message on WhatsApp",
+    "sendMessage": "Send Message",
+    "mapPlaceholder": "Map will be added here",
+    "workingHours": "Working Hours",
+    "weekdays": "Weekdays",
+    "saturday": "Saturday",
+    "sunday": "Sunday",
+    "closed": "Closed"
+  },
+  "contactForm": {
+    "name": "Your Full Name",
+    "email": "Your Email Address",
+    "phone": "Your Phone Number",
+    "subject": "Subject",
+    "message": "Your Message",
+    "submit": "Send",
+    "submitting": "Sending...",
+    "success": "Your message has been sent successfully!",
+    "error": "An error occurred. Please try again."
+  }
+}

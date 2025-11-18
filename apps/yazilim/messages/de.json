@@ -1,0 +1,182 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "services": "Unsere Dienstleistungen",
+    "about": "Über Uns",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Bakırcılar Software",
+    "subtitle": "Softwareentwicklung",
+    "description": "Maßgeschneiderte Softwarelösungen und Beratungsdienste mit modernen Technologien",
+    "primaryCTA": "Unsere Dienstleistungen",
+    "secondaryCTA": "Kontakt"
+  },
+  "services": {
+    "title": "Unsere Dienstleistungen",
+    "subtitle": "Wir digitalisieren Ihr Geschäft mit modernen Technologien",
+    "web": {
+      "title": "Webentwicklung",
+      "description": "Responsive und schnelle Webanwendungen mit React, Next.js und modernen Technologien. SEO-freundlich, benutzerfreundliche Oberflächen.",
+      "feature1": "React & Next.js",
+      "feature2": "SEO",
+      "feature3": "Responsive"
+    },
+    "mobile": {
+      "title": "Mobile Anwendung",
+      "description": "Native und plattformübergreifende mobile Anwendungen für iOS und Android. React Native und Flutter Technologien.",
+      "feature1": "iOS & Android",
+      "feature2": "Cross-Platform",
+      "feature3": "Native"
+    },
+    "cloud": {
+      "title": "Cloud-Lösungen",
+      "description": "Skalierbare und sichere Cloud-Infrastruktur. AWS, Azure und Google Cloud Dienste.",
+      "feature1": "Skalierbar",
+      "feature2": "Sicher",
+      "feature3": "Zuverlässig"
+    },
+    "ai": {
+      "title": "KI & Datenanalyse",
+      "description": "Künstliche Intelligenz und maschinelles Lernen. Datenanalyse und Visualisierung.",
+      "feature1": "KI",
+      "feature2": "Datenanalyse",
+      "feature3": "Vorhersage"
+    }
+  },
+  "features": {
+    "quality": {
+      "title": "Hohe Qualität",
+      "description": "Sauberer Code, Best Practices"
+    },
+    "support": {
+      "title": "24/7 Support",
+      "description": "Immer für Sie da"
+    },
+    "delivery": {
+      "title": "Pünktliche Lieferung",
+      "description": "Projekte termingerecht abgeschlossen"
+    }
+  },
+  "cta": {
+    "title": "Lassen Sie uns Ihr Projekt besprechen",
+    "subtitle": "Kontaktieren Sie uns für maßgeschneiderte Softwarelösungen",
+    "button": "Kontakt aufnehmen"
+  },
+  "footer": {
+    "description": "Wir digitalisieren Ihr Geschäft mit modernen Softwarelösungen",
+    "quickLinks": "Schnellzugriff",
+    "companies": "Unsere Unternehmen",
+    "rights": "Alle Rechte vorbehalten"
+  },
+  "about": {
+    "vision": {
+      "title": "Unsere Vision"
+    },
+    "mission": {
+      "title": "Unsere Mission"
+    }
+  },
+  "aboutPage": {
+    "title": "Über Uns",
+    "subtitle": "Ihr vertrauenswürdiger Lösungspartner in der Softwareindustrie seit 2010",
+    "story": {
+      "title": "Unsere Geschichte",
+      "paragraph1": "Bakırcılar Software wurde 2010 gegründet und ist seit über 15 Jahren in der Softwareindustrie tätig. Wir bieten Dienstleistungen in einem breiten Spektrum von Webanwendungen über mobile Anwendungen bis hin zu Cloud-Lösungen und KI-Integrationen.",
+      "paragraph2": "Mit der Priorisierung der Kundenzufriedenheit sind wir zu einer vertrauenswürdigen Marke in der Branche geworden, mit qualitativ hochwertigen Softwareprodukten und pünktlicher Liefergarantie. Mit unserem erfahrenen Software-Team und modernen Technologien bieten wir Lösungen für Projekte jeder Größe.",
+      "paragraph3": "Mit unserem innovativen Technologieansatz, kontinuierlicher Lernkultur und nachhaltigen Softwareentwicklungsmodell handeln wir mit Blick auf heute und die Zukunft."
+    },
+    "visionDetailed": "Ein führendes Entwicklungs- und Beratungsunternehmen in der Softwareindustrie zu werden, indem wir sich ständig ändernde Technologieanforderungen auf höchstem Niveau auf dem türkischen und globalen Markt erfüllen.",
+    "missionDetailed": "Zur digitalen Transformation unserer Kunden beizutragen, indem wir innovative und skalierbare Softwarelösungen anbieten, ohne unsere Prinzipien von Qualität, Geschwindigkeit und Zuverlässigkeit zu gefährden.",
+    "valuesTitle": "Unsere Werte",
+    "valuesSubtitle": "Die Kernprinzipien, die unsere Geschäftsprozesse prägen",
+    "statsSubtitle": "Wir sind Vorreiter in der Branche mit langjähriger Erfahrung und unserem starken Team",
+    "timelineTag": "Unsere Reise",
+    "timelineTitle": "Unsere Wachstumsgeschichte",
+    "valuesItems": {
+      "innovation": {
+        "title": "Innovation & F&E",
+        "description": "Wir entwickeln innovative Softwareprodukte, die mit unseren F&E-Studien einen Unterschied in der Branche machen"
+      },
+      "reliability": {
+        "title": "Zuverlässigkeit",
+        "description": "Wir sind zu einer vertrauenswürdigen Marke geworden mit pünktlicher Lieferung und qualitativ hochwertigen Softwareprodukten"
+      },
+      "quality": {
+        "title": "Qualitätssicherung",
+        "description": "Wir erfüllen Kundenerwartungen auf höchstem Niveau mit den besten Softwareentwicklungsstandards"
+      },
+      "sustainability": {
+        "title": "Nachhaltigkeit",
+        "description": "Wir bauen langlebige Projekte mit sauberem Code, guter Dokumentation und nachhaltiger Softwarearchitektur"
+      },
+      "humanFocused": {
+        "title": "Menschenorientierter Ansatz",
+        "description": "Wir erzielen Erfolg mit unserem dynamischen, innovationsorientierten Software-Team und unterstützen kontinuierliche Entwicklung"
+      },
+      "excellence": {
+        "title": "Exzellenz",
+        "description": "Wir bieten die höchste Codequalität und Leistungsstandards und streben in jedem Projekt nach Exzellenz"
+      }
+    },
+    "statsTitle": "Bakırcılar Software in Zahlen",
+    "timeline": {
+      "milestone1": {
+        "title": "Gründung",
+        "description": "Unsere Reise in der Softwareindustrie begann als Bakırcılar Software"
+      },
+      "milestone2": {
+        "title": "Expansion",
+        "description": "Wir erweiterten unsere Web- und Mobile-App-Entwicklungsdienste mit modernen Technologien"
+      },
+      "milestone3": {
+        "title": "Innovation",
+        "description": "Wir bereicherten unser Portfolio mit Cloud-Lösungen und künstlicher Intelligenz-Integrationen"
+      },
+      "milestone4": {
+        "title": "Zukunftsausblick",
+        "description": "Wir entwickeln Softwarelösungen der nächsten Generation mit AI- und ML-Technologien"
+      }
+    }
+  },
+  "stats": {
+    "companies": "Servicebereiche",
+    "employees": "Entwickler",
+    "experience": "Jahre Erfahrung",
+    "customers": "Zufriedene Kunden"
+  },
+  "contactPage": {
+    "title": "Kontakt",
+    "subtitle": "Kontaktieren Sie uns für Ihre Softwarebedürfnisse, lassen Sie uns Ihnen die passendste Lösung anbieten",
+    "channelsTag": "Kontaktkanäle",
+    "reachUsTitle": "Kontaktieren Sie Uns",
+    "channelsDescription": "Sie können uns leicht erreichen, indem Sie den für Sie am besten geeigneten Kontaktkanal wählen",
+    "formDescription": "Sie können uns eine Nachricht senden, indem Sie das Formular ausfüllen. Wir werden uns so schnell wie möglich bei Ihnen melden.",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "address": "Adresse",
+    "whatsapp": "WhatsApp",
+    "whatsappMessage": "Nachricht auf WhatsApp",
+    "sendMessage": "Nachricht senden",
+    "mapPlaceholder": "Karte wird hier hinzugefügt",
+    "workingHours": "Arbeitszeiten",
+    "workingHoursTitle": "Unsere Arbeitszeiten",
+    "weekdays": "Wochentage",
+    "weekdaysHours": "09:00 - 18:00",
+    "saturday": "Samstag",
+    "saturdayHours": "09:00 - 14:00",
+    "sunday": "Sonntag",
+    "closed": "Geschlossen"
+  },
+  "contactForm": {
+    "name": "Ihr vollständiger Name",
+    "email": "Ihre E-Mail-Adresse",
+    "phone": "Ihre Telefonnummer",
+    "subject": "Betreff",
+    "message": "Ihre Nachricht",
+    "submit": "Senden",
+    "submitting": "Wird gesendet...",
+    "success": "Ihre Nachricht wurde erfolgreich gesendet!",
+    "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+  }
+}
