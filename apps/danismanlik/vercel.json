@@ -1,7 +1,7 @@
 {
-  "buildCommand": "cd ../.. && npm install && cd apps/danismanlik && npm run build",
+  "buildCommand": "npm run build",
   "devCommand": "npm run dev",
-  "installCommand": "cd ../.. && npm install",
+  "installCommand": "npm install",
   "framework": "nextjs",
   "outputDirectory": ".next"
 }
