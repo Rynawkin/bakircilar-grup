@@ -60,7 +60,7 @@ export const SiteLayout: React.FC<{ children: React.ReactNode; locale: string }>
     }
   ];
 
-  const handleLanguageChange = (lang) => {
+  const handleLanguageChange = (lang: string) => {
     const currentPath = pathname.replace(`/${locale}`, '');
     window.location.href = `/${lang}${currentPath}`;
   };

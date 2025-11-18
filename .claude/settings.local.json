@@ -16,7 +16,11 @@
       "Bash(done)",
       "Bash(for site in yazilim ambalaj danismanlik emlak otomotiv yolpilot)",
       "Bash(do echo 'Checking $site...' grep -r \"from ''''@/\" apps/$site/app/ --include=*.tsx --include=*.ts)",
-      "Bash(for site in yazilim ambalaj danismanlik emlak otomotiv)"
+      "Bash(for site in yazilim ambalaj danismanlik emlak otomotiv)",
+      "Bash(for file in apps/*/components/SiteLayout.tsx)",
+      "Bash(do if [ -f \"$file\" ])",
+      "Bash(then echo \"=== $file ===\")",
+      "Bash(for file in apps/ambalaj/components/SiteLayout.tsx apps/danismanlik/components/SiteLayout.tsx apps/emlak/components/SiteLayout.tsx apps/otomotiv/components/SiteLayout.tsx)"
     ],
     "deny": [],
     "ask": []
