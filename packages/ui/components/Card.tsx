@@ -6,13 +6,15 @@ interface CardProps {
   className?: string;
   hover?: boolean;
   onClick?: () => void;
+  style?: React.CSSProperties;
 }
 
 export const Card: React.FC<CardProps> = ({
   children,
   className = '',
   hover = false,
-  onClick
+  onClick,
+  style
 }) => {
   const CardComponent = hover ? motion.div : 'div';
   const motionProps = hover
@@ -26,6 +28,7 @@ export const Card: React.FC<CardProps> = ({
     <CardComponent
       className={`bg-white rounded-xl shadow-md overflow-hidden ${onClick ? 'cursor-pointer' : ''} ${className}`}
       onClick={onClick}
+      style={style}
       {...motionProps}
     >
       {children}
