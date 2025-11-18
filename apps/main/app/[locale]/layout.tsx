@@ -2,7 +2,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { locales } from '../../i18n';
-import { MainLayout } from '@/components/MainLayout';
+import { MainLayout } from '../../components/MainLayout';
 import '../globals.css';
 
 export function generateStaticParams() {
