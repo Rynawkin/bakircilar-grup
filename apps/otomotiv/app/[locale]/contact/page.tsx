@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Container, ContactForm, Card } from '@bakircilar/ui';
-import { CONTACT_INFO } from '@/lib/constants';
+import { CONTACT_INFO } from '../../../lib/constants';
 import { useTranslations } from 'next-intl';
 
 export default function ContactPage() {
