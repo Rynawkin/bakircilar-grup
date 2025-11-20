@@ -10,28 +10,46 @@ export default function AmbalajHomePage() {
 
   const products = [
     {
-      title: t('products.cardboard.title'),
-      description: t('products.cardboard.description'),
+      title: 'Ambalaj Ürünleri',
+      description: 'Paketleme ürünleri, köpük tabaklar, alüminyum kaplar, plastik kaplar, poşetler ve çantalar',
       icon: '📦',
-      features: [t('products.cardboard.feature1'), t('products.cardboard.feature2'), t('products.cardboard.feature3')]
+      color: 'blue',
+      features: ['Paketleme Ürünleri', 'Köpük Tabaklar', 'Alüminyum Kaplar', 'Plastik Kaplar', 'Poşetler ve Çantalar', 'Naylon ve Jelatinler', 'Ambalaj Kağıtları']
     },
     {
-      title: t('products.flexible.title'),
-      description: t('products.flexible.description'),
-      icon: '🎁',
-      features: [t('products.flexible.feature1'), t('products.flexible.feature2'), t('products.flexible.feature3')]
+      title: 'Temizlik ve Hijyen',
+      description: 'Temizlik malzemeleri, kımyasallar, kağıt ürünleri, koklandırma, eldivenler',
+      icon: '🧹',
+      color: 'green',
+      features: ['Temizlik Malzemeleri', 'Temizlik Kımyasalları', 'Kağıt Ürünleri', 'Koklandırma', 'Eldivenler', 'Çöp ve Atık Kovaları', 'Sağlık ve Kişisel Bakım', 'El ve Cilt Bakımı']
     },
     {
-      title: t('products.plastic.title'),
-      description: t('products.plastic.description'),
-      icon: '🔲',
-      features: [t('products.plastic.feature1'), t('products.plastic.feature2'), t('products.plastic.feature3')]
+      title: 'Kırtasiye ve Ofis',
+      description: 'Diğer kırtasiye ürünleri, dosya ve arşivleme, masa üstü ürünleri, kağıt ürünleri',
+      icon: '📝',
+      color: 'purple',
+      features: ['Diğer Kırtasiye Ürünleri', 'Dosya ve Arşivleme', 'Masa Üstü Ürünleri', 'Kağıt Ürünleri']
     },
     {
-      title: t('products.printing.title'),
-      description: t('products.printing.description'),
-      icon: '🎨',
-      features: [t('products.printing.feature1'), t('products.printing.feature2'), t('products.printing.feature3')]
+      title: 'Gıda ve Mutfak',
+      description: 'Servis malzemeleri, içecek, tatlandırıcılar, diğer mutfak ürünleri',
+      icon: '🍽️',
+      color: 'orange',
+      features: ['Servis Malzemeleri', 'İçecek', 'Tatlandırıcılar', 'Diğer Mutfak Ürünleri']
+    },
+    {
+      title: 'Dispenserler',
+      description: 'Sıvı ve jel dispenserleri, kağıt dispenserleri',
+      icon: '🚰',
+      color: 'cyan',
+      features: ['Sıvı ve Jel Dispenserleri', 'Kağıt Dispenserleri']
+    },
+    {
+      title: 'Hırdavat',
+      description: 'Hırdavat ve baskılı ürünler',
+      icon: '🔧',
+      color: 'gray',
+      features: ['Hırdavat Ürünleri', 'Baskılı Ürünler']
     }
   ];
 
@@ -75,7 +93,7 @@ export default function AmbalajHomePage() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {products.map((product, index) => (
               <motion.div
                 key={index}
