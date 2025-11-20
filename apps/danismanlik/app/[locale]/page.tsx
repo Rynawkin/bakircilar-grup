@@ -214,7 +214,7 @@ export default function DanismanlikHomePage() {
       </section>
 
       <WhatsAppButton
-        phoneNumber="90XXXXXXXXXX"
+        phoneNumber="905301783570"
         message="Merhaba, Bakırcılar Danışmanlık hakkında bilgi almak istiyorum."
       />
     </main>

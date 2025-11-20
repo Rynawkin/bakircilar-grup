@@ -15,33 +15,56 @@
   "products": {
     "title": "Nuestras Categorías de Productos",
     "subtitle": "Ofrecemos soluciones adecuadas para sus necesidades con nuestra amplia gama de productos para diferentes sectores",
-    "cardboard": {
-      "title": "Embalaje de Caja de Cartón",
-      "description": "Producción de cajas de cartón de diseño personalizado en todos los tamaños y características. Soluciones ideales para comercio electrónico, alimentos y aplicaciones industriales.",
-      "feature1": "Impresión Personalizada",
-      "feature2": "Material Duradero",
-      "feature3": "Entrega Rápida"
+    "packaging": {
+      "title": "Productos de Embalaje",
+      "description": "Productos de embalaje, platos de espuma, recipientes de aluminio, recipientes de plástico, bolsas y sobres",
+      "feature1": "Productos de Embalaje",
+      "feature2": "Platos de Espuma",
+      "feature3": "Recipientes de Aluminio",
+      "feature4": "Recipientes de Plástico",
+      "feature5": "Bolsas y Sobres",
+      "feature6": "Nylon y Envolturas",
+      "feature7": "Papeles de Embalaje"
     },
-    "flexible": {
-      "title": "Embalaje Flexible",
-      "description": "Películas de embalaje flexible que cumplen con los estándares de seguridad alimentaria. Garantía de frescura y propiedades protectoras.",
-      "feature1": "Apto para Alimentos",
-      "feature2": "Protección UV",
-      "feature3": "Ecológico"
+    "cleaning": {
+      "title": "Limpieza e Higiene",
+      "description": "Suministros de limpieza, productos químicos, productos de papel, ambientadores, guantes",
+      "feature1": "Suministros de Limpieza",
+      "feature2": "Productos Químicos de Limpieza",
+      "feature3": "Productos de Papel",
+      "feature4": "Ambientadores",
+      "feature5": "Guantes",
+      "feature6": "Cubos de Basura y Residuos",
+      "feature7": "Salud y Cuidado Personal",
+      "feature8": "Cuidado de Manos y Piel"
     },
-    "plastic": {
-      "title": "Embalaje de Plástico",
-      "description": "Soluciones de embalaje de plástico reciclables y duraderas. Aplicaciones industriales y de consumo.",
-      "feature1": "Reciclable",
-      "feature2": "Vista Transparente",
-      "feature3": "Económico"
+    "stationery": {
+      "title": "Papelería y Oficina",
+      "description": "Otros productos de papelería, archivo y almacenamiento, productos de escritorio, productos de papel",
+      "feature1": "Otros Productos de Papelería",
+      "feature2": "Archivo y Almacenamiento",
+      "feature3": "Productos de Escritorio",
+      "feature4": "Productos de Papel"
     },
-    "printing": {
-      "title": "Impresión y Diseño",
-      "description": "Servicios profesionales de diseño gráfico e impresión de alta calidad. Haga que su marca destaque.",
-      "feature1": "Impresión a 4 Colores",
-      "feature2": "Diseño Personalizado",
-      "feature3": "Producción Rápida"
+    "food": {
+      "title": "Alimentos y Cocina",
+      "description": "Suministros de servicio, bebidas, edulcorantes, otros productos de cocina",
+      "feature1": "Suministros de Servicio",
+      "feature2": "Bebidas",
+      "feature3": "Edulcorantes",
+      "feature4": "Otros Productos de Cocina"
+    },
+    "dispensers": {
+      "title": "Dispensadores",
+      "description": "Dispensadores de líquido y gel, dispensadores de papel",
+      "feature1": "Dispensadores de Líquido y Gel",
+      "feature2": "Dispensadores de Papel"
+    },
+    "hardware": {
+      "title": "Ferretería",
+      "description": "Productos de ferretería e impresos",
+      "feature1": "Productos de Ferretería",
+      "feature2": "Productos Impresos"
     }
   },
   "features": {

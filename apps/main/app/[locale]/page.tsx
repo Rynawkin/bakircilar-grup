@@ -338,7 +338,7 @@ export default function HomePage({ params }: { params: { locale: string } }) {
 
       {/* WhatsApp Button */}
       <WhatsAppButton
-        phoneNumber="90XXXXXXXXXX"
+        phoneNumber="905301783570"
         message="Merhaba, Bakırcılar Grup hakkında bilgi almak istiyorum."
       />
     </main>

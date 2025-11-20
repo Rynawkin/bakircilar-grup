@@ -15,33 +15,56 @@
   "products": {
     "title": "Ürün Gruplarımız",
     "subtitle": "Farklı sektörlere yönelik geniş ürün yelpazemiz ile ihtiyaçlarınıza uygun çözümler sunuyoruz",
-    "cardboard": {
-      "title": "Karton Kutu Ambalaj",
-      "description": "Her boyut ve özelliklerde özel tasarım karton kutu üretimi. E-ticaret, gıda ve endüstriyel uygulamalar için ideal çözümler.",
-      "feature1": "Özel Baskı",
-      "feature2": "Dayanıklı Malzeme",
-      "feature3": "Hızlı Teslimat"
+    "packaging": {
+      "title": "Ambalaj Ürünleri",
+      "description": "Paketleme ürünleri, köpük tabaklar, alüminyum kaplar, plastik kaplar, poşetler ve çantalar",
+      "feature1": "Paketleme Ürünleri",
+      "feature2": "Köpük Tabaklar",
+      "feature3": "Alüminyum Kaplar",
+      "feature4": "Plastik Kaplar",
+      "feature5": "Poşetler ve Çantalar",
+      "feature6": "Naylon ve Jelatinler",
+      "feature7": "Ambalaj Kağıtları"
     },
-    "flexible": {
-      "title": "Esnek Ambalaj",
-      "description": "Gıda güvenliği standartlarında esnek ambalaj filmleri. Taze kalma garantisi ve koruma özellikleri.",
-      "feature1": "Gıda Uyumlu",
-      "feature2": "UV Koruma",
-      "feature3": "Çevre Dostu"
+    "cleaning": {
+      "title": "Temizlik ve Hijyen",
+      "description": "Temizlik malzemeleri, kımyasallar, kağıt ürünleri, koklandırma, eldivenler",
+      "feature1": "Temizlik Malzemeleri",
+      "feature2": "Temizlik Kımyasalları",
+      "feature3": "Kağıt Ürünleri",
+      "feature4": "Koklandırma",
+      "feature5": "Eldivenler",
+      "feature6": "Çöp ve Atık Kovaları",
+      "feature7": "Sağlık ve Kişisel Bakım",
+      "feature8": "El ve Cilt Bakımı"
     },
-    "plastic": {
-      "title": "Plastik Ambalaj",
-      "description": "Geri dönüştürülebilir, dayanıklı plastik ambalaj çözümleri. Endüstriyel ve tüketici uygulamaları.",
-      "feature1": "Geri Dönüşümlü",
-      "feature2": "Şeffaf Görünüm",
-      "feature3": "Ekonomik"
+    "stationery": {
+      "title": "Kırtasiye ve Ofis",
+      "description": "Diğer kırtasiye ürünleri, dosya ve arşivleme, masa üstü ürünleri, kağıt ürünleri",
+      "feature1": "Diğer Kırtasiye Ürünleri",
+      "feature2": "Dosya ve Arşivleme",
+      "feature3": "Masa Üstü Ürünleri",
+      "feature4": "Kağıt Ürünleri"
     },
-    "printing": {
-      "title": "Baskı & Tasarım",
-      "description": "Profesyonel grafik tasarım ve yüksek kalite baskı hizmetleri. Markanızı öne çıkarın.",
-      "feature1": "4 Renk Baskı",
-      "feature2": "Özel Tasarım",
-      "feature3": "Hızlı Üretim"
+    "food": {
+      "title": "Gıda ve Mutfak",
+      "description": "Servis malzemeleri, içecek, tatlandırıcılar, diğer mutfak ürünleri",
+      "feature1": "Servis Malzemeleri",
+      "feature2": "İçecek",
+      "feature3": "Tatlandırıcılar",
+      "feature4": "Diğer Mutfak Ürünleri"
+    },
+    "dispensers": {
+      "title": "Dispenserler",
+      "description": "Sıvı ve jel dispenserleri, kağıt dispenserleri",
+      "feature1": "Sıvı ve Jel Dispenserleri",
+      "feature2": "Kağıt Dispenserleri"
+    },
+    "hardware": {
+      "title": "Hırdavat",
+      "description": "Hırdavat ve baskılı ürünler",
+      "feature1": "Hırdavat Ürünleri",
+      "feature2": "Baskılı Ürünler"
     }
   },
   "features": {

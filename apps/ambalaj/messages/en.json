@@ -15,33 +15,56 @@
   "products": {
     "title": "Our Product Categories",
     "subtitle": "We offer suitable solutions for your needs with our wide product range for different sectors",
-    "cardboard": {
-      "title": "Cardboard Box Packaging",
-      "description": "Custom-designed cardboard box production in all sizes and features. Ideal solutions for e-commerce, food, and industrial applications.",
-      "feature1": "Custom Printing",
-      "feature2": "Durable Material",
-      "feature3": "Fast Delivery"
+    "packaging": {
+      "title": "Packaging Products",
+      "description": "Packaging products, foam plates, aluminum containers, plastic containers, bags and pouches",
+      "feature1": "Packaging Products",
+      "feature2": "Foam Plates",
+      "feature3": "Aluminum Containers",
+      "feature4": "Plastic Containers",
+      "feature5": "Bags and Pouches",
+      "feature6": "Nylon and Wraps",
+      "feature7": "Packaging Papers"
     },
-    "flexible": {
-      "title": "Flexible Packaging",
-      "description": "Flexible packaging films that meet food safety standards. Freshness guarantee and protective properties.",
-      "feature1": "Food Safe",
-      "feature2": "UV Protection",
-      "feature3": "Eco-Friendly"
+    "cleaning": {
+      "title": "Cleaning and Hygiene",
+      "description": "Cleaning supplies, chemicals, paper products, air fresheners, gloves",
+      "feature1": "Cleaning Supplies",
+      "feature2": "Cleaning Chemicals",
+      "feature3": "Paper Products",
+      "feature4": "Air Fresheners",
+      "feature5": "Gloves",
+      "feature6": "Trash and Waste Bins",
+      "feature7": "Health and Personal Care",
+      "feature8": "Hand and Skin Care"
     },
-    "plastic": {
-      "title": "Plastic Packaging",
-      "description": "Recyclable, durable plastic packaging solutions. Industrial and consumer applications.",
-      "feature1": "Recyclable",
-      "feature2": "Transparent View",
-      "feature3": "Economical"
+    "stationery": {
+      "title": "Stationery and Office",
+      "description": "Other stationery products, filing and archiving, desktop products, paper products",
+      "feature1": "Other Stationery Products",
+      "feature2": "Filing and Archiving",
+      "feature3": "Desktop Products",
+      "feature4": "Paper Products"
     },
-    "printing": {
-      "title": "Printing & Design",
-      "description": "Professional graphic design and high-quality printing services. Make your brand stand out.",
-      "feature1": "4 Color Printing",
-      "feature2": "Custom Design",
-      "feature3": "Fast Production"
+    "food": {
+      "title": "Food and Kitchen",
+      "description": "Service supplies, beverages, sweeteners, other kitchen products",
+      "feature1": "Service Supplies",
+      "feature2": "Beverages",
+      "feature3": "Sweeteners",
+      "feature4": "Other Kitchen Products"
+    },
+    "dispensers": {
+      "title": "Dispensers",
+      "description": "Liquid and gel dispensers, paper dispensers",
+      "feature1": "Liquid and Gel Dispensers",
+      "feature2": "Paper Dispensers"
+    },
+    "hardware": {
+      "title": "Hardware",
+      "description": "Hardware and printed products",
+      "feature1": "Hardware Products",
+      "feature2": "Printed Products"
     }
   },
   "features": {

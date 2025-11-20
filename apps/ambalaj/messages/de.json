@@ -15,33 +15,56 @@
   "products": {
     "title": "Unsere Produktkategorien",
     "subtitle": "Wir bieten geeignete Lösungen für Ihre Bedürfnisse mit unserem breiten Produktsortiment für verschiedene Branchen",
-    "cardboard": {
-      "title": "Kartonverpackungen",
-      "description": "Individuell gestaltete Kartonproduktion in allen Größen und Ausführungen. Ideale Lösungen für E-Commerce, Lebensmittel und industrielle Anwendungen.",
-      "feature1": "Individueller Druck",
-      "feature2": "Langlebiges Material",
-      "feature3": "Schnelle Lieferung"
+    "packaging": {
+      "title": "Verpackungsprodukte",
+      "description": "Verpackungsprodukte, Schaumstoffteller, Aluminiumbehälter, Plastikbehälter, Taschen und Beutel",
+      "feature1": "Verpackungsprodukte",
+      "feature2": "Schaumstoffteller",
+      "feature3": "Aluminiumbehälter",
+      "feature4": "Plastikbehälter",
+      "feature5": "Taschen und Beutel",
+      "feature6": "Nylon und Folien",
+      "feature7": "Verpackungspapiere"
     },
-    "flexible": {
-      "title": "Flexible Verpackung",
-      "description": "Flexible Verpackungsfolien, die Lebensmittelsicherheitsstandards entsprechen. Frischegarantie und Schutzeigenschaften.",
-      "feature1": "Lebensmittelecht",
-      "feature2": "UV-Schutz",
-      "feature3": "Umweltfreundlich"
+    "cleaning": {
+      "title": "Reinigung und Hygiene",
+      "description": "Reinigungsmittel, Chemikalien, Papierprodukte, Lufterfrischer, Handschuhe",
+      "feature1": "Reinigungsmittel",
+      "feature2": "Reinigungschemikalien",
+      "feature3": "Papierprodukte",
+      "feature4": "Lufterfrischer",
+      "feature5": "Handschuhe",
+      "feature6": "Müll- und Abfalleimer",
+      "feature7": "Gesundheit und Körperpflege",
+      "feature8": "Hand- und Hautpflege"
     },
-    "plastic": {
-      "title": "Kunststoffverpackung",
-      "description": "Recycelbare, langlebige Kunststoffverpackungslösungen. Industrielle und Verbraucheranwendungen.",
-      "feature1": "Recycelbar",
-      "feature2": "Transparente Ansicht",
-      "feature3": "Wirtschaftlich"
+    "stationery": {
+      "title": "Schreibwaren und Büro",
+      "description": "Weitere Schreibwaren, Ablage und Archivierung, Schreibtischprodukte, Papierprodukte",
+      "feature1": "Weitere Schreibwaren",
+      "feature2": "Ablage und Archivierung",
+      "feature3": "Schreibtischprodukte",
+      "feature4": "Papierprodukte"
     },
-    "printing": {
-      "title": "Druck & Design",
-      "description": "Professionelles Grafikdesign und hochwertige Druckdienstleistungen. Heben Sie Ihre Marke hervor.",
-      "feature1": "4-Farben-Druck",
-      "feature2": "Individuelles Design",
-      "feature3": "Schnelle Produktion"
+    "food": {
+      "title": "Lebensmittel und Küche",
+      "description": "Servicezubehör, Getränke, Süßstoffe, weitere Küchenprodukte",
+      "feature1": "Servicezubehör",
+      "feature2": "Getränke",
+      "feature3": "Süßstoffe",
+      "feature4": "Weitere Küchenprodukte"
+    },
+    "dispensers": {
+      "title": "Spender",
+      "description": "Flüssig- und Gelspender, Papierspender",
+      "feature1": "Flüssig- und Gelspender",
+      "feature2": "Papierspender"
+    },
+    "hardware": {
+      "title": "Eisenwaren",
+      "description": "Eisenwaren und bedruckte Produkte",
+      "feature1": "Eisenwarenprodukte",
+      "feature2": "Bedruckte Produkte"
     }
   },
   "features": {

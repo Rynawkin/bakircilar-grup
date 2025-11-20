@@ -213,7 +213,7 @@ export default function EmlakHomePage() {
       </section>
 
       <WhatsAppButton
-        phoneNumber="90XXXXXXXXXX"
+        phoneNumber="905301783570"
         message="Merhaba, Bakırcılar Emlak hakkında bilgi almak istiyorum."
       />
     </main>

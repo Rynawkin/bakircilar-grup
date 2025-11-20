@@ -213,7 +213,7 @@ export default function YazilimHomePage() {
       </section>
 
       <WhatsAppButton
-        phoneNumber="90XXXXXXXXXX"
+        phoneNumber="905301783570"
         message="Merhaba, Bakırcılar Yazılım hakkında bilgi almak istiyorum."
       />
     </main>

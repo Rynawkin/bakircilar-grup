@@ -10,46 +10,79 @@ export default function AmbalajHomePage() {
 
   const products = [
     {
-      title: 'Ambalaj Ürünleri',
-      description: 'Paketleme ürünleri, köpük tabaklar, alüminyum kaplar, plastik kaplar, poşetler ve çantalar',
+      title: t('products.packaging.title'),
+      description: t('products.packaging.description'),
       icon: '📦',
       color: 'blue',
-      features: ['Paketleme Ürünleri', 'Köpük Tabaklar', 'Alüminyum Kaplar', 'Plastik Kaplar', 'Poşetler ve Çantalar', 'Naylon ve Jelatinler', 'Ambalaj Kağıtları']
+      features: [
+        t('products.packaging.feature1'),
+        t('products.packaging.feature2'),
+        t('products.packaging.feature3'),
+        t('products.packaging.feature4'),
+        t('products.packaging.feature5'),
+        t('products.packaging.feature6'),
+        t('products.packaging.feature7')
+      ]
     },
     {
-      title: 'Temizlik ve Hijyen',
-      description: 'Temizlik malzemeleri, kımyasallar, kağıt ürünleri, koklandırma, eldivenler',
+      title: t('products.cleaning.title'),
+      description: t('products.cleaning.description'),
       icon: '🧹',
       color: 'green',
-      features: ['Temizlik Malzemeleri', 'Temizlik Kımyasalları', 'Kağıt Ürünleri', 'Koklandırma', 'Eldivenler', 'Çöp ve Atık Kovaları', 'Sağlık ve Kişisel Bakım', 'El ve Cilt Bakımı']
+      features: [
+        t('products.cleaning.feature1'),
+        t('products.cleaning.feature2'),
+        t('products.cleaning.feature3'),
+        t('products.cleaning.feature4'),
+        t('products.cleaning.feature5'),
+        t('products.cleaning.feature6'),
+        t('products.cleaning.feature7'),
+        t('products.cleaning.feature8')
+      ]
     },
     {
-      title: 'Kırtasiye ve Ofis',
-      description: 'Diğer kırtasiye ürünleri, dosya ve arşivleme, masa üstü ürünleri, kağıt ürünleri',
+      title: t('products.stationery.title'),
+      description: t('products.stationery.description'),
       icon: '📝',
       color: 'purple',
-      features: ['Diğer Kırtasiye Ürünleri', 'Dosya ve Arşivleme', 'Masa Üstü Ürünleri', 'Kağıt Ürünleri']
+      features: [
+        t('products.stationery.feature1'),
+        t('products.stationery.feature2'),
+        t('products.stationery.feature3'),
+        t('products.stationery.feature4')
+      ]
     },
     {
-      title: 'Gıda ve Mutfak',
-      description: 'Servis malzemeleri, içecek, tatlandırıcılar, diğer mutfak ürünleri',
+      title: t('products.food.title'),
+      description: t('products.food.description'),
       icon: '🍽️',
       color: 'orange',
-      features: ['Servis Malzemeleri', 'İçecek', 'Tatlandırıcılar', 'Diğer Mutfak Ürünleri']
+      features: [
+        t('products.food.feature1'),
+        t('products.food.feature2'),
+        t('products.food.feature3'),
+        t('products.food.feature4')
+      ]
     },
     {
-      title: 'Dispenserler',
-      description: 'Sıvı ve jel dispenserleri, kağıt dispenserleri',
+      title: t('products.dispensers.title'),
+      description: t('products.dispensers.description'),
       icon: '🚰',
       color: 'cyan',
-      features: ['Sıvı ve Jel Dispenserleri', 'Kağıt Dispenserleri']
+      features: [
+        t('products.dispensers.feature1'),
+        t('products.dispensers.feature2')
+      ]
     },
     {
-      title: 'Hırdavat',
-      description: 'Hırdavat ve baskılı ürünler',
+      title: t('products.hardware.title'),
+      description: t('products.hardware.description'),
       icon: '🔧',
       color: 'gray',
-      features: ['Hırdavat Ürünleri', 'Baskılı Ürünler']
+      features: [
+        t('products.hardware.feature1'),
+        t('products.hardware.feature2')
+      ]
     }
   ];
 
@@ -235,7 +268,7 @@ export default function AmbalajHomePage() {
       </section>
 
       <WhatsAppButton
-        phoneNumber="90XXXXXXXXXX"
+        phoneNumber="905301783570"
         message="Merhaba, Bakırcılar Ambalaj hakkında bilgi almak istiyorum."
       />
     </main>
