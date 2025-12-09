@@ -14,6 +14,7 @@ export default function AmbalajHomePage() {
       description: t('products.packaging.description'),
       icon: '📦',
       color: 'blue',
+      href: 'https://www.bankted.com/ambalaj-urunleri',
       features: [
         t('products.packaging.feature1'),
         t('products.packaging.feature2'),
@@ -29,6 +30,7 @@ export default function AmbalajHomePage() {
       description: t('products.cleaning.description'),
       icon: '🧹',
       color: 'green',
+      href: 'https://www.bankted.com/temizlik-ve-hijyen',
       features: [
         t('products.cleaning.feature1'),
         t('products.cleaning.feature2'),
@@ -45,6 +47,7 @@ export default function AmbalajHomePage() {
       description: t('products.stationery.description'),
       icon: '📝',
       color: 'purple',
+      href: 'https://www.bankted.com/kirtasiye-ve-ofis',
       features: [
         t('products.stationery.feature1'),
         t('products.stationery.feature2'),
@@ -57,6 +60,7 @@ export default function AmbalajHomePage() {
       description: t('products.food.description'),
       icon: '🍽️',
       color: 'orange',
+      href: 'https://www.bankted.com/gida-ve-mutfak',
       features: [
         t('products.food.feature1'),
         t('products.food.feature2'),
@@ -69,19 +73,10 @@ export default function AmbalajHomePage() {
       description: t('products.dispensers.description'),
       icon: '🚰',
       color: 'cyan',
+      href: 'https://www.bankted.com/dispanserler',
       features: [
         t('products.dispensers.feature1'),
         t('products.dispensers.feature2')
-      ]
-    },
-    {
-      title: t('products.hardware.title'),
-      description: t('products.hardware.description'),
-      icon: '🔧',
-      color: 'gray',
-      features: [
-        t('products.hardware.feature1'),
-        t('products.hardware.feature2')
       ]
     }
   ];
@@ -136,29 +131,41 @@ export default function AmbalajHomePage() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <Card className="p-8 h-full relative overflow-hidden hover:shadow-2xl transition-all border-2 border-transparent hover:border-blue-200 bg-white group">
-                  <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-blue-500 to-cyan-500" />
+                <a href={product.href} target="_blank" rel="noopener noreferrer" className="block h-full">
+                  <Card className="p-8 h-full relative overflow-hidden hover:shadow-2xl transition-all border-2 border-transparent hover:border-blue-200 bg-white group cursor-pointer">
+                    <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-blue-500 to-cyan-500" />
 
-                  <div className="flex items-start gap-6">
-                    <div className="relative inline-flex flex-shrink-0">
-                      <div className="absolute inset-0 bg-blue-500 opacity-20 rounded-2xl blur-xl" />
-                      <div className="relative text-6xl p-4 bg-blue-50 rounded-2xl group-hover:scale-110 transition-transform">
-                        {product.icon}
+                    <div className="flex items-start gap-6">
+                      <div className="relative inline-flex flex-shrink-0">
+                        <div className="absolute inset-0 bg-blue-500 opacity-20 rounded-2xl blur-xl" />
+                        <div className="relative text-6xl p-4 bg-blue-50 rounded-2xl group-hover:scale-110 transition-transform">
+                          {product.icon}
+                        </div>
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-2xl font-bold mb-3 text-blue-600 group-hover:underline">{product.title}</h3>
+                        <p className="text-gray-700 text-base leading-relaxed mb-4">{product.description}</p>
+                        <div className="flex flex-wrap gap-2">
+                          {product.features.map((feature, idx) => (
+                            <span key={idx} className="px-4 py-2 bg-blue-50 text-blue-700 text-sm rounded-full font-bold border-2 border-blue-200">
+                              ✓ {feature}
+                            </span>
+                          ))}
+                        </div>
                       </div>
                     </div>
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-bold mb-3 text-blue-600">{product.title}</h3>
-                      <p className="text-gray-700 text-base leading-relaxed mb-4">{product.description}</p>
-                      <div className="flex flex-wrap gap-2">
-                        {product.features.map((feature, idx) => (
-                          <span key={idx} className="px-4 py-2 bg-blue-50 text-blue-700 text-sm rounded-full font-bold border-2 border-blue-200">
-                            ✓ {feature}
-                          </span>
-                        ))}
+
+                    {/* View products button indicator */}
+                    <div className="mt-6 flex items-center justify-center">
+                      <div className="inline-flex items-center text-sm font-bold px-6 py-3 rounded-xl transition-all group-hover:shadow-lg group-hover:translate-y-[-2px] bg-blue-50 text-blue-600 border-2 border-blue-200">
+                        Ürünleri Görüntüle
+                        <svg className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                        </svg>
                       </div>
                     </div>
-                  </div>
-                </Card>
+                  </Card>
+                </a>
               </motion.div>
             ))}
           </div>

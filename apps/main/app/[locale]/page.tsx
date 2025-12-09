@@ -18,6 +18,13 @@ export default function HomePage({ params }: { params: { locale: string } }) {
       href: `https://bakircilarambalaj.com/${locale}`
     },
     {
+      name: 'Bankted E-Ticaret',
+      description: locale === 'tr' ? 'Ambalaj, temizlik, kırtasiye ve daha fazlası için online alışveriş platformumuz' : 'Our online shopping platform for packaging, cleaning, stationery and more',
+      icon: '🛒',
+      color: '#f59e0b',
+      href: 'https://www.bankted.com'
+    },
+    {
       name: t('companies.yazilim.name'),
       description: t('companies.yazilim.description'),
       icon: '💻',
