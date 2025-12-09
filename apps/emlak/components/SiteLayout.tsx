@@ -4,6 +4,7 @@ import React from 'react';
 import { Header, Footer } from '@bakircilar/ui';
 import { usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 export const SiteLayout: React.FC<{ children: React.ReactNode; locale: string }> = ({
   children,
@@ -70,10 +71,13 @@ export const SiteLayout: React.FC<{ children: React.ReactNode; locale: string }>
       <Header
         logo={
           <div className="flex items-center">
-            <div className="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center text-white font-bold text-xl mr-3 shadow-lg">
-              E
-            </div>
-            <span className="text-xl font-bold text-white">Bakırcılar Emlak</span>
+            <Image
+              src="/logo.png"
+              alt="Bakırcılar Emlak"
+              width={180}
+              height={50}
+              className="h-12 w-auto"
+            />
           </div>
         }
         menuItems={menuItems}
@@ -87,10 +91,13 @@ export const SiteLayout: React.FC<{ children: React.ReactNode; locale: string }>
       <Footer
         logo={
           <div className="flex items-center">
-            <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center text-green-500 font-bold text-xl mr-3">
-              E
-            </div>
-            <span className="text-xl font-bold text-white">Bakırcılar Emlak</span>
+            <Image
+              src="/logo.png"
+              alt="Bakırcılar Emlak"
+              width={180}
+              height={50}
+              className="h-12 w-auto"
+            />
           </div>
         }
         description={t('footer.description')}
