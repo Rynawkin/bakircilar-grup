@@ -101,6 +101,7 @@ export default function AmbalajHomePage() {
           label: t('hero.secondaryCTA'),
           href: '#contact'
         }}
+        backgroundVideo="/videos/hero-video.mp4"
       />
 
       {/* Products Section */}

@@ -49,6 +49,7 @@ export default function DanismanlikHomePage() {
           label: t('hero.secondaryCTA'),
           href: 'https://bakircilargrup.com/contact'
         }}
+        backgroundVideo="/videos/hero-video.mp4"
       />
 
       <section id="services" className="py-24 bg-gradient-to-br from-gray-50 via-white to-purple-50">
