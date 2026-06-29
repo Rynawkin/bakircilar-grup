@@ -5,6 +5,7 @@ import { Header, Footer } from '@bakircilar/ui';
 import { usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import { CONTACT_INFO, CAMPAIGN_URL } from '../lib/constants';
 
 export const SiteLayout: React.FC<{ children: React.ReactNode; locale: string }> = ({
   children,
@@ -17,7 +18,8 @@ export const SiteLayout: React.FC<{ children: React.ReactNode; locale: string }>
     { label: t('nav.home'), href: `/${locale}` },
     { label: t('nav.products'), href: `/${locale}#products` },
     { label: t('nav.about'), href: `/${locale}/about` },
-    { label: t('nav.contact'), href: `/${locale}/contact` }
+    { label: t('nav.contact'), href: `/${locale}/contact` },
+    { label: t('campaign.label'), href: CAMPAIGN_URL, external: true }
   ];
 
   const footerSections = [
@@ -104,9 +106,9 @@ export const SiteLayout: React.FC<{ children: React.ReactNode; locale: string }>
         sections={footerSections}
         socialLinks={socialLinks}
         companyName="Bakırcılar Ambalaj"
-        email="info@bakircilarambalaj.com"
-        phone="+90 XXX XXX XX XX"
-        address="Adres bilgisi buraya gelecek"
+        email={CONTACT_INFO.email}
+        phone={CONTACT_INFO.phone}
+        address={CONTACT_INFO.address}
       />
     </>
   );

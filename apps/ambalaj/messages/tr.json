@@ -1,4 +1,7 @@
 {
+  "campaign": {
+    "label": "Kampanyalı Ürünler"
+  },
   "nav": {
     "home": "Ana Sayfa",
     "products": "Ürünlerimiz",

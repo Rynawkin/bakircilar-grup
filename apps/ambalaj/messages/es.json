@@ -1,4 +1,7 @@
 {
+  "campaign": {
+    "label": "Ofertas de Campaña"
+  },
   "nav": {
     "home": "Inicio",
     "products": "Nuestros Productos",

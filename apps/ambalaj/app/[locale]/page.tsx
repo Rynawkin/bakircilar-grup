@@ -4,6 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Hero, Container, Card, WhatsAppButton } from '@bakircilar/ui';
 import { useTranslations } from 'next-intl';
+import { CAMPAIGN_URL, CONTACT_INFO } from '../../lib/constants';
 
 export default function AmbalajHomePage() {
   const t = useTranslations();
@@ -14,7 +15,7 @@ export default function AmbalajHomePage() {
       description: t('products.packaging.description'),
       icon: '📦',
       color: 'blue',
-      href: 'https://www.bankted.com/ambalaj-urunleri',
+      href: CAMPAIGN_URL,
       features: [
         t('products.packaging.feature1'),
         t('products.packaging.feature2'),
@@ -30,7 +31,7 @@ export default function AmbalajHomePage() {
       description: t('products.cleaning.description'),
       icon: '🧹',
       color: 'green',
-      href: 'https://www.bankted.com/temizlik-ve-hijyen',
+      href: CAMPAIGN_URL,
       features: [
         t('products.cleaning.feature1'),
         t('products.cleaning.feature2'),
@@ -47,7 +48,7 @@ export default function AmbalajHomePage() {
       description: t('products.stationery.description'),
       icon: '📝',
       color: 'purple',
-      href: 'https://www.bankted.com/kirtasiye-ve-ofis',
+      href: CAMPAIGN_URL,
       features: [
         t('products.stationery.feature1'),
         t('products.stationery.feature2'),
@@ -60,7 +61,7 @@ export default function AmbalajHomePage() {
       description: t('products.food.description'),
       icon: '🍽️',
       color: 'orange',
-      href: 'https://www.bankted.com/gida-ve-mutfak',
+      href: CAMPAIGN_URL,
       features: [
         t('products.food.feature1'),
         t('products.food.feature2'),
@@ -73,7 +74,7 @@ export default function AmbalajHomePage() {
       description: t('products.dispensers.description'),
       icon: '🚰',
       color: 'cyan',
-      href: 'https://www.bankted.com/dispanserler',
+      href: CAMPAIGN_URL,
       features: [
         t('products.dispensers.feature1'),
         t('products.dispensers.feature2')
@@ -89,12 +90,12 @@ export default function AmbalajHomePage() {
         subtitle={t('hero.subtitle')}
         description={t('hero.description')}
         primaryCTA={{
-          label: t('hero.primaryCTA'),
-          href: '#products'
+          label: t('campaign.label'),
+          href: CAMPAIGN_URL
         }}
         secondaryCTA={{
-          label: t('hero.secondaryCTA'),
-          href: '#contact'
+          label: t('hero.primaryCTA'),
+          href: '#products'
         }}
         backgroundVideo="/videos/hero-video.mp4"
       />
@@ -276,7 +277,7 @@ export default function AmbalajHomePage() {
       </section>
 
       <WhatsAppButton
-        phoneNumber="905301783570"
+        phoneNumber={CONTACT_INFO.whatsapp}
         message="Merhaba, Bakırcılar Ambalaj hakkında bilgi almak istiyorum."
       />
     </main>

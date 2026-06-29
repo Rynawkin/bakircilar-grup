@@ -1,4 +1,7 @@
 {
+  "campaign": {
+    "label": "Campaign Deals"
+  },
   "nav": {
     "home": "Home",
     "products": "Our Products",

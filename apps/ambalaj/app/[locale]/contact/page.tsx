@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Container, ContactForm, Card } from '@bakircilar/ui';
-import { CONTACT_INFO } from '../../../lib/constants';
+import { CONTACT_INFO, LOCATIONS } from '../../../lib/constants';
 import { useTranslations } from 'next-intl';
 
 export default function ContactPage() {
@@ -214,30 +214,30 @@ export default function ContactPage() {
               viewport={{ once: true }}
               className="space-y-6"
             >
-              {/* Map Placeholder */}
-              <Card className="h-96 overflow-hidden border-2 border-gray-100 hover:border-blue-200 transition-all">
-                <div className="w-full h-full bg-gradient-to-br from-blue-50 via-blue-100 to-cyan-100 flex items-center justify-center relative group">
-                  <div className="absolute inset-0 opacity-10">
-                    <div className="absolute inset-0" style={{
-                      backgroundImage: 'radial-gradient(circle at 20px 20px, rgba(59, 130, 246, 0.5) 2px, transparent 0)',
-                      backgroundSize: '50px 50px'
-                    }} />
+              {/* Lokasyonlar + Gömülü Haritalar */}
+              {LOCATIONS.map((loc) => (
+                <Card key={loc.name} className="overflow-hidden border-2 border-gray-100 hover:border-blue-200 transition-all">
+                  <div className="p-5 border-b border-gray-100 bg-gradient-to-r from-blue-50 to-cyan-50">
+                    <h3 className="text-lg font-bold text-gray-900 flex items-center gap-2">
+                      <svg className="w-5 h-5 flex-shrink-0 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                      {loc.name}
+                    </h3>
+                    <p className="text-sm text-gray-600 mt-1">{loc.address}</p>
                   </div>
-                  <div className="relative text-center p-8">
-                    <div className="inline-block mb-4 relative">
-                      <div className="absolute inset-0 bg-blue-500 opacity-20 rounded-full blur-2xl animate-pulse" />
-                      <div className="relative w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-xl">
-                        <svg className="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                        </svg>
-                      </div>
-                    </div>
-                    <p className="text-blue-700 font-bold text-lg">{t('contactPage.mapPlaceholder')}</p>
-                    <p className="text-blue-600 text-sm mt-2">Google Maps entegrasyonu</p>
-                  </div>
-                </div>
-              </Card>
+                  <iframe
+                    src={`https://www.google.com/maps?q=${encodeURIComponent(loc.mapsQuery)}&output=embed`}
+                    width="100%"
+                    height="240"
+                    style={{ border: 0, display: 'block' }}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title={`${loc.name} - Harita`}
+                  />
+                </Card>
+              ))}
 
               {/* Working Hours */}
               <Card className="p-8 border-2 border-transparent hover:border-blue-200 transition-all hover:shadow-2xl relative overflow-hidden group">
