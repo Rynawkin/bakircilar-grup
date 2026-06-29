@@ -12,6 +12,12 @@ const ICONS: Record<string, React.ReactNode> = {
   document: <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />,
   cake: <path strokeLinecap="round" strokeLinejoin="round" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z" />,
   beaker: <path strokeLinecap="round" strokeLinejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />,
+  tools: (
+    <>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+    </>
+  ),
   shield: <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />,
   globe: <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />,
   truck: (
@@ -19,7 +25,7 @@ const ICONS: Record<string, React.ReactNode> = {
       <path strokeLinecap="round" strokeLinejoin="round" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zm10 0a2 2 0 11-4 0 2 2 0 014 0z" />
       <path strokeLinecap="round" strokeLinejoin="round" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1" />
     </>
-  ),
+  )
 };
 
 function Icon({ name, className }: { name: string; className?: string }) {
@@ -50,66 +56,12 @@ export default function AmbalajHomePage() {
   const locale = useLocale();
 
   const products = [
-    {
-      icon: 'cube',
-      title: t('products.packaging.title'),
-      description: t('products.packaging.description'),
-      features: [
-        t('products.packaging.feature1'),
-        t('products.packaging.feature2'),
-        t('products.packaging.feature3'),
-        t('products.packaging.feature4'),
-        t('products.packaging.feature5'),
-        t('products.packaging.feature6'),
-        t('products.packaging.feature7')
-      ]
-    },
-    {
-      icon: 'sparkles',
-      title: t('products.cleaning.title'),
-      description: t('products.cleaning.description'),
-      features: [
-        t('products.cleaning.feature1'),
-        t('products.cleaning.feature2'),
-        t('products.cleaning.feature3'),
-        t('products.cleaning.feature4'),
-        t('products.cleaning.feature5'),
-        t('products.cleaning.feature6'),
-        t('products.cleaning.feature7'),
-        t('products.cleaning.feature8')
-      ]
-    },
-    {
-      icon: 'document',
-      title: t('products.stationery.title'),
-      description: t('products.stationery.description'),
-      features: [
-        t('products.stationery.feature1'),
-        t('products.stationery.feature2'),
-        t('products.stationery.feature3'),
-        t('products.stationery.feature4')
-      ]
-    },
-    {
-      icon: 'cake',
-      title: t('products.food.title'),
-      description: t('products.food.description'),
-      features: [
-        t('products.food.feature1'),
-        t('products.food.feature2'),
-        t('products.food.feature3'),
-        t('products.food.feature4')
-      ]
-    },
-    {
-      icon: 'beaker',
-      title: t('products.dispensers.title'),
-      description: t('products.dispensers.description'),
-      features: [
-        t('products.dispensers.feature1'),
-        t('products.dispensers.feature2')
-      ]
-    }
+    { icon: 'cube', title: t('products.packaging.title'), description: t('products.packaging.description') },
+    { icon: 'sparkles', title: t('products.cleaning.title'), description: t('products.cleaning.description') },
+    { icon: 'document', title: t('products.stationery.title'), description: t('products.stationery.description') },
+    { icon: 'cake', title: t('products.food.title'), description: t('products.food.description') },
+    { icon: 'beaker', title: t('products.dispensers.title'), description: t('products.dispensers.description') },
+    { icon: 'tools', title: t('products.hardware.title'), description: t('products.hardware.description') }
   ];
 
   const features = [
@@ -218,7 +170,7 @@ export default function AmbalajHomePage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-60px' }}
                 transition={{ duration: 0.5, delay: index * 0.06 }}
-                className="group flex flex-col rounded-2xl border border-stone-200/80 bg-white p-8 transition duration-300 hover:-translate-y-1 hover:border-brand-copper/40 hover:shadow-[0_18px_50px_-20px_rgba(19,41,75,0.25)]"
+                className="group flex h-full flex-col rounded-2xl border border-stone-200/80 bg-white p-8 transition duration-300 hover:-translate-y-1 hover:border-brand-copper/40 hover:shadow-[0_18px_50px_-20px_rgba(19,41,75,0.25)]"
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-navy/[0.06] text-brand-navy transition duration-300 group-hover:bg-brand-copper group-hover:text-white">
                   <Icon name={product.icon} className="h-6 w-6" />
@@ -226,22 +178,10 @@ export default function AmbalajHomePage() {
                 <h3 className="mt-6 font-display text-xl font-semibold text-brand-navy">
                   {product.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-stone-600">
+                <p className="mt-3 text-sm leading-relaxed text-stone-600">
                   {product.description}
                 </p>
-                <div className="mt-5 flex flex-wrap gap-2">
-                  {product.features.slice(0, 4).map((feature) => (
-                    <span key={feature} className="rounded-full bg-stone-100 px-3 py-1 text-xs font-medium text-stone-600">
-                      {feature}
-                    </span>
-                  ))}
-                  {product.features.length > 4 && (
-                    <span className="px-1 py-1 text-xs font-medium text-stone-400">
-                      +{product.features.length - 4}
-                    </span>
-                  )}
-                </div>
-                <div className="mt-7 flex items-center gap-1.5 text-sm font-medium text-brand-copper">
+                <div className="mt-auto flex items-center gap-1.5 pt-6 text-sm font-medium text-brand-copper">
                   Ürünleri gör
                   <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
                 </div>
