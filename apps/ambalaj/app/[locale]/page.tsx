@@ -2,20 +2,58 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Hero, Container, Card, WhatsAppButton } from '@bakircilar/ui';
-import { useTranslations } from 'next-intl';
+import { WhatsAppButton } from '@bakircilar/ui';
+import { useTranslations, useLocale } from 'next-intl';
 import { CAMPAIGN_URL, CONTACT_INFO } from '../../lib/constants';
+
+const ICONS: Record<string, React.ReactNode> = {
+  cube: <path strokeLinecap="round" strokeLinejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />,
+  sparkles: <path strokeLinecap="round" strokeLinejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />,
+  document: <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />,
+  cake: <path strokeLinecap="round" strokeLinejoin="round" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z" />,
+  beaker: <path strokeLinecap="round" strokeLinejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />,
+  shield: <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />,
+  globe: <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />,
+  truck: (
+    <>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zm10 0a2 2 0 11-4 0 2 2 0 014 0z" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1" />
+    </>
+  ),
+};
+
+function Icon({ name, className }: { name: string; className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} className={className} aria-hidden="true">
+      {ICONS[name]}
+    </svg>
+  );
+}
+
+function ArrowRight({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className={className} aria-hidden="true">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-6-6l6 6-6 6" />
+    </svg>
+  );
+}
+
+const fadeUp = {
+  initial: { opacity: 0, y: 24 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true, margin: '-80px' },
+  transition: { duration: 0.6 }
+};
 
 export default function AmbalajHomePage() {
   const t = useTranslations();
+  const locale = useLocale();
 
   const products = [
     {
+      icon: 'cube',
       title: t('products.packaging.title'),
       description: t('products.packaging.description'),
-      icon: '📦',
-      color: 'blue',
-      href: CAMPAIGN_URL,
       features: [
         t('products.packaging.feature1'),
         t('products.packaging.feature2'),
@@ -27,11 +65,9 @@ export default function AmbalajHomePage() {
       ]
     },
     {
+      icon: 'sparkles',
       title: t('products.cleaning.title'),
       description: t('products.cleaning.description'),
-      icon: '🧹',
-      color: 'green',
-      href: CAMPAIGN_URL,
       features: [
         t('products.cleaning.feature1'),
         t('products.cleaning.feature2'),
@@ -44,11 +80,9 @@ export default function AmbalajHomePage() {
       ]
     },
     {
+      icon: 'document',
       title: t('products.stationery.title'),
       description: t('products.stationery.description'),
-      icon: '📝',
-      color: 'purple',
-      href: CAMPAIGN_URL,
       features: [
         t('products.stationery.feature1'),
         t('products.stationery.feature2'),
@@ -57,11 +91,9 @@ export default function AmbalajHomePage() {
       ]
     },
     {
+      icon: 'cake',
       title: t('products.food.title'),
       description: t('products.food.description'),
-      icon: '🍽️',
-      color: 'orange',
-      href: CAMPAIGN_URL,
       features: [
         t('products.food.feature1'),
         t('products.food.feature2'),
@@ -70,11 +102,9 @@ export default function AmbalajHomePage() {
       ]
     },
     {
+      icon: 'beaker',
       title: t('products.dispensers.title'),
       description: t('products.dispensers.description'),
-      icon: '🚰',
-      color: 'cyan',
-      href: CAMPAIGN_URL,
       features: [
         t('products.dispensers.feature1'),
         t('products.dispensers.feature2')
@@ -82,198 +112,192 @@ export default function AmbalajHomePage() {
     }
   ];
 
-  return (
-    <main className="min-h-screen">
-      {/* Hero Section */}
-      <Hero
-        title={t('hero.title')}
-        subtitle={t('hero.subtitle')}
-        description={t('hero.description')}
-        primaryCTA={{
-          label: t('campaign.label'),
-          href: CAMPAIGN_URL
-        }}
-        secondaryCTA={{
-          label: t('hero.primaryCTA'),
-          href: '#products'
-        }}
-        backgroundVideo="/videos/hero-video.mp4"
-      />
+  const features = [
+    { icon: 'shield', title: t('features.quality.title'), description: t('features.quality.description') },
+    { icon: 'globe', title: t('features.eco.title'), description: t('features.eco.description') },
+    { icon: 'truck', title: t('features.delivery.title'), description: t('features.delivery.description') }
+  ];
 
-      {/* Products Section */}
-      <section id="products" className="py-24 bg-gradient-to-br from-gray-50 via-white to-blue-50">
-        <Container>
+  const facts = [
+    { value: '1990', label: 'Kuruluş yılı' },
+    { value: '5', label: 'Ürün grubu' },
+    { value: '2', label: 'Lokasyon' },
+    { value: '4 dil', label: 'TR · EN · DE · ES' }
+  ];
+
+  return (
+    <main>
+      {/* Hero */}
+      <section className="relative isolate overflow-hidden bg-brand-navy">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 h-full w-full object-cover"
+        >
+          <source src="/videos/hero-video.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-brand-navy/80" />
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/45 to-transparent" />
+
+        <div className="relative mx-auto max-w-7xl px-6 py-28 md:py-40 lg:px-8">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+            className="max-w-2xl"
           >
-            <div className="inline-block mb-4">
-              <span className="text-blue-600 font-bold text-sm uppercase tracking-widest bg-blue-50 px-6 py-2 rounded-full border-2 border-blue-200">
-                Ürünlerimiz
-              </span>
+            <span className="inline-flex items-center gap-3 text-sm font-medium uppercase tracking-[0.2em] text-brand-copper">
+              <span className="h-px w-8 bg-brand-copper" />
+              {t('hero.subtitle')}
+            </span>
+            <h1 className="mt-6 font-display text-4xl font-bold leading-[1.08] text-white sm:text-5xl lg:text-6xl">
+              {t('hero.title')}
+            </h1>
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-stone-300">
+              {t('hero.description')}
+            </p>
+            <div className="mt-10 flex flex-wrap items-center gap-4">
+              <a
+                href={CAMPAIGN_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-2 rounded-full bg-brand-copper px-7 py-3.5 text-base font-medium text-white transition hover:bg-brand-copper-dark"
+              >
+                {t('campaign.label')}
+                <ArrowRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
+              </a>
+              <a
+                href="#products"
+                className="inline-flex items-center gap-2 rounded-full border border-white/25 px-7 py-3.5 text-base font-medium text-white transition hover:border-white/50 hover:bg-white/5"
+              >
+                {t('hero.primaryCTA')}
+              </a>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
+          </motion.div>
+        </div>
+
+        {/* Trust strip */}
+        <div className="relative border-t border-white/10 bg-brand-navy/50 backdrop-blur-sm">
+          <div className="mx-auto grid max-w-7xl grid-cols-2 divide-x divide-white/10 px-6 md:grid-cols-4 lg:px-8">
+            {facts.map((f) => (
+              <div key={f.label} className="px-2 py-6 text-center md:py-7">
+                <div className="font-display text-2xl font-bold text-white md:text-3xl">{f.value}</div>
+                <div className="mt-1 text-xs text-stone-400 md:text-sm">{f.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Products */}
+      <section id="products" className="bg-brand-sand py-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <motion.div {...fadeUp} className="max-w-2xl">
+            <span className="inline-flex items-center gap-3 text-sm font-medium uppercase tracking-[0.2em] text-brand-copper">
+              <span className="h-px w-8 bg-brand-copper" />
+              {t('hero.subtitle')}
+            </span>
+            <h2 className="mt-5 font-display text-3xl font-bold text-brand-navy md:text-4xl">
               {t('products.title')}
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="mt-4 text-lg leading-relaxed text-stone-600">
               {t('products.subtitle')}
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {products.map((product, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
+              <motion.a
+                key={product.title}
+                href={CAMPAIGN_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
+                viewport={{ once: true, margin: '-60px' }}
+                transition={{ duration: 0.5, delay: index * 0.06 }}
+                className="group flex flex-col rounded-2xl border border-stone-200/80 bg-white p-8 transition duration-300 hover:-translate-y-1 hover:border-brand-copper/40 hover:shadow-[0_18px_50px_-20px_rgba(19,41,75,0.25)]"
               >
-                <a href={product.href} target="_blank" rel="noopener noreferrer" className="block h-full">
-                  <Card className="p-8 h-full relative overflow-hidden hover:shadow-2xl transition-all border-2 border-transparent hover:border-blue-200 bg-white group cursor-pointer">
-                    <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-blue-500 to-cyan-500" />
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-navy/[0.06] text-brand-navy transition duration-300 group-hover:bg-brand-copper group-hover:text-white">
+                  <Icon name={product.icon} className="h-6 w-6" />
+                </div>
+                <h3 className="mt-6 font-display text-xl font-semibold text-brand-navy">
+                  {product.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-stone-600">
+                  {product.description}
+                </p>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {product.features.slice(0, 4).map((feature) => (
+                    <span key={feature} className="rounded-full bg-stone-100 px-3 py-1 text-xs font-medium text-stone-600">
+                      {feature}
+                    </span>
+                  ))}
+                  {product.features.length > 4 && (
+                    <span className="px-1 py-1 text-xs font-medium text-stone-400">
+                      +{product.features.length - 4}
+                    </span>
+                  )}
+                </div>
+                <div className="mt-7 flex items-center gap-1.5 text-sm font-medium text-brand-copper">
+                  Ürünleri gör
+                  <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
+                </div>
+              </motion.a>
+            ))}
+          </div>
+        </div>
+      </section>
 
-                    <div className="flex items-start gap-6">
-                      <div className="relative inline-flex flex-shrink-0">
-                        <div className="absolute inset-0 bg-blue-500 opacity-20 rounded-2xl blur-xl" />
-                        <div className="relative text-6xl p-4 bg-blue-50 rounded-2xl group-hover:scale-110 transition-transform">
-                          {product.icon}
-                        </div>
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-2xl font-bold mb-3 text-blue-600 group-hover:underline">{product.title}</h3>
-                        <p className="text-gray-700 text-base leading-relaxed mb-4">{product.description}</p>
-                        <div className="flex flex-wrap gap-2">
-                          {product.features.map((feature, idx) => (
-                            <span key={idx} className="px-4 py-2 bg-blue-50 text-blue-700 text-sm rounded-full font-bold border-2 border-blue-200">
-                              ✓ {feature}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* View products button indicator */}
-                    <div className="mt-6 flex items-center justify-center">
-                      <div className="inline-flex items-center text-sm font-bold px-6 py-3 rounded-xl transition-all group-hover:shadow-lg group-hover:translate-y-[-2px] bg-blue-50 text-blue-600 border-2 border-blue-200">
-                        Ürünleri Görüntüle
-                        <svg className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                        </svg>
-                      </div>
-                    </div>
-                  </Card>
-                </a>
+      {/* Features */}
+      <section className="bg-white py-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="grid gap-x-10 gap-y-12 md:grid-cols-3">
+            {features.map((feature) => (
+              <motion.div {...fadeUp} key={feature.title} className="relative pl-16">
+                <div className="absolute left-0 top-0 flex h-12 w-12 items-center justify-center rounded-xl border border-stone-200 text-brand-copper">
+                  <Icon name={feature.icon} className="h-6 w-6" />
+                </div>
+                <h3 className="font-display text-lg font-semibold text-brand-navy">
+                  {feature.title}
+                </h3>
+                <p className="mt-2 leading-relaxed text-stone-600">
+                  {feature.description}
+                </p>
               </motion.div>
             ))}
           </div>
-        </Container>
+        </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-24 bg-white">
-        <Container>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: '✓',
-                title: t('features.quality.title'),
-                description: t('features.quality.description'),
-                gradient: 'from-blue-500 to-cyan-500',
-                bgColor: 'bg-blue-50'
-              },
-              {
-                icon: '🌿',
-                title: t('features.eco.title'),
-                description: t('features.eco.description'),
-                gradient: 'from-green-500 to-emerald-500',
-                bgColor: 'bg-green-50'
-              },
-              {
-                icon: '🚚',
-                title: t('features.delivery.title'),
-                description: t('features.delivery.description'),
-                gradient: 'from-orange-500 to-amber-500',
-                bgColor: 'bg-orange-50'
-              }
-            ].map((feature, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="group"
-              >
-                <Card className={`p-10 text-center h-full relative overflow-hidden border-2 border-transparent hover:border-gray-200 transition-all hover:shadow-2xl`}>
-                  <div className={`absolute top-0 left-0 right-0 h-2 bg-gradient-to-r ${feature.gradient}`} />
-
-                  <div className="relative inline-flex mb-6">
-                    <div className={`absolute inset-0 opacity-20 rounded-2xl blur-2xl bg-gradient-to-r ${feature.gradient}`} />
-                    <div className={`relative text-6xl p-6 ${feature.bgColor} rounded-2xl group-hover:scale-110 transition-transform duration-300`}>
-                      {feature.icon}
-                    </div>
-                  </div>
-
-                  <h3 className="text-2xl font-bold mb-4 text-gray-900">{feature.title}</h3>
-                  <p className="text-gray-700 leading-relaxed text-base">{feature.description}</p>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      {/* CTA Section */}
-      <section id="contact" className="py-24 bg-gradient-to-br from-blue-600 via-blue-700 to-cyan-800 text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 left-10 w-72 h-72 bg-white rounded-full blur-3xl animate-pulse" />
-          <div className="absolute bottom-10 right-10 w-96 h-96 bg-cyan-300 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
-        </div>
-
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0" style={{
-            backgroundImage: 'radial-gradient(circle at 20px 20px, white 1px, transparent 0)',
-            backgroundSize: '40px 40px'
-          }} />
-        </div>
-
-        <Container className="relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-center"
-          >
-            <div className="inline-block mb-6">
-              <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto border border-white/30">
-                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-              </div>
-            </div>
-
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              {t('cta.title')}
-            </h2>
-            <p className="text-xl md:text-2xl mb-10 text-blue-100 max-w-3xl mx-auto leading-relaxed">
-              {t('cta.subtitle')}
-            </p>
+      {/* CTA */}
+      <section className="bg-brand-navy py-24">
+        <div className="mx-auto max-w-3xl px-6 text-center">
+          <motion.h2 {...fadeUp} className="font-display text-3xl font-bold leading-tight text-white md:text-4xl">
+            {t('cta.title')}
+          </motion.h2>
+          <motion.p {...fadeUp} className="mt-5 text-lg text-stone-300">
+            {t('cta.subtitle')}
+          </motion.p>
+          <motion.div {...fadeUp} className="mt-10 flex flex-wrap justify-center gap-4">
             <a
-              href="https://bakircilargrup.com/contact"
-              className="inline-flex items-center gap-3 bg-white text-blue-600 font-bold px-12 py-5 rounded-2xl shadow-2xl hover:shadow-white/25 hover:scale-105 transition-all text-lg group"
+              href={CAMPAIGN_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-brand-copper px-8 py-4 text-base font-medium text-white transition hover:bg-brand-copper-dark"
+            >
+              {t('campaign.label')}
+            </a>
+            <a
+              href={`/${locale}/contact`}
+              className="rounded-full border border-white/25 px-8 py-4 text-base font-medium text-white transition hover:border-white/50 hover:bg-white/5"
             >
               {t('cta.button')}
-              <svg className="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
             </a>
           </motion.div>
-        </Container>
+        </div>
       </section>
 
       <WhatsAppButton
