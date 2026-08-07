@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { CONTACT_INFO } from "../../../lib/constants";
 
 const SITE_URL = "https://www.bakircilarambalaj.com";
 const DATA_CONTROLLER = "Necati Uçarer Bakırcılar Ambalaj";
-const ADDRESS =
-  "Rasimpaşa Mah., Atatürk Blv. Cami No:5, No:75/A, 54300 Hendek / Sakarya";
+const ADDRESS = CONTACT_INFO.address;
 const EMAIL = "info@bakircilarambalaj.com";
 const SUPPORTED_LOCALES = ["tr", "en", "de", "es"] as const;
 

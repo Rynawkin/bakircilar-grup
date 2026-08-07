@@ -90,7 +90,7 @@ export default async function LocaleLayout({
     foundingDate: '1990',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Rasimpaşa Mah., Atatürk Blv. Cami No:5, No:75/A',
+      streetAddress: CONTACT_INFO.streetAddress,
       addressLocality: 'Hendek',
       addressRegion: 'Sakarya',
       postalCode: '54300',
