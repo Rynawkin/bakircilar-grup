@@ -39,17 +39,10 @@ export default function AboutPage() {
   ];
 
   const facts = [
-    { value: '1990', label: 'Kuruluş' },
-    { value: '35+', label: 'Yıl tecrübe' },
-    { value: '6', label: 'Ürün grubu' },
-    { value: '2', label: 'Lokasyon' }
-  ];
-
-  const milestones = [
-    { year: '1990', key: 'milestone1' },
-    { year: '2000', key: 'milestone2' },
-    { year: '2010', key: 'milestone3' },
-    { year: '2024', key: 'milestone4' }
+    { value: '1990', label: t('facts.founded') },
+    { value: '6', label: t('facts.productGroups') },
+    { value: '2', label: t('facts.locations') },
+    { value: '4', label: t('facts.languages') }
   ];
 
   return (
@@ -142,37 +135,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Timeline */}
-      <section className="bg-brand-sand py-24">
-        <div className="mx-auto max-w-3xl px-6 lg:px-8">
-          <motion.div {...fadeUp} className="mb-14">
-            <Eyebrow>{t('aboutPage.timelineTag')}</Eyebrow>
-            <h2 className="mt-5 font-display text-3xl font-bold text-brand-navy md:text-4xl">
-              {t('aboutPage.timelineTitle')}
-            </h2>
-          </motion.div>
-          <div className="relative border-l border-stone-300 pl-10">
-            {milestones.map((m, index) => (
-              <motion.div
-                {...fadeUp}
-                key={m.key}
-                className={index < milestones.length - 1 ? 'relative pb-12' : 'relative'}
-              >
-                <span className="absolute -left-[3.05rem] top-0.5 flex h-6 w-6 items-center justify-center rounded-full border-2 border-brand-copper bg-brand-sand">
-                  <span className="h-2 w-2 rounded-full bg-brand-copper" />
-                </span>
-                <div className="font-display text-2xl font-bold text-brand-copper">{m.year}</div>
-                <h3 className="mt-1 font-display text-lg font-semibold text-brand-navy">
-                  {t(`aboutPage.timeline.${m.key}.title`)}
-                </h3>
-                <p className="mt-2 leading-relaxed text-stone-600">
-                  {t(`aboutPage.timeline.${m.key}.description`)}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
     </main>
   );
 }

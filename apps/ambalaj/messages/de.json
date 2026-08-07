@@ -1,6 +1,6 @@
 {
   "campaign": {
-    "label": "Aktionsangebote"
+    "label": "Bakırcılar B2B- und Aktionsportal"
   },
   "nav": {
     "home": "Startseite",
@@ -9,15 +9,16 @@
     "contact": "Kontakt"
   },
   "hero": {
-    "title": "Bakırcılar Verpackung",
-    "subtitle": "Verpackungslösungen",
-    "description": "Hochwertige und umweltfreundliche Verpackungsprodukte, hergestellt mit moderner Technologie",
+    "title": "Bakırcılar Ambalaj",
+    "subtitle": "Beschaffungslösungen für Unternehmen",
+    "description": "Wir bündeln Verpackungs-, Reinigungs-, Papier-, Hygiene-, Lebensmittel- und Büroverbrauchsartikel für Unternehmen bei einem Lieferanten",
     "primaryCTA": "Unsere Produkte",
     "secondaryCTA": "Kontakt"
   },
   "products": {
     "title": "Unsere Produktkategorien",
-    "subtitle": "Wir bieten geeignete Lösungen für Ihre Bedürfnisse mit unserem breiten Produktsortiment für verschiedene Branchen",
+    "subtitle": "Wir ordnen den regelmäßigen Bedarf von Unternehmen in sechs zentrale Produktgruppen",
+    "view": "Produkte ansehen",
     "packaging": {
       "title": "Verpackungsprodukte",
       "description": "Verpackungsprodukte, Schaumstoffteller, Aluminiumbehälter, Plastikbehälter, Taschen und Beutel",
@@ -72,26 +73,29 @@
   },
   "features": {
     "quality": {
-      "title": "Qualitätssicherung",
-      "description": "Wir garantieren höchste Qualität mit unseren ISO-zertifizierten Produktionsprozessen"
+      "title": "Beschaffung für Unternehmen",
+      "description": "Wir bündeln verschiedene Verbrauchsartikel für Unternehmen in einer übersichtlichen Beschaffungsstruktur"
     },
     "eco": {
-      "title": "Umweltfreundlich",
-      "description": "Wir bieten nachhaltige und recycelbare Verpackungslösungen"
+      "title": "Etabliertes Markennetzwerk",
+      "description": "Wir bieten Firmenkunden Produkte von Marken an, mit denen Liefer- und Vertriebspartnerschaften bestehen"
     },
     "delivery": {
-      "title": "Schnelle Lieferung",
-      "description": "Wir bieten schnellen und sicheren Lieferservice in der gesamten Türkei"
+      "title": "Zwei Standorte",
+      "description": "Von zwei Standorten aus betreuen wir den Bedarf an Verpackungs-, Reinigungs-, Hygiene-, Lebensmittel- und Büroverbrauchsartikeln"
     }
   },
   "cta": {
     "title": "Kontaktieren Sie uns für Ihre Verpackungsbedürfnisse",
-    "subtitle": "Unser Expertenteam ist bereit, Ihnen die passendste Lösung anzubieten",
+    "subtitle": "Kontaktieren Sie uns direkt zu Produktgruppen und Unternehmensbeschaffung",
     "button": "Kontakt aufnehmen"
   },
   "footer": {
-    "description": "Wir sind ein führendes Unternehmen in der Branche mit modernen Verpackungslösungen und Produktion.",
+    "description": "Seit 1990 beliefern wir Unternehmen mit Verpackungs-, Reinigungs-, Papier-, Hygiene-, Lebensmittel- und Büroverbrauchsartikeln.",
     "quickLinks": "Schnellzugriff",
+    "corporate": "Unternehmen",
+    "privacy": "Datenschutz- und KVKK-Hinweis",
+    "terms": "Nutzungsbedingungen",
     "companies": "Unsere Unternehmen",
     "rights": "Alle Rechte vorbehalten"
   },
@@ -105,49 +109,47 @@
   },
   "aboutPage": {
     "title": "Über Uns",
-    "subtitle": "Ihr vertrauenswürdiger Lösungspartner in der Verpackungsindustrie seit 1990",
+    "subtitle": "Verpackungs- und Verbrauchsmaterialbeschaffung für Unternehmen seit 1990",
     "story": {
       "title": "Unsere Geschichte",
-      "paragraph1": "Bakırcılar Verpackung wurde 1990 gegründet und ist seit über 30 Jahren in der Verpackungsindustrie tätig. Wir bieten Dienstleistungen in einem breiten Spektrum von Verpackungsprodukten über industrielle Reinigungsprodukte bis hin zu Büroartikeln und schnelldrehenden Konsumgütern.",
-      "paragraph2": "Mit der Priorisierung der Kundenzufriedenheit sind wir zu einer vertrauenswürdigen Marke in der Branche geworden, mit Qualitätsprodukten und pünktlicher Liefergarantie. Mit unserem erfahrenen Personal und modernen Produktionsanlagen bieten wir Lösungen für Projekte jeder Größe.",
-      "paragraph3": "Mit unserem umweltfreundlichen Produktionsansatz, der Verwendung recycelbarer Materialien und einem nachhaltigen Geschäftsmodell handeln wir mit Blick auf heute und die Zukunft."
+      "paragraph1": "Bakırcılar Ambalaj wurde 1990 gegründet und bietet Großhandelsbeschaffung für den Verpackungs- und Verbrauchsmaterialbedarf von Unternehmen. Wir bündeln Verpackungs-, Reinigungs-, Papier-, Hygiene-, Lebensmittel- und Büroverbrauchsartikel an einem Ort.",
+      "paragraph2": "Unser Unternehmen ist an zwei Standorten tätig und unterstützt Unternehmen dabei, unterschiedliche Produktgruppen in einem klaren und geordneten Beschaffungsprozess zu verwalten.",
+      "paragraph3": "Zu den Marken, mit denen Liefer- und Vertriebspartnerschaften bestehen, gehören Hayat Kimya, Diversey, Green (İlmak Makina), Kurukahveci Mehmet Efendi, Doğuş Çay und Bencup."
     },
-    "visionDetailed": "Ein führendes Produktions- und Versorgungsunternehmen in der Verpackungsindustrie zu werden, indem wir sich ständig ändernde Kundenanforderungen auf höchstem Niveau auf dem türkischen und globalen Markt erfüllen.",
-    "missionDetailed": "Zum Erfolg unserer Kunden beizutragen, indem wir umweltfreundliche und innovative Verpackungslösungen anbieten, ohne unsere Prinzipien von Qualität, Geschwindigkeit und Zuverlässigkeit zu gefährden.",
+    "visionDetailed": "Einen klaren und zugänglichen Unternehmensservice anzubieten, mit dem Betriebe unterschiedliche Verbrauchsmaterialbedarfe in einer Beschaffungsstruktur verwalten können.",
+    "missionDetailed": "Verpackungs-, Reinigungs-, Papier-, Hygiene-, Lebensmittel- und Büroverbrauchsartikel mit einer klaren Produktstruktur und direkter Kommunikation für Unternehmen zusammenzuführen.",
     "valuesTitle": "Unsere Werte",
     "valuesSubtitle": "Die Kernprinzipien, die unsere Geschäftsprozesse prägen",
-    "statsSubtitle": "Wir sind Vorreiter in der Branche mit langjähriger Erfahrung und unserem starken Team",
+    "statsSubtitle": "Seit 1990 bieten wir Unternehmen von zwei Standorten aus Großhandelsbeschaffung an",
     "timelineTag": "Unsere Reise",
     "timelineTitle": "Unsere Wachstumsgeschichte",
     "valuesItems": {
       "innovation": {
-        "title": "Innovation & F&E",
-        "description": "Wir entwickeln innovative Produkte, die mit unseren F&E-Studien einen Unterschied in der Branche machen"
+        "title": "Produkt- und Kategoriewissen",
+        "description": "Wir präsentieren Produkte für verschiedene Einsatzbereiche in klaren Kategorien"
       },
       "reliability": {
-        "title": "Zuverlässigkeit",
-        "description": "Mit Priorisierung der Kundenzufriedenheit sind wir zu einer vertrauenswürdigen Marke in der Branche geworden"
+        "title": "Seit 1990",
+        "description": "Seit 1990 betreuen wir den Verpackungs- und Verbrauchsmaterialbedarf von Unternehmen"
       },
       "quality": {
-        "title": "Qualitätssicherung",
-        "description": "Wir erfüllen Kundenerwartungen auf höchstem Niveau mit unseren ISO-zertifizierten Produktionsprozessen"
+        "title": "Beschaffungsstruktur",
+        "description": "Wir bündeln regelmäßig benötigte Verbrauchsartikel für Unternehmen bei einer Anlaufstelle"
       },
       "sustainability": {
-        "title": "Nachhaltigkeit",
-        "description": "Wir bauen die Zukunft mit einem umweltfreundlichen Produktionsansatz, der Natur und Gesellschaft respektiert"
+        "title": "Markenbeziehungen",
+        "description": "Wir bieten Firmenkunden Produkte von Marken an, mit denen Liefer- und Vertriebspartnerschaften bestehen"
       },
       "humanFocused": {
-        "title": "Menschenorientierter Ansatz",
-        "description": "Wir erzielen Erfolg mit unserem dynamischen, innovationsorientierten Team und unterstützen die Karriereentwicklung"
+        "title": "Unternehmensorientierter Ansatz",
+        "description": "Wir präsentieren Produktgruppen klar und passend zu betrieblichen Einkaufsprozessen"
       },
       "excellence": {
-        "title": "Exzellenz",
-        "description": "Wir arbeiten mit pünktlicher Liefergarantie und streben in jedem Projekt nach Exzellenz"
+        "title": "Direkte Kommunikation",
+        "description": "Wir stehen bei Produktauswahl und Bestellung in direktem Austausch mit Unternehmen"
       }
     },
-    "statsTitle": "Bakırcılar Verpackung in Zahlen",
-    "visionDetailed": "Ein führendes Produktions- und Versorgungsunternehmen in der Verpackungsindustrie zu werden, indem wir sich ständig ändernde Kundenanforderungen auf höchstem Niveau auf dem türkischen und globalen Markt erfüllen.",
-    "missionDetailed": "Zum Erfolg unserer Kunden beizutragen, indem wir umweltfreundliche und innovative Verpackungslösungen anbieten, ohne unsere Prinzipien von Qualität, Geschwindigkeit und Zuverlässigkeit zu gefährden.",
+    "statsTitle": "Bakırcılar Ambalaj in Zahlen",
     "timeline": {
       "milestone1": {
         "title": "Gründung",
@@ -155,7 +157,7 @@
       },
       "milestone2": {
         "title": "Wachstum",
-        "description": "Wir stärkten unsere Position in der Branche mit modernen Produktionsanlagen und breitem Produktsortiment"
+        "description": "Wir erweiterten unsere Tätigkeit auf die Betreuung von Kunden an zwei Standorten"
       },
       "milestone3": {
         "title": "Diversifizierung",
@@ -163,7 +165,7 @@
       },
       "milestone4": {
         "title": "Digitale Transformation",
-        "description": "Wir investieren in die Zukunft mit umweltfreundlicher Produktion und digitalen Lösungen"
+        "description": "Wir führten unser B2B- und Aktionsportal für Firmenkunden ein"
       }
     }
   },
@@ -172,6 +174,12 @@
     "employees": "Mitarbeiter",
     "experience": "Jahre Erfahrung",
     "customers": "Zufriedene Kunden"
+  },
+  "facts": {
+    "founded": "Gründungsjahr",
+    "productGroups": "Produktgruppen",
+    "locations": "Standorte",
+    "languages": "Sprachoptionen"
   },
   "contactPage": {
     "title": "Kontakt",
@@ -184,6 +192,10 @@
     "sendMessage": "Nachricht senden",
     "mapPlaceholder": "Karte wird hier hinzugefügt",
     "workingHours": "Arbeitszeiten",
+    "hoursNote": "Bitte bestätigen Sie die aktuellen Öffnungszeiten vor Ihrem Besuch telefonisch.",
+    "directContact": "Kontaktieren Sie uns für Ihr Anliegen direkt per E-Mail, Telefon oder WhatsApp.",
+    "legalNotice": "Bitte lesen Sie vor der Übermittlung personenbezogener Daten unseren Datenschutz- und KVKK-Hinweis.",
+    "legalName": "Rechtlicher Firmenname",
     "weekdays": "Wochentage",
     "saturday": "Samstag",
     "sunday": "Sonntag",

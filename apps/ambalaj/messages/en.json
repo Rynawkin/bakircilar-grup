@@ -1,6 +1,6 @@
 {
   "campaign": {
-    "label": "Campaign Deals"
+    "label": "Bakırcılar B2B and Campaign Portal"
   },
   "nav": {
     "home": "Home",
@@ -9,15 +9,16 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "Bakırcılar Packaging",
-    "subtitle": "Packaging Solutions",
-    "description": "High-quality and environmentally friendly packaging products manufactured with modern technology",
+    "title": "Bakırcılar Ambalaj",
+    "subtitle": "Corporate Supply Solutions",
+    "description": "We bring packaging, cleaning, paper, hygiene, food and office consumables together for businesses through a single supplier",
     "primaryCTA": "Our Products",
     "secondaryCTA": "Contact"
   },
   "products": {
     "title": "Our Product Categories",
-    "subtitle": "We offer suitable solutions for your needs with our wide product range for different sectors",
+    "subtitle": "We organize recurring business supplies under six main product groups",
+    "view": "View products",
     "packaging": {
       "title": "Packaging Products",
       "description": "Packaging products, foam plates, aluminum containers, plastic containers, bags and pouches",
@@ -72,26 +73,29 @@
   },
   "features": {
     "quality": {
-      "title": "Quality Assurance",
-      "description": "We guarantee the highest quality with our ISO certified production processes"
+      "title": "Corporate Supply",
+      "description": "We bring different consumable groups together for businesses through a single supply arrangement"
     },
     "eco": {
-      "title": "Eco-Friendly",
-      "description": "We offer sustainable and recyclable packaging solutions"
+      "title": "Established Brand Network",
+      "description": "We connect corporate customers with products from brands with which we have supply and dealership relationships"
     },
     "delivery": {
-      "title": "Fast Delivery",
-      "description": "We provide fast and secure delivery service throughout Turkey"
+      "title": "Two Locations",
+      "description": "From two locations, we serve business needs across packaging, cleaning, hygiene, food and office consumables"
     }
   },
   "cta": {
     "title": "Contact Us for Your Packaging Needs",
-    "subtitle": "Our expert team is ready to offer you the most suitable solution",
+    "subtitle": "Contact us directly about product groups and corporate supply",
     "button": "Get in Touch"
   },
   "footer": {
-    "description": "We are a leading company in the industry with modern packaging solutions and production.",
+    "description": "Since 1990, we have supplied businesses with packaging, cleaning, paper, hygiene, food and office consumables.",
     "quickLinks": "Quick Links",
+    "corporate": "Corporate",
+    "privacy": "Privacy and KVKK Notice",
+    "terms": "Terms of Use",
     "companies": "Our Companies",
     "rights": "All rights reserved"
   },
@@ -105,18 +109,18 @@
   },
   "aboutPage": {
     "title": "About Us",
-    "subtitle": "Your trusted solution partner in the packaging industry since 1990",
+    "subtitle": "Packaging and consumables supply for businesses since 1990",
     "story": {
       "title": "Our Story",
-      "paragraph1": "Founded in 1990, Bakırcılar Packaging has been operating in the packaging industry for over 30 years. We offer services in a wide range from packaging products to industrial cleaning products, from stationery products to fast-moving consumer goods.",
-      "paragraph2": "By prioritizing customer satisfaction, we have become a trusted brand in the industry with quality products and on-time delivery guarantee. With our experienced staff and modern production facilities, we provide solutions for projects of all sizes.",
-      "paragraph3": "With our environmentally friendly production approach, use of recyclable materials and sustainable business model, we act thinking about both today and the future."
+      "paragraph1": "Founded in 1990, Bakırcılar Ambalaj provides wholesale supply services for the packaging and consumable needs of businesses. We bring packaging, cleaning, paper, hygiene, food and office consumables together in one place.",
+      "paragraph2": "Operating from two locations, our company helps businesses manage different product groups through a clear and organized supply process.",
+      "paragraph3": "Brands with which we have supply and dealership relationships include Hayat Kimya, Diversey, Green (İlmak Makina), Kurukahveci Mehmet Efendi, Doğuş Çay and Bencup."
     },
-    "visionDetailed": "To become a leading production and supply company in the packaging industry by meeting constantly changing customer demands at the highest level in the Turkish and global market.",
-    "missionDetailed": "To contribute to our customers' success by offering environmentally friendly and innovative packaging solutions without compromising our principles of quality, speed and reliability.",
+    "visionDetailed": "To provide a clear and accessible corporate service through which businesses can manage different consumable needs in one supply arrangement.",
+    "missionDetailed": "To bring packaging, cleaning, paper, hygiene, food and office consumables together for businesses through a clear product structure and direct communication.",
     "valuesTitle": "Our Values",
     "valuesSubtitle": "The core principles that shape our business processes",
-    "statsSubtitle": "We are pioneers in the industry with years of experience and our strong team",
+    "statsSubtitle": "Since 1990, we have provided wholesale supply services to businesses from two locations",
     "timelineTag": "Our Journey",
     "timelineTitle": "Our Growth Story",
     "timeline": {
@@ -126,7 +130,7 @@
       },
       "milestone2": {
         "title": "Expansion",
-        "description": "We strengthened our position in the industry with modern production facilities and wide product range"
+        "description": "We expanded our operations to serve customers from two locations"
       },
       "milestone3": {
         "title": "Diversification",
@@ -134,42 +138,48 @@
       },
       "milestone4": {
         "title": "Innovation",
-        "description": "We invest in the future with environmentally friendly production and digital solutions"
+        "description": "We introduced our B2B and campaign portal for corporate customers"
       }
     },
     "valuesItems": {
       "innovation": {
-        "title": "Innovation & R&D",
-        "description": "We develop innovative products that make a difference in the industry with our R&D studies"
+        "title": "Product and Category Knowledge",
+        "description": "We present products for different areas of use under clear categories"
       },
       "reliability": {
-        "title": "Reliability",
-        "description": "By prioritizing customer satisfaction, we have become a trusted brand in the industry"
+        "title": "Since 1990",
+        "description": "Since 1990, we have served the packaging and consumable supply needs of businesses"
       },
       "quality": {
-        "title": "Quality Assurance",
-        "description": "We meet customer expectations at the highest standards with our ISO certified production processes"
+        "title": "Supply Organization",
+        "description": "We bring recurring business consumables together through a single supply point"
       },
       "sustainability": {
-        "title": "Sustainability",
-        "description": "We build the future with an environmentally friendly production approach that respects nature and society"
+        "title": "Brand Relationships",
+        "description": "We provide corporate customers with products from brands with which we have supply and dealership relationships"
       },
       "humanFocused": {
-        "title": "Human-Focused Approach",
-        "description": "We achieve success with our dynamic, innovation-oriented team and support career development"
+        "title": "Business-Focused Approach",
+        "description": "We present product groups in a clear structure suited to business purchasing processes"
       },
       "excellence": {
-        "title": "Excellence",
-        "description": "We work with on-time delivery guarantee, aiming for excellence in every project"
+        "title": "Direct Communication",
+        "description": "We communicate directly with businesses throughout product selection and ordering"
       }
     },
-    "statsTitle": "Bakırcılar Packaging in Numbers"
+    "statsTitle": "Bakırcılar Ambalaj in Numbers"
   },
   "stats": {
     "companies": "Product Categories",
     "employees": "Employees",
     "experience": "Years of Experience",
     "customers": "Happy Customers"
+  },
+  "facts": {
+    "founded": "Year founded",
+    "productGroups": "Product groups",
+    "locations": "Locations",
+    "languages": "Language options"
   },
   "contactPage": {
     "title": "Contact",
@@ -182,6 +192,10 @@
     "sendMessage": "Send Message",
     "mapPlaceholder": "Map will be added here",
     "workingHours": "Working Hours",
+    "hoursNote": "Please confirm current opening hours by phone before visiting.",
+    "directContact": "Contact us directly by email, phone or WhatsApp for your request.",
+    "legalNotice": "Please read our Privacy and KVKK Notice before sending personal data.",
+    "legalName": "Legal business name",
     "weekdays": "Weekdays",
     "saturday": "Saturday",
     "sunday": "Sunday",

@@ -1,6 +1,6 @@
 {
   "campaign": {
-    "label": "Kampanyalı Ürünler"
+    "label": "Bakırcılar B2B ve Kampanya Portalı"
   },
   "nav": {
     "home": "Ana Sayfa",
@@ -10,14 +10,15 @@
   },
   "hero": {
     "title": "Bakırcılar Ambalaj",
-    "subtitle": "Ambalaj Çözümleri",
-    "description": "Modern teknoloji ile üretilen, kaliteli ve çevre dostu ambalaj ürünleri",
+    "subtitle": "Kurumsal Tedarik Çözümleri",
+    "description": "Ambalaj, temizlik, kağıt, hijyen, gıda ve ofis sarf ürünlerini işletmeler için tek tedarik noktasında buluşturuyoruz",
     "primaryCTA": "Ürünlerimiz",
     "secondaryCTA": "İletişim"
   },
   "products": {
     "title": "Ürün Gruplarımız",
-    "subtitle": "Farklı sektörlere yönelik geniş ürün yelpazemiz ile ihtiyaçlarınıza uygun çözümler sunuyoruz",
+    "subtitle": "İşletmelerin düzenli sarf ihtiyaçlarını altı ana ürün grubunda bir araya getiriyoruz",
+    "view": "Ürünleri inceleyin",
     "packaging": {
       "title": "Ambalaj Ürünleri",
       "description": "Paketleme ürünleri, köpük tabaklar, alüminyum kaplar, plastik kaplar, poşetler ve çantalar",
@@ -72,26 +73,29 @@
   },
   "features": {
     "quality": {
-      "title": "Kalite Güvencesi",
-      "description": "ISO sertifikalı üretim süreçlerimiz ile en yüksek kaliteyi garanti ediyoruz"
+      "title": "Kurumsal Tedarik",
+      "description": "Farklı sarf gruplarını işletmeler için tek tedarik düzeninde bir araya getiriyoruz"
     },
     "eco": {
-      "title": "Çevre Dostu",
-      "description": "Sürdürülebilir ve geri dönüştürülebilir ambalaj çözümleri sunuyoruz"
+      "title": "Güçlü Marka Ağı",
+      "description": "Tedarik ve bayilik ilişkilerimiz bulunan markaların ürünlerini kurumsal müşterilerle buluşturuyoruz"
     },
     "delivery": {
-      "title": "Hızlı Teslimat",
-      "description": "Türkiye genelinde hızlı ve güvenli teslimat hizmeti sağlıyoruz"
+      "title": "İki Lokasyon",
+      "description": "İki lokasyondan ambalaj, temizlik, hijyen, gıda ve ofis sarf ihtiyaçlarına hizmet veriyoruz"
     }
   },
   "cta": {
     "title": "Ambalaj İhtiyaçlarınız İçin Bize Ulaşın",
-    "subtitle": "Uzman ekibimiz size en uygun çözümü sunmaya hazır",
+    "subtitle": "Ürün grupları ve kurumsal tedarik için bizimle doğrudan iletişime geçin",
     "button": "İletişime Geçin"
   },
   "footer": {
-    "description": "Modern ambalaj çözümleri ve üretimi ile sektörde öncü firmayız.",
+    "description": "1990'dan beri işletmelerin ambalaj, temizlik, kağıt, hijyen, gıda ve ofis sarf ürünleri tedarikçisiyiz.",
     "quickLinks": "Hızlı Bağlantılar",
+    "corporate": "Kurumsal",
+    "privacy": "Gizlilik ve KVKK",
+    "terms": "Kullanım Koşulları",
     "companies": "Şirketlerimiz",
     "rights": "Tüm hakları saklıdır"
   },
@@ -105,44 +109,44 @@
   },
   "aboutPage": {
     "title": "Hakkımızda",
-    "subtitle": "1990'dan beri ambalaj sektöründe güvenilir çözüm ortağınız",
+    "subtitle": "1990'dan beri işletmelere yönelik ambalaj ve sarf ürünleri tedariki",
     "story": {
       "title": "Hikayemiz",
-      "paragraph1": "Temelleri 1990 yılında atılan Bakırcılar Ambalaj, 30 yılı aşkın süredir ambalaj sektöründe faaliyet göstermektedir. Ambalaj ürünlerinden endüstriyel temizlik ürünlerine, kırtasiye ürünlerinden hızlı tüketim ürünlerine kadar geniş bir yelpazede hizmet sunuyoruz.",
-      "paragraph2": "Müşteri memnuniyetini ön planda tutarak, kaliteli ürünler ve zamanında teslimat garantisi ile sektörde güvenilir bir marka haline geldik. Deneyimli kadromuz ve modern üretim tesislerimizle, her ölçekte projeye çözüm üretiyoruz.",
-      "paragraph3": "Çevre dostu üretim anlayışımız, geri dönüşümlü malzeme kullanımı ve sürdürülebilir iş modelimizle hem bugünü hem de geleceği düşünerek hareket ediyoruz."
+      "paragraph1": "Temelleri 1990 yılında atılan Bakırcılar Ambalaj, işletmelerin ambalaj ve sarf ürünleri ihtiyaçlarına yönelik toptan tedarik hizmeti verir. Ambalaj, temizlik, kağıt, hijyen, gıda ve ofis sarf ürünlerini tek noktada bir araya getirir.",
+      "paragraph2": "İki lokasyonda faaliyet gösteren şirketimiz, işletmelerin farklı ürün gruplarını düzenli ve anlaşılır bir tedarik sürecinde yönetmesine yardımcı olur.",
+      "paragraph3": "Tedarik ve bayilik ilişkilerimiz bulunan markalar arasında Hayat Kimya, Diversey, Green (İlmak Makina), Kurukahveci Mehmet Efendi, Doğuş Çay ve Bencup yer alır."
     },
-    "visionDetailed": "Türkiye ve dünya piyasasında sürekli değişen müşteri taleplerini en üst seviyede karşılayarak, ambalaj sektöründe lider üretim ve tedarik firması olmak.",
-    "missionDetailed": "Kalite, hız ve güvenilirlik ilkelerimizden ödün vermeden, çevre dostu ve yenilikçi ambalaj çözümleri sunarak müşterilerimizin başarısına katkı sağlamak.",
+    "visionDetailed": "İşletmelerin farklı sarf ihtiyaçlarını tek tedarik düzeninde yönetebildiği, açık ve erişilebilir bir kurumsal hizmet sunmak.",
+    "missionDetailed": "Ambalaj, temizlik, kağıt, hijyen, gıda ve ofis sarf ürünlerini işletmeler için anlaşılır bir ürün yapısı ve doğrudan iletişimle bir araya getirmek.",
     "valuesTitle": "Değerlerimiz",
     "valuesSubtitle": "İş süreçlerimizi şekillendiren temel ilkelerimiz",
-    "statsSubtitle": "Yılların deneyimi ve güçlü ekibimizle sektörde öncü konumdayız",
+    "statsSubtitle": "1990'dan beri iki lokasyonda, işletmelere yönelik toptan tedarik hizmeti veriyoruz",
     "timelineTag": "Yolculuğumuz",
     "timelineTitle": "Büyüme Hikayemiz",
     "valuesItems": {
       "innovation": {
-        "title": "İnovasyon & AR-GE",
-        "description": "Ar-Ge çalışmalarımızla sektörde fark yaratan, yenilikçi ürünler geliştiriyoruz"
+        "title": "Ürün ve Kategori Bilgisi",
+        "description": "Farklı kullanım alanlarına yönelik ürünleri anlaşılır kategoriler altında sunuyoruz"
       },
       "reliability": {
-        "title": "Güvenilirlik",
-        "description": "Müşteri memnuniyetini ön planda tutarak, sektörde güvenilir bir marka olduk"
+        "title": "1990'dan Beri",
+        "description": "1990'dan beri işletmelerin ambalaj ve sarf ürünleri tedarik ihtiyaçlarına hizmet veriyoruz"
       },
       "quality": {
-        "title": "Kalite Güvencesi",
-        "description": "ISO sertifikalı üretim süreçlerimizle müşteri beklentilerini en yüksek standartlarda karşılıyoruz"
+        "title": "Tedarik Düzeni",
+        "description": "İşletmelerin düzenli sarf ihtiyaçlarını tek tedarik noktasında bir araya getiriyoruz"
       },
       "sustainability": {
-        "title": "Sürdürülebilirlik",
-        "description": "Doğaya ve topluma saygılı, çevre dostu üretim anlayışıyla geleceği inşa ediyoruz"
+        "title": "Marka İlişkileri",
+        "description": "Tedarik ve bayilik ilişkilerimiz bulunan markaların ürünlerini kurumsal müşterilere sunuyoruz"
       },
       "humanFocused": {
-        "title": "İnsan Odaklı Yaklaşım",
-        "description": "Dinamik, yeniliklere açık ekibimizle başarıya ulaşıyor, kariyer gelişimini destekliyoruz"
+        "title": "İşletme Odaklı Yaklaşım",
+        "description": "Ürün gruplarını işletmelerin satın alma süreçlerine uygun ve anlaşılır biçimde sunuyoruz"
       },
       "excellence": {
-        "title": "Mükemmellik",
-        "description": "Her projede mükemmeli hedefleyerek, zamanında teslimat garantisi ile çalışıyoruz"
+        "title": "Açık İletişim",
+        "description": "Ürün ve sipariş süreçlerinde işletmelerle doğrudan iletişim kuruyoruz"
       }
     },
     "statsTitle": "Rakamlarla Bakırcılar Ambalaj",
@@ -153,7 +157,7 @@
       },
       "milestone2": {
         "title": "Büyüme",
-        "description": "Modern üretim tesisleri ve geniş ürün gamımızla sektörde güçlendik"
+        "description": "İki lokasyonda hizmet verecek şekilde faaliyet alanımızı geliştirdik"
       },
       "milestone3": {
         "title": "Genişleme",
@@ -161,7 +165,7 @@
       },
       "milestone4": {
         "title": "Dijitalleşme",
-        "description": "Çevre dostu üretim ve dijital çözümlerle geleceğe yatırım yapıyoruz"
+        "description": "Kurumsal müşteriler için B2B ve kampanya portalımızı devreye aldık"
       }
     }
   },
@@ -170,6 +174,12 @@
     "employees": "Çalışan",
     "experience": "Yıllık Tecrübe",
     "customers": "Mutlu Müşteri"
+  },
+  "facts": {
+    "founded": "Kuruluş yılı",
+    "productGroups": "Ürün grubu",
+    "locations": "Lokasyon",
+    "languages": "Dil seçeneği"
   },
   "contactPage": {
     "title": "İletişim",
@@ -182,6 +192,10 @@
     "sendMessage": "Mesaj Gönderin",
     "mapPlaceholder": "Harita buraya eklenecek",
     "workingHours": "Çalışma Saatleri",
+    "hoursNote": "Ziyaret öncesinde güncel çalışma saatlerini telefonla teyit edebilirsiniz.",
+    "directContact": "Talebiniz için e-posta, telefon veya WhatsApp üzerinden doğrudan bize ulaşın.",
+    "legalNotice": "Kişisel veri iletmeden önce Gizlilik ve KVKK metnimizi okuyun.",
+    "legalName": "Ticari unvan",
     "weekdays": "Hafta İçi",
     "saturday": "Cumartesi",
     "sunday": "Pazar",

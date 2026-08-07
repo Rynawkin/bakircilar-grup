@@ -2,8 +2,8 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ContactForm } from '@bakircilar/ui';
-import { useTranslations } from 'next-intl';
+import Link from 'next/link';
+import { useLocale, useTranslations } from 'next-intl';
 import { CONTACT_INFO, LOCATIONS } from '../../../lib/constants';
 import { Icon } from '../../../components/icons';
 
@@ -33,29 +33,13 @@ function WhatsAppGlyph({ className }: { className?: string }) {
 
 export default function ContactPage() {
   const t = useTranslations();
-
-  const handleSubmit = async (data: any) => {
-    const response = await fetch('/api/contact', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data)
-    });
-    if (!response.ok) {
-      throw new Error('Failed to send message');
-    }
-  };
+  const locale = useLocale();
 
   const methods = [
     { icon: 'mail', title: t('contactPage.email'), value: CONTACT_INFO.email, href: `mailto:${CONTACT_INFO.email}` },
     { icon: 'phone', title: t('contactPage.phone'), value: CONTACT_INFO.phone, href: `tel:${CONTACT_INFO.phone.replace(/[^\d+]/g, '')}` },
     { icon: 'pin', title: t('contactPage.address'), value: CONTACT_INFO.address, href: null as string | null },
     { icon: 'whatsapp', title: t('contactPage.whatsapp'), value: t('contactPage.whatsappMessage'), href: `https://wa.me/${CONTACT_INFO.whatsapp}` }
-  ];
-
-  const hours = [
-    { day: t('contactPage.weekdays'), time: '09:00 – 18:00', closed: false },
-    { day: t('contactPage.saturday'), time: '09:00 – 14:00', closed: false },
-    { day: t('contactPage.sunday'), time: t('contactPage.closed'), closed: true }
   ];
 
   return (
@@ -117,33 +101,59 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Form + locations */}
+      {/* Direct contact + locations */}
       <section className="bg-brand-sand py-24">
         <div className="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-2 lg:px-8">
-          {/* Form */}
+          {/* Direct contact */}
           <motion.div {...fadeUp}>
             <h2 className="font-display text-3xl font-bold text-brand-navy md:text-4xl">
               {t('contactPage.sendMessage')}
             </h2>
-            <div className="mt-8 rounded-2xl border border-stone-200/80 bg-white p-8">
-              <ContactForm
-                onSubmit={handleSubmit}
-                labels={{
-                  name: t('contactForm.name'),
-                  email: t('contactForm.email'),
-                  phone: t('contactForm.phone'),
-                  subject: t('contactForm.subject'),
-                  message: t('contactForm.message'),
-                  submit: t('contactForm.submit'),
-                  submitting: t('contactForm.submitting'),
-                  success: t('contactForm.success'),
-                  error: t('contactForm.error')
-                }}
-              />
+            <div className="mt-8 rounded-2xl border border-stone-200/80 bg-white p-8 md:p-10">
+              <p className="max-w-xl text-base leading-relaxed text-stone-600">
+                {t('contactPage.directContact')}
+              </p>
+              <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+                <a
+                  href={`tel:${CONTACT_INFO.phoneE164}`}
+                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-brand-navy px-5 py-3 text-sm font-semibold text-white transition hover:bg-brand-navy/90 focus:outline-none focus:ring-2 focus:ring-brand-copper focus:ring-offset-2"
+                >
+                  <Icon name="phone" className="h-4 w-4" />
+                  {CONTACT_INFO.phone}
+                </a>
+                <a
+                  href={`mailto:${CONTACT_INFO.email}`}
+                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border border-brand-navy/20 px-5 py-3 text-sm font-semibold text-brand-navy transition hover:border-brand-copper hover:text-brand-copper focus:outline-none focus:ring-2 focus:ring-brand-copper focus:ring-offset-2"
+                >
+                  <Icon name="mail" className="h-4 w-4" />
+                  {CONTACT_INFO.email}
+                </a>
+                <a
+                  href={`https://wa.me/${CONTACT_INFO.whatsapp}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border border-brand-navy/20 px-5 py-3 text-sm font-semibold text-brand-navy transition hover:border-brand-copper hover:text-brand-copper focus:outline-none focus:ring-2 focus:ring-brand-copper focus:ring-offset-2"
+                >
+                  <WhatsAppGlyph className="h-4 w-4" />
+                  {t('contactPage.whatsapp')}
+                </a>
+              </div>
+              <div className="mt-8 border-t border-stone-100 pt-6 text-sm leading-relaxed text-stone-500">
+                <p>
+                  <span className="font-medium text-brand-navy">{t('contactPage.legalName')}:</span>{' '}
+                  {CONTACT_INFO.legalName}
+                </p>
+                <p className="mt-3">
+                  {t('contactPage.legalNotice')}{' '}
+                  <Link href={`/${locale}/privacy`} className="font-medium text-brand-navy underline decoration-brand-copper/50 underline-offset-4 hover:text-brand-copper">
+                    {t('footer.privacy')}
+                  </Link>
+                </p>
+              </div>
             </div>
           </motion.div>
 
-          {/* Locations + hours */}
+          {/* Locations + availability note */}
           <motion.div {...fadeUp} className="space-y-6">
             {LOCATIONS.map((loc) => (
               <div key={loc.name} className="overflow-hidden rounded-2xl border border-stone-200/80 bg-white">
@@ -175,14 +185,7 @@ export default function ContactPage() {
                 </span>
                 <h3 className="font-display text-base font-semibold text-brand-navy">{t('contactPage.workingHours')}</h3>
               </div>
-              <dl className="mt-4 space-y-2.5 text-sm">
-                {hours.map((h) => (
-                  <div key={h.day} className="flex items-center justify-between border-b border-stone-100 pb-2.5 last:border-0 last:pb-0">
-                    <dt className="text-stone-600">{h.day}</dt>
-                    <dd className={h.closed ? 'font-medium text-stone-400' : 'font-medium text-brand-navy'}>{h.time}</dd>
-                  </div>
-                ))}
-              </dl>
+              <p className="mt-4 text-sm leading-relaxed text-stone-600">{t('contactPage.hoursNote')}</p>
             </div>
           </motion.div>
         </div>

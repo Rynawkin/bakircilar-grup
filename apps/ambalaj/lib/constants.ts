@@ -1,9 +1,13 @@
 export const CONTACT_INFO = {
+  brandName: 'Bakırcılar Ambalaj',
+  legalName: 'Necati Uçarer Bakırcılar Ambalaj',
+  website: 'https://www.bakircilarambalaj.com',
   email: 'info@bakircilarambalaj.com',
-  phone: '+90 (850) 756 62 67',
+  phone: '+90 (264) 614 67 77',
+  phoneE164: '+902646146777',
   whatsapp: '905301783570',
   // Merkez adres (footer ve genel kullanım için tek satır)
-  address: 'Rasimpaşa, Atatürk Blv. Cami No:5 No:75/A, 54300 Hendek / Sakarya'
+  address: 'Rasimpaşa Mah., Atatürk Blv. Cami No:5, No:75/A, 54300 Hendek / Sakarya'
 };
 
 // Lokasyonlar — iletişim sayfasında adres + gömülü harita olarak listelenir.
@@ -11,8 +15,8 @@ export const CONTACT_INFO = {
 export const LOCATIONS = [
   {
     name: 'Merkez',
-    address: 'Rasimpaşa, Atatürk Blv. Cami No:5 No:75/A, 54300 Hendek / Sakarya',
-    mapsQuery: 'Atatürk Bulvarı, 54300 Hendek/Sakarya'
+    address: 'Rasimpaşa Mah., Atatürk Blv. Cami No:5, No:75/A, 54300 Hendek / Sakarya',
+    mapsQuery: 'Rasimpaşa Mahallesi Atatürk Bulvarı Cami No 5 No 75 A Hendek Sakarya'
   },
   {
     name: 'Topça Şube',

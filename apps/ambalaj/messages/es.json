@@ -1,6 +1,6 @@
 {
   "campaign": {
-    "label": "Ofertas de Campaña"
+    "label": "Portal B2B y de campañas de Bakırcılar"
   },
   "nav": {
     "home": "Inicio",
@@ -9,15 +9,16 @@
     "contact": "Contacto"
   },
   "hero": {
-    "title": "Bakırcılar Embalaje",
-    "subtitle": "Soluciones de Embalaje",
-    "description": "Productos de embalaje de alta calidad y respetuosos con el medio ambiente fabricados con tecnología moderna",
+    "title": "Bakırcılar Ambalaj",
+    "subtitle": "Suministro para Empresas",
+    "description": "Reunimos consumibles de embalaje, limpieza, papel, higiene, alimentación y oficina para empresas con un único proveedor",
     "primaryCTA": "Nuestros Productos",
     "secondaryCTA": "Contacto"
   },
   "products": {
     "title": "Nuestras Categorías de Productos",
-    "subtitle": "Ofrecemos soluciones adecuadas para sus necesidades con nuestra amplia gama de productos para diferentes sectores",
+    "subtitle": "Organizamos las necesidades recurrentes de las empresas en seis grupos principales de productos",
+    "view": "Ver productos",
     "packaging": {
       "title": "Productos de Embalaje",
       "description": "Productos de embalaje, platos de espuma, recipientes de aluminio, recipientes de plástico, bolsas y sobres",
@@ -72,26 +73,29 @@
   },
   "features": {
     "quality": {
-      "title": "Garantía de Calidad",
-      "description": "Garantizamos la más alta calidad con nuestros procesos de producción certificados ISO"
+      "title": "Suministro para Empresas",
+      "description": "Reunimos distintos grupos de consumibles para empresas en una única estructura de suministro"
     },
     "eco": {
-      "title": "Ecológico",
-      "description": "Ofrecemos soluciones de embalaje sostenibles y reciclables"
+      "title": "Red de Marcas Consolidada",
+      "description": "Ofrecemos a clientes corporativos productos de marcas con las que mantenemos relaciones de suministro y distribución"
     },
     "delivery": {
-      "title": "Entrega Rápida",
-      "description": "Proporcionamos servicio de entrega rápida y segura en toda Turquía"
+      "title": "Dos Ubicaciones",
+      "description": "Desde dos ubicaciones atendemos necesidades de embalaje, limpieza, higiene, alimentación y consumibles de oficina"
     }
   },
   "cta": {
     "title": "Contáctenos para Sus Necesidades de Embalaje",
-    "subtitle": "Nuestro equipo de expertos está listo para ofrecerle la solución más adecuada",
+    "subtitle": "Contáctenos directamente para consultar grupos de productos y suministro corporativo",
     "button": "Ponerse en Contacto"
   },
   "footer": {
-    "description": "Somos una empresa líder en la industria con soluciones de embalaje modernas y producción.",
+    "description": "Desde 1990 suministramos a empresas productos de embalaje, limpieza, papel, higiene, alimentación y consumibles de oficina.",
     "quickLinks": "Enlaces Rápidos",
+    "corporate": "Empresa",
+    "privacy": "Privacidad y aviso KVKK",
+    "terms": "Condiciones de uso",
     "companies": "Nuestras Empresas",
     "rights": "Todos los derechos reservados"
   },
@@ -105,49 +109,47 @@
   },
   "aboutPage": {
     "title": "Sobre Nosotros",
-    "subtitle": "Su socio de soluciones de confianza en la industria del embalaje desde 1990",
+    "subtitle": "Suministro de embalaje y consumibles para empresas desde 1990",
     "story": {
       "title": "Nuestra Historia",
-      "paragraph1": "Fundada en 1990, Bakırcılar Embalaje ha estado operando en la industria del embalaje durante más de 30 años. Ofrecemos servicios en una amplia gama desde productos de embalaje hasta productos de limpieza industrial, desde productos de papelería hasta bienes de consumo de rápido movimiento.",
-      "paragraph2": "Al priorizar la satisfacción del cliente, nos hemos convertido en una marca de confianza en la industria con productos de calidad y garantía de entrega puntual. Con nuestro personal experimentado e instalaciones de producción modernas, proporcionamos soluciones para proyectos de todos los tamaños.",
-      "paragraph3": "Con nuestro enfoque de producción respetuoso con el medio ambiente, uso de materiales reciclables y modelo de negocio sostenible, actuamos pensando tanto en el presente como en el futuro."
+      "paragraph1": "Fundada en 1990, Bakırcılar Ambalaj presta servicios de suministro mayorista para las necesidades de embalaje y consumibles de las empresas. Reunimos productos de embalaje, limpieza, papel, higiene, alimentación y consumibles de oficina en un solo lugar.",
+      "paragraph2": "Nuestra empresa opera desde dos ubicaciones y ayuda a las empresas a gestionar distintos grupos de productos mediante un proceso de suministro claro y organizado.",
+      "paragraph3": "Entre las marcas con las que mantenemos relaciones de suministro y distribución se encuentran Hayat Kimya, Diversey, Green (İlmak Makina), Kurukahveci Mehmet Efendi, Doğuş Çay y Bencup."
     },
-    "visionDetailed": "Convertirse en una empresa líder de producción y suministro en la industria del embalaje satisfaciendo las demandas de clientes en constante cambio al más alto nivel en el mercado turco y global.",
-    "missionDetailed": "Contribuir al éxito de nuestros clientes ofreciendo soluciones de embalaje respetuosas con el medio ambiente e innovadoras sin comprometer nuestros principios de calidad, velocidad y confiabilidad.",
+    "visionDetailed": "Ofrecer un servicio corporativo claro y accesible que permita a las empresas gestionar distintas necesidades de consumibles en una única estructura de suministro.",
+    "missionDetailed": "Reunir productos de embalaje, limpieza, papel, higiene, alimentación y consumibles de oficina para empresas con una estructura de productos clara y comunicación directa.",
     "valuesTitle": "Nuestros Valores",
     "valuesSubtitle": "Los principios fundamentales que dan forma a nuestros procesos comerciales",
-    "statsSubtitle": "Somos pioneros en la industria con años de experiencia y nuestro sólido equipo",
+    "statsSubtitle": "Desde 1990 prestamos servicios de suministro mayorista a empresas desde dos ubicaciones",
     "timelineTag": "Nuestro Viaje",
     "timelineTitle": "Nuestra Historia de Crecimiento",
     "valuesItems": {
       "innovation": {
-        "title": "Innovación e I+D",
-        "description": "Desarrollamos productos innovadores que marcan la diferencia en la industria con nuestros estudios de I+D"
+        "title": "Conocimiento de Productos y Categorías",
+        "description": "Presentamos productos para distintos usos dentro de categorías claras"
       },
       "reliability": {
-        "title": "Confiabilidad",
-        "description": "Al priorizar la satisfacción del cliente, nos hemos convertido en una marca de confianza en la industria"
+        "title": "Desde 1990",
+        "description": "Desde 1990 atendemos las necesidades de suministro de embalaje y consumibles de las empresas"
       },
       "quality": {
-        "title": "Garantía de Calidad",
-        "description": "Cumplimos con las expectativas del cliente en los más altos estándares con nuestros procesos de producción certificados ISO"
+        "title": "Organización del Suministro",
+        "description": "Reunimos los consumibles recurrentes de las empresas en un único punto de suministro"
       },
       "sustainability": {
-        "title": "Sostenibilidad",
-        "description": "Construimos el futuro con un enfoque de producción respetuoso con el medio ambiente que respeta la naturaleza y la sociedad"
+        "title": "Relaciones con Marcas",
+        "description": "Ofrecemos a clientes corporativos productos de marcas con las que mantenemos relaciones de suministro y distribución"
       },
       "humanFocused": {
-        "title": "Enfoque Centrado en las Personas",
-        "description": "Logramos el éxito con nuestro equipo dinámico orientado a la innovación y apoyamos el desarrollo profesional"
+        "title": "Enfoque Orientado a Empresas",
+        "description": "Presentamos los grupos de productos de forma clara y adaptada a los procesos de compra empresariales"
       },
       "excellence": {
-        "title": "Excelencia",
-        "description": "Trabajamos con garantía de entrega puntual, aspirando a la excelencia en cada proyecto"
+        "title": "Comunicación Directa",
+        "description": "Mantenemos comunicación directa con las empresas durante la selección de productos y los pedidos"
       }
     },
-    "statsTitle": "Bakırcılar Embalaje en Números",
-    "visionDetailed": "Convertirse en una empresa líder de producción y suministro en la industria del embalaje satisfaciendo las demandas de clientes en constante cambio al más alto nivel en el mercado turco y global.",
-    "missionDetailed": "Contribuir al éxito de nuestros clientes ofreciendo soluciones de embalaje respetuosas con el medio ambiente e innovadoras sin comprometer nuestros principios de calidad, velocidad y confiabilidad.",
+    "statsTitle": "Bakırcılar Ambalaj en Números",
     "timeline": {
       "milestone1": {
         "title": "Fundación",
@@ -155,7 +157,7 @@
       },
       "milestone2": {
         "title": "Crecimiento",
-        "description": "Fortalecimos nuestra posición en la industria con instalaciones de producción modernas y amplia gama de productos"
+        "description": "Ampliamos nuestra actividad para atender a clientes desde dos ubicaciones"
       },
       "milestone3": {
         "title": "Diversificación",
@@ -163,7 +165,7 @@
       },
       "milestone4": {
         "title": "Transformación Digital",
-        "description": "Invertimos en el futuro con producción respetuosa con el medio ambiente y soluciones digitales"
+        "description": "Pusimos en marcha nuestro portal B2B y de campañas para clientes corporativos"
       }
     }
   },
@@ -172,6 +174,12 @@
     "employees": "Empleados",
     "experience": "Años de Experiencia",
     "customers": "Clientes Satisfechos"
+  },
+  "facts": {
+    "founded": "Año de fundación",
+    "productGroups": "Grupos de productos",
+    "locations": "Ubicaciones",
+    "languages": "Idiomas disponibles"
   },
   "contactPage": {
     "title": "Contacto",
@@ -184,6 +192,10 @@
     "sendMessage": "Enviar Mensaje",
     "mapPlaceholder": "El mapa se agregará aquí",
     "workingHours": "Horario de Trabajo",
+    "hoursNote": "Confirme por teléfono el horario vigente antes de su visita.",
+    "directContact": "Contáctenos directamente por correo electrónico, teléfono o WhatsApp para realizar su consulta.",
+    "legalNotice": "Lea nuestro aviso de Privacidad y KVKK antes de enviar datos personales.",
+    "legalName": "Razón social",
     "weekdays": "Días de Semana",
     "saturday": "Sábado",
     "sunday": "Domingo",

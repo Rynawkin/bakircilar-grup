@@ -71,10 +71,10 @@ export default function AmbalajHomePage() {
   ];
 
   const facts = [
-    { value: '1990', label: 'Kuruluş yılı' },
-    { value: '5', label: 'Ürün grubu' },
-    { value: '2', label: 'Lokasyon' },
-    { value: '4 dil', label: 'TR · EN · DE · ES' }
+    { value: '1990', label: t('facts.founded') },
+    { value: '6', label: t('facts.productGroups') },
+    { value: '2', label: t('facts.locations') },
+    { value: '4', label: t('facts.languages') }
   ];
 
   return (
@@ -182,7 +182,7 @@ export default function AmbalajHomePage() {
                   {product.description}
                 </p>
                 <div className="mt-auto flex items-center gap-1.5 pt-6 text-sm font-medium text-brand-copper">
-                  Ürünleri gör
+                  {t('products.view')}
                   <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
                 </div>
               </motion.a>
