@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Header, Footer } from '@bakircilar/ui';
 import { usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
@@ -14,9 +14,22 @@ export const SiteLayout: React.FC<{ children: React.ReactNode; locale: string }>
   const pathname = usePathname();
   const t = useTranslations();
 
+  // Hesap makineleri yalnız Türkçe sunulur. Bilgisayarda üst menü dolu (Hesapla eklenince öbür
+  // bağlantılar iki satıra kırılıyor); bu yüzden menüde yalnız telefondaki açılır menüde görünür,
+  // bilgisayarda alt bilgideki Hızlı Bağlantılar'dadır.
+  const hesapla = locale === 'tr' ? [{ label: 'Hesapla', href: '/tr/hesapla' }] : [];
+  const [telefonMenusu, setTelefonMenusu] = useState(false);
+  useEffect(() => {
+    const guncelle = () => setTelefonMenusu(window.innerWidth < 768);   // Header'ın md kırılımı
+    guncelle();
+    window.addEventListener('resize', guncelle);
+    return () => window.removeEventListener('resize', guncelle);
+  }, []);
+
   const menuItems = [
     { label: t('nav.home'), href: `/${locale}` },
     { label: t('nav.products'), href: `/${locale}#products` },
+    ...(telefonMenusu ? hesapla : []),
     { label: t('nav.about'), href: `/${locale}/about` },
     { label: t('nav.contact'), href: `/${locale}/contact` },
     { label: t('campaign.label'), href: CAMPAIGN_URL, external: true }
@@ -28,6 +41,7 @@ export const SiteLayout: React.FC<{ children: React.ReactNode; locale: string }>
       links: [
         { label: t('nav.home'), href: `/${locale}` },
         { label: t('nav.products'), href: `/${locale}#products` },
+        ...hesapla,
         { label: t('campaign.label'), href: CAMPAIGN_URL }
       ]
     },
