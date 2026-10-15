@@ -1,0 +1,108 @@
+/* Bakırcılar hesap makineleri — ortak görünüm. Tüm kurallar .hk kapsayıcısının içindedir (sitenin geri kalanını etkilemez).
+   Renkler bakircilarambalaj.com ile aynı: lacivert #13294B, bakır #C16E3A, koyu bakır #9E5526, kum #F7F3EC. */
+.hk { --hk-lacivert: #13294B; --hk-bakir: #C16E3A; --hk-bakir-koyu: #9E5526; --hk-bakir-derin: #7A3F17; --hk-kum: #F7F3EC; --hk-murekkep: #16202E;
+      /* Sitede next/font değişkenleri (--font-inter, --font-sora) tanımlıdır; yerel ön izlemede yoksa @font-face adlarına düşer.
+         Fallback'siz var() tanımsızsa bütün font kuralını geçersiz kılar — bu yüzden her var() fallback'li yazılır. */
+      --hk-sans: var(--font-inter, "Inter"), system-ui, sans-serif; --hk-display: var(--font-sora, "Sora"), var(--font-inter, "Inter"), sans-serif;
+      max-width: 480px; margin: 0 auto; padding: 0 16px 40px; font-family: var(--hk-sans); color: var(--hk-murekkep); -webkit-text-size-adjust: 100%; }
+.hk *, .hk *::before, .hk *::after { box-sizing: border-box; }
+.hk h1, .hk h2, .hk h3, .hk p, .hk ul, .hk fieldset, .hk legend { margin: 0; padding: 0; }
+.hk :focus-visible { outline: 3px solid var(--hk-bakir); outline-offset: 2px; }
+/* Sitenin sabit üst çubuğu (~49 px) odaklanan alanın üstünü örtmesin */
+.hk input, .hk select, .hk button, .hk summary, .hk a { scroll-margin-top: 84px; }
+.hk-gizli { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+.hk-giris { padding: 22px 0 6px; }
+.hk-ust-etiket { font: 700 12px/1 var(--hk-sans); letter-spacing: .14em; text-transform: uppercase; color: var(--hk-bakir-derin); }
+.hk h1 { margin-top: 10px; font: 600 28px/1.15 var(--hk-display); letter-spacing: -.02em; color: var(--hk-lacivert); }
+.hk-aciklama { margin-top: 10px !important; font: 400 16px/1.5 var(--hk-sans); color: #3F3428; }
+.hk-hizli { display: flex; gap: 10px; margin-top: 14px; flex-wrap: wrap; }
+.hk button { font: 600 15px/1 var(--hk-sans); border-radius: 12px; cursor: pointer; }
+.hk-hizli button { height: 44px; padding: 0 16px; background: #fff; color: var(--hk-lacivert); border: 1.5px solid #CDBFAE; }
+.hk-ornek-isaret { display: none; margin-top: 10px !important; padding: 8px 12px; border-radius: 10px; background: #FFF1D6; color: #6A4300; font: 600 13px/1.4 var(--hk-sans); }
+.hk.hk-ornek .hk-ornek-isaret { display: block; }
+
+.hk-kart { background: #fff; border: 1px solid #E5DDD1; border-radius: 16px; padding: 16px; margin-top: 14px; }
+.hk-kart h2 { font: 600 18px/1.2 var(--hk-display); color: var(--hk-lacivert); display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.hk-harf { width: 30px; height: 30px; border-radius: 50%; background: var(--hk-lacivert); color: #fff; font: 700 15px/30px var(--hk-display); text-align: center; flex: 0 0 30px; }
+.hk-kart[data-u="B"] .hk-harf { background: var(--hk-bakir); }
+.hk-silik { font: 500 14px/1.2 var(--hk-sans); color: #6B5B4B; }
+
+.hk .hk-secim-alan { border: 0; margin-top: 16px; min-width: 0; }
+.hk-secim-alan legend { font: 600 14px/1.3 var(--hk-sans); color: #3F3428; margin-bottom: 8px; }
+.hk-secim { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; background: #EDE6DB; border-radius: 12px; padding: 4px; gap: 4px; }
+.hk-secim label { position: relative; }
+.hk-secim input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.hk-secim span { display: flex; align-items: center; justify-content: center; min-height: 42px; padding: 4px 6px; border-radius: 9px; font: 600 14px/1.2 var(--hk-sans); text-align: center; color: #5A4A3A; }
+.hk-secim input:checked + span { background: #fff; color: var(--hk-lacivert); box-shadow: 0 1px 3px rgba(0,0,0,.12); }
+.hk-secim input:focus-visible + span { outline: 3px solid var(--hk-bakir); outline-offset: 1px; }
+
+.hk-alan { margin-top: 14px; min-width: 0; }
+.hk-alan label { display: block; font: 600 15px/1.3 var(--hk-sans); color: #2E261E; }
+.hk-kutu { position: relative; margin-top: 6px; }
+.hk-alan input, .hk-alan select { width: 100%; height: 52px; border: 1.5px solid #CDBFAE; border-radius: 12px; padding: 0 64px 0 14px;
+  font: 500 18px/1 var(--hk-sans); color: var(--hk-murekkep); background: #fff; -webkit-appearance: none; appearance: none; }
+.hk-alan select { padding-right: 42px; font-size: 16px; background-repeat: no-repeat; background-position: right 16px center;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1.5l6 6 6-6' fill='none' stroke='%2313294B' stroke-width='2'/%3E%3C/svg%3E"); }
+.hk input::placeholder { color: #7A6A5A; opacity: 1; }   /* sitenin genel sıfırlaması yer tutucuyu soluklaştırmasın */
+.hk-birim { position: absolute; right: 14px; top: 0; height: 52px; font: 600 15px/52px var(--hk-sans); color: #7A6A5A; pointer-events: none; }
+.hk-ipucu, .hk-okunus { margin-top: 5px; font: 400 13px/1.4 var(--hk-sans); color: #6B5B4B; }
+.hk-okunus { font-weight: 500; }
+.hk-hata { margin-top: 5px; font: 600 13px/1.4 var(--hk-sans); color: #A3261B; }
+.hk-alan input[aria-invalid="true"] { border-color: #A3261B; background: #FFF7F6; }
+.hk-orta { text-align: center; }
+.hk-iki { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.hk details { margin-top: 14px; border-top: 1px dashed #DCD2C4; padding-top: 12px; }
+.hk-palet details.hk-palet-ac { margin-top: 0; border-top: 0; padding-top: 0; }
+.hk summary { cursor: pointer; font: 600 15px/1.3 var(--hk-sans); color: var(--hk-lacivert); min-height: 40px; display: flex; align-items: center; list-style: none; }
+.hk summary::-webkit-details-marker { display: none; }
+.hk summary::after { content: "+"; margin-left: auto; flex: 0 0 28px; width: 28px; height: 28px; border-radius: 50%; border: 1.5px solid #CDBFAE; font: 600 18px/25px var(--hk-sans); text-align: center; color: var(--hk-lacivert); }
+.hk details[open] > summary::after { content: "−"; }
+.hk-ipucu-genel { margin-top: 6px !important; font: 400 13px/1.45 var(--hk-sans); color: #6B5B4B; }
+.hk ul.hk-ipucu-genel { padding-left: 18px; list-style: disc outside; }
+
+.hk-sonuc { margin-top: 18px; background: var(--hk-lacivert); color: #fff; border-radius: 18px; padding: 18px 16px; }
+.hk-sonuc h2 { font: 600 18px/1.2 var(--hk-display); color: #fff; }
+.hk-bos { margin-top: 8px !important; font: 400 15px/1.5 var(--hk-sans); color: #D7DEE9; }
+.hk-ornek-rozet { display: none; margin-top: 8px; padding: 6px 10px; border-radius: 8px; background: #FFF1D6; color: #6A4300; font: 700 12.5px/1.3 var(--hk-sans); }
+.hk.hk-ornek .hk-ornek-rozet { display: inline-block; }
+.hk-tablo { width: 100%; margin-top: 12px; border-collapse: collapse; }
+.hk-tablo th, .hk-tablo td { padding: 9px 0; border-bottom: 1px solid rgba(255,255,255,.14); text-align: right; font: 500 14px/1.3 var(--hk-sans); color: #D7DEE9; vertical-align: middle; }
+.hk-tablo th:first-child, .hk-tablo td:first-child { text-align: left; padding-right: 8px; }
+.hk-tablo thead th { font: 700 13px/1 var(--hk-sans); color: #fff; letter-spacing: .04em; }
+.hk-tablo td.hk-sayi { font: 600 16px/1.2 var(--hk-display); color: #fff; white-space: nowrap; padding-left: 14px; }
+.hk-tablo tr.hk-vurgu td.hk-sayi { font-size: 19px; }
+.hk-tablo td.hk-sayi.hk-dusuk { color: #FFC9A6; }
+@media (max-width: 380px) { .hk-tablo td.hk-sayi { font-size: 15px; } .hk-tablo tr.hk-vurgu td.hk-sayi { font-size: 17px; } .hk h1 { font-size: 25px; } }
+.hk-karar { margin-top: 14px; background: rgba(255,255,255,.08); border-radius: 12px; padding: 12px 14px; }
+.hk-karar b { display: block; font: 600 16.5px/1.35 var(--hk-display); color: #fff; }
+.hk-karar b + b { margin-top: 6px; }
+.hk-karar span { display: block; margin-top: 4px; font: 400 14px/1.45 var(--hk-sans); color: #D7DEE9; }
+.hk-hedef { margin-top: 14px; }
+.hk-hedef h3 { font: 600 15px/1.3 var(--hk-sans); color: #fff; }
+.hk-satir { margin-top: 8px; padding: 10px 12px; border-radius: 12px; background: rgba(255,255,255,.06); font: 400 14px/1.5 var(--hk-sans); color: #D7DEE9; }
+.hk-satir b { color: #fff; font-weight: 600; }
+.hk-notlar { margin-top: 14px !important; padding-left: 18px !important; list-style: disc outside; font: 400 13.5px/1.5 var(--hk-sans); color: #D7DEE9; }
+.hk-notlar li { margin-top: 4px; }
+
+.hk-paylas { margin-top: 16px; }
+.hk-wa { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; height: 56px; background: var(--hk-bakir-koyu); color: #fff; font: 700 17px/1 var(--hk-sans); border-radius: 14px; text-decoration: none; }
+.hk-wa[aria-disabled="true"] { background: #CDBFAE; cursor: not-allowed; }
+.hk-wa svg { width: 22px; height: 22px; }
+.hk-paylas .hk-ipucu { margin-top: 8px; color: #5A4A3A; }
+.hk-onizleme pre { white-space: pre-wrap; margin-top: 8px; padding: 12px; border-radius: 12px; background: #fff; border: 1px solid #E5DDD1; font: 400 13px/1.5 var(--hk-sans); color: #2E261E; }
+.hk-alt { margin-top: 22px; font: 400 12.5px/1.55 var(--hk-sans); color: #6B5B4B; }
+.hk-alt p + p { margin-top: 6px; }
+
+/* Sitede araç sayfasının üstündeki "Tüm hesap makineleri" bağlantısı (.hk dışında; yalnız bu sınıf) */
+.hk-iz { max-width: 480px; margin: 0 auto; padding: 16px 16px 0; font: 600 14px/1.3 var(--font-inter, "Inter"), system-ui, sans-serif; }
+.hk-iz a { display: inline-flex; align-items: center; min-height: 40px; color: #7A3F17; text-decoration: none; }
+.hk-iz a:hover { text-decoration: underline; }
+.hk-iz a:focus-visible { outline: 3px solid #C16E3A; outline-offset: 2px; }
+
+/* Araç listesi (/hesapla) */
+.hk-liste { list-style: none; margin-top: 16px !important; display: grid; gap: 12px; }
+.hk-liste a { display: block; background: #fff; border: 1px solid #E5DDD1; border-radius: 16px; padding: 16px; text-decoration: none; color: inherit; }
+.hk-liste a:hover { border-color: var(--hk-bakir); }
+.hk-liste b { display: block; font: 600 18px/1.25 var(--hk-display); color: var(--hk-lacivert); }
+.hk-liste span { display: block; margin-top: 6px; font: 400 14px/1.45 var(--hk-sans); color: #5A4A3A; }
