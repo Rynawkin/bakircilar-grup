@@ -5,6 +5,7 @@ import { Header, Footer } from '@bakircilar/ui';
 import { usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import Link from 'next/link';
 import { CONTACT_INFO, CAMPAIGN_URL } from '../lib/constants';
 
 export const SiteLayout: React.FC<{ children: React.ReactNode; locale: string }> = ({
@@ -92,6 +93,16 @@ export const SiteLayout: React.FC<{ children: React.ReactNode; locale: string }>
         currentLanguage={locale}
         brandColor="#3b82f6"
       />
+
+      {/* Menüyü açmadan da görünsün: en üstte ince Hesapla şeridi (yalnız Türkçe; araç sayfalarında gerekmez) */}
+      {hesapla.length > 0 && !pathname.startsWith('/tr/hesapla') && (
+        <Link
+          href="/tr/hesapla"
+          className="block bg-brand-copper-dark px-4 py-2.5 text-center text-sm font-semibold text-white hover:bg-brand-copper"
+        >
+          Hesap makineleri: havlu, Z havlu, streç →
+        </Link>
+      )}
 
       {children}
 
