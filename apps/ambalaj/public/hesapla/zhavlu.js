@@ -8,6 +8,7 @@
   if (typeof module !== "undefined" && module.exports) module.exports = api;
 })(typeof window !== "undefined" ? window : globalThis, function (O) {
   "use strict";
+  var T = O.tam;   // tam kesir aritmetiği (çekirdek; 2. dalganın tam_kesir.js'iyle aynı)
 
   var SINIR = {
     koliFiyati: { max: 1000000 }, paketSayisi: { max: 500, tamSayi: true }, paketYaprak: { max: 10000, tamSayi: true },
@@ -15,20 +16,28 @@
   };
   function alanDenetle(ad, metin) { return O.alanDenetle(SINIR[ad], metin); }
 
+  /* Gösterilen her sayı ve karar nesnenin görünmeyen "tam" alanındaki kesirden (çekirdek: tam kesir aritmetiği);
+     kayan nokta alanları yalnız bilgi içindir. */
   function urunHesapla(koliFiyati, paketSayisi, paketYaprak, enCm, boyCm) {
-    var toplamYaprak = paketSayisi * paketYaprak;
-    var alanM2 = toplamYaprak * enCm * boyCm / 10000;
-    var yaprakFiyati = koliFiyati / toplamYaprak;
-    return { koliFiyati: koliFiyati, paketSayisi: paketSayisi, paketYaprak: paketYaprak, enCm: enCm, boyCm: boyCm,
-             toplamYaprak: toplamYaprak, yaprakCm2: enCm * boyCm, alanM2: alanM2,
-             yaprakFiyati: yaprakFiyati, yuzYaprakFiyati: yaprakFiyati * 100, m2Fiyati: koliFiyati / alanM2 };
+    var toplam = T.kCarp(paketSayisi, paketYaprak), cm2 = T.kCarp(enCm, boyCm), alan = T.kBol(T.kCarp(toplam, cm2), 10000);
+    var yaprak = T.kBol(koliFiyati, toplam), yuz = T.kCarp(yaprak, 100), m2 = T.kBol(koliFiyati, alan);
+    var u = { koliFiyati: koliFiyati, paketSayisi: paketSayisi, paketYaprak: paketYaprak, enCm: enCm, boyCm: boyCm,
+              toplamYaprak: paketSayisi * paketYaprak, yaprakCm2: T.kSayi(cm2), alanM2: T.kSayi(alan),
+              yaprakFiyati: T.kSayi(yaprak), yuzYaprakFiyati: T.kSayi(yuz), m2Fiyati: T.kSayi(m2) };
+    Object.defineProperty(u, "tam", { value: { cm2: cm2, alan: alan, yaprak: yaprak, yuz: yuz, m2: m2 } });
+    return u;
   }
   function karsilastir(a, b) {   // her ölçünün .basamak'ı: kazanan varsa iki değer ekranda da ayrı görünür
-    var yaprak = O.karsilastir(a.yaprakFiyati, b.yaprakFiyati, O.birimBasamak([a.yaprakFiyati, b.yaprakFiyati]));
-    var m2 = O.karsilastir(a.m2Fiyati, b.m2Fiyati, 2);
-    var yuzBasamak = yaprak.esit ? 2 : O.ayirtBasamak(a.yuzYaprakFiyati, b.yuzYaprakFiyati, 2);
+    var yaprak = O.karsilastirTam(a.tam.yaprak, b.tam.yaprak, T.birimTaban([a.tam.yaprak, b.tam.yaprak]));
+    var m2 = O.karsilastirTam(a.tam.m2, b.tam.m2, 2);
+    var yuzBasamak = T.ayirtAnlamli(a.tam.yuz, b.tam.yuz, 2, !yaprak.esit);   // yaprakta kazanan varsa 100 yaprak da ayrı görünür
     var celiski = !yaprak.esit && !m2.esit && yaprak.dusuk !== m2.dusuk;
     return { yaprak: yaprak, m2: m2, celiski: celiski, yaprakBasamak: yaprak.basamak, yuzBasamak: yuzBasamak, m2Basamak: m2.basamak };
+  }
+  function basamaklar(k, a) {   // ekran ve mesaj aynı ondalığı kullanır; sıfırdan büyük fiyat hiçbir zaman 0 görünmez
+    if (k) return { yaprak: k.yaprakBasamak, yuz: k.yuzBasamak, m2: k.m2Basamak };
+    return { yaprak: T.anlamliBasamak([a.tam.yaprak], T.birimTaban([a.tam.yaprak])), yuz: T.anlamliBasamak([a.tam.yuz], 2),
+             m2: T.anlamliBasamak([a.tam.m2], 2) };
   }
   function toleransCumlesi(k) {   // hangi ölçüde fark %2'nin altında
     var y = k.yaprak.toleransNotu, m = k.m2.toleransNotu;
@@ -48,10 +57,10 @@
   function mesajMetni(s) {   // s.basamak: { yaprak, yuz, m2 } — ekrandaki tabloyla aynı ondalıklar
     var bs = s.basamak, satir = ["Merhaba, Bakırcılar Z havlu / peçete hesap sayfasında hesap yaptım:"];
     function urunSatiri(ad, u, kat) {
-      return ad + ": koli " + O.tlYaz(u.koliFiyati) + " TL, " + u.paketSayisi + " paket × " + u.paketYaprak + " yaprak = " + O.sayiYazEsnek(u.toplamYaprak) +
-             " yaprak; yaprak " + O.sayiYazEsnek(u.enCm, 2) + " × " + O.sayiYazEsnek(u.boyCm, 2) + " cm" + (kat != null ? ", " + kat + " kat" : "") +
-             " → kâğıt alanı " + O.sayiYaz(u.alanM2, 2) + " m²; yaprak " + O.sayiYaz(u.yaprakFiyati, bs.yaprak) + " TL (100 yaprak: " +
-             O.sayiYaz(u.yuzYaprakFiyati, bs.yuz) + " TL), m² " + O.sayiYaz(u.m2Fiyati, bs.m2) + " TL";
+      return ad + ": koli " + T.girdiTlYaz(u.koliFiyati) + " TL, " + T.adetYaz(u.paketSayisi) + " paket × " + T.adetYaz(u.paketYaprak) + " yaprak = " +
+             T.adetYaz(u.toplamYaprak) + " yaprak; yaprak " + O.sayiYazEsnek(u.enCm, 2) + " × " + O.sayiYazEsnek(u.boyCm, 2) + " cm" + (kat != null ? ", " + kat + " kat" : "") +
+             " → kâğıt alanı " + T.yaz(u.tam.alan, 2) + " m²; yaprak " + T.yaz(u.tam.yaprak, bs.yaprak) + " TL (100 yaprak: " +
+             T.yaz(u.tam.yuz, bs.yuz) + " TL), m² " + T.yaz(u.tam.m2, bs.m2) + " TL";
     }
     satir.push(urunSatiri("A", s.a, s.katA));
     if (s.b) satir.push(urunSatiri("B", s.b, s.katB));
@@ -61,8 +70,7 @@
       if (s.k.celiski) satir.push("İki ölçü farklı sonuç veriyor; yaprak ölçüleri farklı olduğu için ikisini birlikte değerlendiriyorum.");
       var t = toleransCumlesi(s.k); if (t) satir.push(t);
     }
-    satir.push("Fiyatlar benim girdiğim değerlerdir (" + (s.kdv === "haric" ? "KDV hariç" : "KDV dahil") + (s.b ? ", iki üründe aynı kabul edildi" : "") + ")" +
-               (s.ornek ? "; sayfadaki örnek değerlerle denendi." : "."));
+    satir.push(O.fiyatCumlesi(!!s.b, s.kdv, s.ornek));
     satir.push("Alan tek yüzdür, katlar çarpılmadı; hesap kaliteyi ya da emiciliği ölçmez.");
     return satir.join("\n");
   }
@@ -107,7 +115,7 @@
       return { tamam: tamam, hepsiBos: bosSay === 5, kat: kat.hata || kat.bos ? null : kat.deger,
                urun: tamam ? urunHesapla(f.koliFiyati, f.paketSayisi, f.paketYaprak, f.enCm, f.boyCm) : null };
     }
-    function tl(x, b) { return O.sayiYaz(x, b == null ? 2 : b) + NB + "TL"; }
+    function tl(x, b) { return T.yaz(x, b == null ? 2 : b) + NB + "TL"; }
 
     function hesapla() {
       var A = urunOku("A"), B = urunOku("B"), kdv = O.secili(kokEl, "kdv") || "dahil", ornek = ornekMi();
@@ -116,26 +124,25 @@
         sonucEl.innerHTML = '<h2 id="hk-sonuc-baslik">Sonuç</h2><p class="hk-bos">Sonucu görmek için A teklifinin beş alanını doldurun: koli fiyatı, paket sayısı, paketteki yaprak, yaprak eni ve boyu.</p>';
         O.waAyarla(wa, null); kokEl.querySelector(".hk-mesaj").textContent = "—"; ozetYaz("Sonuç için A teklifinin beş alanını doldurun."); return;
       }
-      var a = A.urun, b = B.tamam ? B.urun : null, k = b ? karsilastir(a, b) : null;
-      var bs = k ? { yaprak: k.yaprakBasamak, yuz: k.yuzBasamak, m2: k.m2Basamak } : { yaprak: O.birimBasamak([a.yaprakFiyati]), yuz: 2, m2: 2 };
+      var a = A.urun, b = B.tamam ? B.urun : null, k = b ? karsilastir(a, b) : null, bs = basamaklar(k, a);
       function hucre(x, vurgu) { return '<td class="hk-sayi' + (vurgu ? " hk-dusuk" : "") + '">' + x + "</td>"; }
       function satirBasi(x) { return '<th scope="row">' + x + "</th>"; }
       var dy = k && !k.yaprak.esit ? k.yaprak.dusuk : null, dm = k && !k.m2.esit ? k.m2.dusuk : null;
       var h = '<h2 id="hk-sonuc-baslik">Sonuç</h2><span class="hk-ornek-rozet">Örnek değerlerle hesaplandı</span>' +
         '<table class="hk-tablo"><thead><tr><th scope="col"><span class="hk-gizli">Ölçü</span></th><th scope="col">A</th>' + (b ? '<th scope="col">B</th>' : "") + "</tr></thead><tbody>" +
-        "<tr>" + satirBasi("Kolideki yaprak") + hucre(O.sayiYazEsnek(a.toplamYaprak)) + (b ? hucre(O.sayiYazEsnek(b.toplamYaprak)) : "") + "</tr>" +
-        "<tr>" + satirBasi("Bir yaprağın alanı") + hucre(O.sayiYazEsnek(a.yaprakCm2, 1) + NB + "cm²") + (b ? hucre(O.sayiYazEsnek(b.yaprakCm2, 1) + NB + "cm²") : "") + "</tr>" +
-        "<tr>" + satirBasi("Kolideki kâğıt alanı") + hucre(O.sayiYaz(a.alanM2, 2) + NB + "m²") + (b ? hucre(O.sayiYaz(b.alanM2, 2) + NB + "m²") : "") + "</tr>" +
-        '<tr class="hk-vurgu">' + satirBasi("Yaprak fiyatı") + hucre(tl(a.yaprakFiyati, bs.yaprak), dy === "A") + (b ? hucre(tl(b.yaprakFiyati, bs.yaprak), dy === "B") : "") + "</tr>" +
-        "<tr>" + satirBasi("100 yaprağın fiyatı") + hucre(tl(a.yuzYaprakFiyati, bs.yuz)) + (b ? hucre(tl(b.yuzYaprakFiyati, bs.yuz)) : "") + "</tr>" +
-        '<tr class="hk-vurgu">' + satirBasi("Metrekare fiyatı") + hucre(tl(a.m2Fiyati, bs.m2), dm === "A") + (b ? hucre(tl(b.m2Fiyati, bs.m2), dm === "B") : "") + "</tr></tbody></table>";
+        "<tr>" + satirBasi("Kolideki yaprak") + hucre(T.adetYaz(a.toplamYaprak)) + (b ? hucre(T.adetYaz(b.toplamYaprak)) : "") + "</tr>" +
+        "<tr>" + satirBasi("Bir yaprağın alanı") + hucre(T.yazEsnek(a.tam.cm2, 1) + NB + "cm²") + (b ? hucre(T.yazEsnek(b.tam.cm2, 1) + NB + "cm²") : "") + "</tr>" +
+        "<tr>" + satirBasi("Kolideki kâğıt alanı") + hucre(T.yaz(a.tam.alan, 2) + NB + "m²") + (b ? hucre(T.yaz(b.tam.alan, 2) + NB + "m²") : "") + "</tr>" +
+        '<tr class="hk-vurgu">' + satirBasi("Yaprak fiyatı") + hucre(tl(a.tam.yaprak, bs.yaprak), dy === "A") + (b ? hucre(tl(b.tam.yaprak, bs.yaprak), dy === "B") : "") + "</tr>" +
+        "<tr>" + satirBasi("100 yaprağın fiyatı") + hucre(tl(a.tam.yuz, bs.yuz)) + (b ? hucre(tl(b.tam.yuz, bs.yuz)) : "") + "</tr>" +
+        '<tr class="hk-vurgu">' + satirBasi("Metrekare fiyatı") + hucre(tl(a.tam.m2, bs.m2), dm === "A") + (b ? hucre(tl(b.tam.m2, bs.m2), dm === "B") : "") + "</tr></tbody></table>";
       if (k) {
         var k1 = O.kararCumlesi(k.yaprak, "Yaprak başına maliyet"), k2 = O.kararCumlesi(k.m2, "Metrekare başına maliyet"), tn = toleransCumlesi(k);
         h += '<div class="hk-karar"><b>' + k1 + "</b><b>" + k2 + "</b>" +
              (k.celiski ? "<span>İki ölçü farklı sonuç veriyor: yaprak ölçüleri farklı olduğu için yaprak fiyatı tek başına yeterli değil; ikisini birlikte değerlendirin.</span>" : "") +
              (tn ? "<span>" + tn + "</span>" : "") + "</div>";
         ozetYaz(k1 + " " + k2);
-      } else if (B.hepsiBos) { h += '<div class="hk-karar"><span>Karşılaştırmak için B teklifini de yazın.</span></div>'; ozetYaz("A teklifinin yaprak fiyatı " + tl(a.yaprakFiyati, bs.yaprak) + "."); }
+      } else if (B.hepsiBos) { h += '<div class="hk-karar"><span>Karşılaştırmak için B teklifini de yazın.</span></div>'; ozetYaz("A teklifinin yaprak fiyatı " + tl(a.tam.yaprak, bs.yaprak) + "."); }
       else { h += '<div class="hk-karar"><span>B teklifinde eksik ya da hatalı alan var; karşılaştırma yapılmadı.</span></div>'; ozetYaz("B teklifinde eksik ya da hatalı alan var."); }
       h += '<ul class="hk-notlar">' + notlar({ katA: A.kat, katB: B.kat, karsilastirma: !!b }).concat(["Bu hesap yalnız maliyeti gösterir; kaliteyi ya da uygunluğu ölçmez."])
              .map(function (x) { return "<li>" + x + "</li>"; }).join("") + "</ul>";
@@ -153,6 +160,6 @@
     return { hesapla: hesapla, ornekDoldur: ornekDoldur };
   }
 
-  return { SINIR: SINIR, ORNEK: ORNEK, alanDenetle: alanDenetle, urunHesapla: urunHesapla, karsilastir: karsilastir, notlar: notlar,
-           toleransCumlesi: toleransCumlesi, mesajMetni: mesajMetni, baslat: baslat };
+  return { SINIR: SINIR, ORNEK: ORNEK, alanDenetle: alanDenetle, urunHesapla: urunHesapla, karsilastir: karsilastir, basamaklar: basamaklar,
+           notlar: notlar, toleransCumlesi: toleransCumlesi, mesajMetni: mesajMetni, baslat: baslat };
 });

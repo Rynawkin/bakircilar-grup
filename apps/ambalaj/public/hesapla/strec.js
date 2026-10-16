@@ -13,6 +13,9 @@
   if (typeof module !== "undefined" && module.exports) module.exports = api;
 })(typeof window !== "undefined" ? window : globalThis, function (O) {
   "use strict";
+  var T = O.tam;   // tam kesir aritmetiği (çekirdek; 2. dalganın tam_kesir.js'iyle aynı)
+  function asagi(x, b) { var r = T.kCarp(x, Math.pow(10, b)); return r.p / r.q; }   // aşağı yuvarlanmış (değer × 10^b), BigInt
+  function asagiYaz(x, b) { return T.trBicim(asagi(x, b), b, false); }   // 4,96 palet → "4,9" (yanında "tam 4" ile çelişmesin)
 
   var SINIR = {
     ruloFiyati: { max: 100000 }, brut: { max: 60000 }, gobek: { max: 60000, sifirOlur: true }, diger: { max: 60000, sifirOlur: true },
@@ -32,35 +35,43 @@
     }
     if (ad === "brut" && (!carpan || carpan === 1) && !r.bos && !r.hata && r.deger < 100)   // gram seçiliyken kilogram yazılmış olabilir
       r = { bos: false, deger: r.deger, hata: null, not: (r.not ? r.not + " " : "") + "Streç rulosu için çok hafif; kilogram yazdıysanız üstten Kilogram'ı seçin." };
-    if (!r.bos && !r.hata && carpan) r = { bos: false, deger: r.deger * carpan, hata: null, not: r.not, girilen: r.deger };
+    if (!r.bos && !r.hata && carpan) r = { bos: false, deger: T.kSayi(T.kCarp(r.deger, carpan)), hata: null, not: r.not, girilen: r.deger };
     return r;
   }
 
+  /* Gösterilen her sayı ve karar nesnenin görünmeyen "tam" alanındaki kesirden (çekirdek: tam kesir aritmetiği);
+     kayan nokta alanları yalnız bilgi içindir. */
   function ruloHesapla(r) {   // r: { brutG, gobekG, digerG, enCm, mikron, fiyat, yogunluk }
-    var netG = r.brutG - r.gobekG - (r.digerG || 0);
-    if (!(netG > 0)) return { hata: "Göbek (ve varsa başka ambalaj) brüt ağırlıktan küçük olmalı." };
-    var uzunlukM = netG / (r.yogunluk * r.mikron * 0.0001 * r.enCm) / 100;
-    return { brutG: r.brutG, gobekG: r.gobekG, digerG: r.digerG || 0, enCm: r.enCm, mikron: r.mikron, fiyat: r.fiyat, yogunluk: r.yogunluk,
-             netG: netG, netKg: netG / 1000, uzunlukM: uzunlukM, netKgFiyati: r.fiyat / (netG / 1000), metreFiyati: r.fiyat / uzunlukM };
+    var net = T.kCikar(T.kCikar(r.brutG, r.gobekG), r.digerG || 0);
+    if (T.kKiyas(net, 0) <= 0) return { hata: "Göbek (ve varsa başka ambalaj) brüt ağırlıktan küçük olmalı." };
+    var uzunluk = T.kBol(T.kCarp(100, net), T.kCarp(T.kCarp(r.yogunluk, r.mikron), r.enCm));   // 100 × net g ÷ (yoğunluk × mikron × en)
+    var netKg = T.kBol(net, 1000), netKgFiyati = T.kBol(r.fiyat, netKg), metreFiyati = T.kBol(r.fiyat, uzunluk);
+    var u = { brutG: r.brutG, gobekG: r.gobekG, digerG: r.digerG || 0, enCm: r.enCm, mikron: r.mikron, fiyat: r.fiyat, yogunluk: r.yogunluk,
+              netG: T.kSayi(net), netKg: T.kSayi(netKg), uzunlukM: T.kSayi(uzunluk), netKgFiyati: T.kSayi(netKgFiyati), metreFiyati: T.kSayi(metreFiyati) };
+    Object.defineProperty(u, "tam", { value: { net: net, netKg: netKg, uzunluk: uzunluk, netKgFiyati: netKgFiyati, metreFiyati: metreFiyati } });
+    return u;
   }
   function paletHesapla(p, rulo) {   // p: { yukEn, yukBoy, yukseklik, etkiliEn|null, bindirme(%), altTur, ustTur, duzen, onGermeDurum, onGerme(%), fire(%)|null }
-    var etkili = p.etkiliEn != null ? p.etkiliEn : rulo.enCm;
-    if (etkili > rulo.enCm + 1e-9) return { hata: "Sarımda etkili en, film eninden (" + O.sayiYazEsnek(rulo.enCm) + " cm) büyük olamaz." };
-    var cevre = 2 * (p.yukEn + p.yukBoy), ilerleme = etkili * (1 - p.bindirme / 100);
-    var spiral = Math.max(0, (p.yukseklik - etkili) / ilerleme), gecis = p.duzen === "yukari_asagi" ? 2 : 1;
-    var toplamTur = p.altTur + p.ustTur + gecis * spiral, sarilmisM = toplamTur * cevre / 100;
-    if (toplamTur < 1 - 1e-9) return { hata: "Toplam tur 1'den az çıkıyor; film paleti en az bir kez dolanmalı.", oneri: "Altta ya da üstte ek tur yazın." };
-    var onGerme = p.onGermeDurum === "var" ? p.onGerme / 100 : 0;
-    var rulodanM = sarilmisM / (1 + onGerme), fireDahilM = rulodanM * (1 + (p.fire != null ? p.fire / 100 : 0));
-    var paletRulo = rulo.uzunlukM / fireDahilM;
-    return { etkiliEn: etkili, etkiliOlculmedi: p.etkiliEn == null, cevre: cevre, ilerleme: ilerleme, spiralTur: spiral, toplamTur: toplamTur,
-             sarilmisM: sarilmisM, rulodanM: rulodanM, fireDahilM: fireDahilM, paletRulo: paletRulo,
-             tamPalet: Math.floor(paletRulo + 1e-9), paletBasiMaliyet: fireDahilM * rulo.metreFiyati };
+    var en = T.kesir(rulo.enCm), etkili = p.etkiliEn != null ? T.kesir(p.etkiliEn) : en;
+    if (T.kKiyas(etkili, en) > 0) return { hata: "Sarımda etkili en, film eninden (" + O.sayiYazEsnek(rulo.enCm) + " cm) büyük olamaz." };
+    var cevre = T.kCarp(2, T.kTopla(p.yukEn, p.yukBoy)), ilerleme = T.kCarp(etkili, T.kCikar(1, T.kBol(p.bindirme, 100)));
+    var yukselecek = T.kCikar(p.yukseklik, etkili), gecis = p.duzen === "yukari_asagi" ? 2 : 1;
+    var spiral = T.kKiyas(yukselecek, 0) > 0 ? T.kBol(yukselecek, ilerleme) : T.kesir(0);
+    var toplamTur = T.kTopla(T.kTopla(p.altTur, p.ustTur), T.kCarp(gecis, spiral)), sarilmis = T.kBol(T.kCarp(toplamTur, cevre), 100);
+    if (T.kKiyas(toplamTur, 1) < 0) return { hata: "Toplam tur 1'den az çıkıyor; film paleti en az bir kez dolanmalı.", oneri: "Altta ya da üstte ek tur yazın." };
+    var onGerme = p.onGermeDurum === "var" ? T.kBol(p.onGerme, 100) : 0;
+    var rulodan = T.kBol(sarilmis, T.kTopla(1, onGerme)), fireDahil = T.kCarp(rulodan, T.kTopla(1, p.fire != null ? T.kBol(p.fire, 100) : 0));
+    var paletRulo = T.kBol(rulo.tam.uzunluk, fireDahil), maliyet = T.kCarp(fireDahil, rulo.tam.metreFiyati);
+    var s = { etkiliEn: T.kSayi(etkili), etkiliOlculmedi: p.etkiliEn == null, cevre: T.kSayi(cevre), ilerleme: T.kSayi(ilerleme), spiralTur: T.kSayi(spiral),
+              toplamTur: T.kSayi(toplamTur), sarilmisM: T.kSayi(sarilmis), rulodanM: T.kSayi(rulodan), fireDahilM: T.kSayi(fireDahil),
+              paletRulo: T.kSayi(paletRulo), tamPalet: Number(asagi(paletRulo, 0)), paletBasiMaliyet: T.kSayi(maliyet) };
+    Object.defineProperty(s, "tam", { value: { toplamTur: toplamTur, sarilmis: sarilmis, fireDahil: fireDahil, paletRulo: paletRulo, maliyet: maliyet } });
+    return s;
   }
   function karsilastir(a, b, pa, pb) {   // her ölçünün .basamak'ı: kazanan varsa iki değer ekranda da ayrı görünür
-    var metre = O.karsilastir(a.metreFiyati, b.metreFiyati, O.birimBasamak([a.metreFiyati, b.metreFiyati]));
-    return { metre: metre, kg: O.karsilastir(a.netKgFiyati, b.netKgFiyati, 2),
-             palet: pa && pb && !pa.hata && !pb.hata ? O.karsilastir(pa.paletBasiMaliyet, pb.paletBasiMaliyet, 2) : null,
+    var metre = O.karsilastirTam(a.tam.metreFiyati, b.tam.metreFiyati, T.birimTaban([a.tam.metreFiyati, b.tam.metreFiyati]));
+    return { metre: metre, kg: O.karsilastirTam(a.tam.netKgFiyati, b.tam.netKgFiyati, 2),
+             palet: pa && pb && !pa.hata && !pb.hata ? O.karsilastirTam(pa.tam.maliyet, pb.tam.maliyet, 2) : null,
              metreBasamak: metre.basamak };
   }
   function toleransCumlesi(k) {   // hangi ölçülerde fark %2'nin altında: "Metre ve palet başına fark …"
@@ -74,8 +85,11 @@
     return liste.charAt(0).toUpperCase() + liste.slice(1) + " başına fark %" + O.TOLERANS_YUZDE +
            "'nin altında; etiketteki ağırlık toleransı ve filmlerin gerçek yoğunluğu bu farkı değiştirebilir.";
   }
-  function basamaklar(k, a) {   // ekran ve mesaj aynı ondalığı kullanır
-    return k ? { metre: k.metre.basamak, kg: k.kg.basamak, palet: k.palet ? k.palet.basamak : 2 } : { metre: O.birimBasamak([a.metreFiyati]), kg: 2, palet: 2 };
+  function basamaklar(k, a, pa, pb) {   // ekran ve mesaj aynı ondalığı kullanır; sıfırdan büyük tutar hiçbir zaman 0 görünmez
+    var paletler = [pa, pb].filter(function (x) { return x && !x.hata; }).map(function (x) { return x.tam.maliyet; });
+    return { metre: k ? k.metre.basamak : T.anlamliBasamak([a.tam.metreFiyati], T.birimTaban([a.tam.metreFiyati])),
+             kg: k ? k.kg.basamak : T.anlamliBasamak([a.tam.netKgFiyati], 2),
+             palet: k && k.palet ? k.palet.basamak : T.anlamliBasamak(paletler, 2) };
   }
   function paletNotlari(p) {
     var n = ["Palet sonucu teoriktir; taşıma emniyeti, yük tutma dayanımı ya da gerçek saha tüketimi garantisi değildir."];
@@ -86,12 +100,12 @@
     return n;
   }
   function mesajMetni(s) {
-    var bs = basamaklar(s.k, s.a);
+    var bs = basamaklar(s.k, s.a, s.pa, s.pb);
     var satir = ["Merhaba, Bakırcılar palet streç hesap sayfasında hesap yaptım:"];
     function ruloSatiri(ad, r) {
       return "Rulo " + ad + ": brüt " + O.sayiYazEsnek(r.brutG) + " g − göbek " + O.sayiYazEsnek(r.gobekG) + " g" + (r.digerG ? " − ambalaj " + O.sayiYazEsnek(r.digerG) + " g" : "") +
-             " = net " + O.sayiYazEsnek(r.netG) + " g; en " + O.sayiYazEsnek(r.enCm) + " cm, " + O.sayiYazEsnek(r.mikron) + " mikron → yaklaşık " + O.sayiYaz(r.uzunlukM, 2) +
-             " m; rulo " + O.tlYaz(r.fiyat) + " TL → net kg " + O.sayiYaz(r.netKgFiyati, bs.kg) + " TL, metre " + O.sayiYaz(r.metreFiyati, bs.metre) + " TL";
+             " = net " + T.yazEsnek(r.tam.net, 3) + " g; en " + O.sayiYazEsnek(r.enCm) + " cm, " + O.sayiYazEsnek(r.mikron) + " mikron → yaklaşık " + T.yaz(r.tam.uzunluk, 2) +
+             " m; rulo " + T.girdiTlYaz(r.fiyat) + " TL → net kg " + T.yaz(r.tam.netKgFiyati, bs.kg) + " TL, metre " + T.yaz(r.tam.metreFiyati, bs.metre) + " TL";
     }
     satir.push(ruloSatiri("A", s.a));
     if (s.b) satir.push(ruloSatiri("B", s.b));
@@ -115,15 +129,14 @@
       [["A", s.pa], ["B", s.pb]].forEach(function (x) {
         if (!x[1]) return;
         if (x[1].hata) { satir.push("- Rulo " + x[0] + ": " + x[1].hata); return; }
-        satir.push("- Rulo " + x[0] + ": palet başına rulodan " + O.sayiYaz(x[1].fireDahilM, 2) + " m → " + O.asagiYaz(x[1].paletRulo, 1) + " palet (tam " + x[1].tamPalet +
-                   "); palet başı film " + O.sayiYaz(x[1].paletBasiMaliyet, bs.palet) + " TL");
+        satir.push("- Rulo " + x[0] + ": palet başına rulodan " + T.yaz(x[1].tam.fireDahil, 2) + " m → " + asagiYaz(x[1].tam.paletRulo, 1) + " palet (tam " +
+                   T.adetYaz(x[1].tamPalet) + "); palet başı film " + T.yaz(x[1].tam.maliyet, bs.palet) + " TL");
       });
       if (s.k && s.k.palet) satir.push(O.kararCumlesi(s.k.palet, "Palet başına film maliyeti"));
       satir.push("Uzunluk ve palet sayısı teoriktir; taşıma emniyeti ya da gerçek tüketim garantisi değildir.");
     }
     var t = toleransCumlesi(s.k); if (t) satir.push(t);
-    satir.push("Fiyatlar benim girdiğim değerlerdir (" + (s.kdv === "haric" ? "KDV hariç" : "KDV dahil") + (s.b ? ", iki ruloda aynı kabul edildi" : "") + ")" +
-               (s.ornek ? "; sayfadaki örnek değerlerle denendi." : "."));
+    satir.push(O.fiyatCumlesi(!!s.b, s.kdv, s.ornek));
     return satir.join("\n");
   }
 
@@ -209,8 +222,8 @@
                     ["yukEn", "yukBoy", "yukseklik", "bindirme", "altTur", "ustTur", "etkiliEn", "fire", "onGerme"].every(function (x) { return d(x).trim() === ""; });
       return { p: p, eksik: eksik, hata: hata, hicbiri: hicbiri, tamam: !eksik.length && !hata };
     }
-    function tl(x, b) { return O.sayiYaz(x, b == null ? 2 : b) + NB + "TL"; }
-    function m(x, b) { return O.sayiYaz(x, b == null ? 2 : b) + NB + "m"; }
+    function tl(x, b) { return T.yaz(x, b == null ? 2 : b) + NB + "TL"; }
+    function m(x, b) { return T.yaz(x, b == null ? 2 : b) + NB + "m"; }
 
     function hesapla() {
       var birim = O.secili(kokEl, "agirlikBirim") || "g", carpan = birim === "kg" ? 1000 : 1;
@@ -229,21 +242,21 @@
       }
       var a = A.rulo, b = B.tamam ? B.rulo : null;
       var pa = P.tamam ? paletHesapla(P.p, a) : null, pb = P.tamam && b ? paletHesapla(P.p, b) : null;
-      var k = b ? karsilastir(a, b, pa, pb) : null, bs = basamaklar(k, a);
+      var k = b ? karsilastir(a, b, pa, pb) : null, bs = basamaklar(k, a, pa, pb);
       function hucre(x, vurgu) { return '<td class="hk-sayi' + (vurgu ? " hk-dusuk" : "") + '">' + x + "</td>"; }
       function satirBasi(x) { return '<th scope="row">' + x + "</th>"; }
       var dm = k && !k.metre.esit ? k.metre.dusuk : null, dk = k && !k.kg.esit ? k.kg.dusuk : null;
       var h = '<h2 id="hk-sonuc-baslik">Sonuç</h2><span class="hk-ornek-rozet">Örnek değerlerle hesaplandı</span>' +
         '<table class="hk-tablo"><thead><tr><th scope="col"><span class="hk-gizli">Ölçü</span></th><th scope="col">Rulo A</th>' + (b ? '<th scope="col">Rulo B</th>' : "") + "</tr></thead><tbody>" +
-        "<tr>" + satirBasi("Net film") + hucre(O.sayiYazEsnek(a.netKg, 3) + NB + "kg") + (b ? hucre(O.sayiYazEsnek(b.netKg, 3) + NB + "kg") : "") + "</tr>" +
-        "<tr>" + satirBasi("Yaklaşık uzunluk") + hucre(m(a.uzunlukM)) + (b ? hucre(m(b.uzunlukM)) : "") + "</tr>" +
-        '<tr class="hk-vurgu">' + satirBasi("Metre fiyatı") + hucre(tl(a.metreFiyati, bs.metre), dm === "A") + (b ? hucre(tl(b.metreFiyati, bs.metre), dm === "B") : "") + "</tr>" +
-        "<tr>" + satirBasi("Net kg fiyatı") + hucre(tl(a.netKgFiyati, bs.kg), dk === "A") + (b ? hucre(tl(b.netKgFiyati, bs.kg), dk === "B") : "") + "</tr></tbody></table>";
+        "<tr>" + satirBasi("Net film") + hucre(T.yazEsnek(a.tam.netKg, 3) + NB + "kg") + (b ? hucre(T.yazEsnek(b.tam.netKg, 3) + NB + "kg") : "") + "</tr>" +
+        "<tr>" + satirBasi("Yaklaşık uzunluk") + hucre(m(a.tam.uzunluk)) + (b ? hucre(m(b.tam.uzunluk)) : "") + "</tr>" +
+        '<tr class="hk-vurgu">' + satirBasi("Metre fiyatı") + hucre(tl(a.tam.metreFiyati, bs.metre), dm === "A") + (b ? hucre(tl(b.tam.metreFiyati, bs.metre), dm === "B") : "") + "</tr>" +
+        "<tr>" + satirBasi("Net kg fiyatı") + hucre(tl(a.tam.netKgFiyati, bs.kg), dk === "A") + (b ? hucre(tl(b.tam.netKgFiyati, bs.kg), dk === "B") : "") + "</tr></tbody></table>";
       var tn = toleransCumlesi(k);
       if (k) {
         var k1 = O.kararCumlesi(k.metre, "Metre başına maliyet"), k2 = O.kararCumlesi(k.kg, "Net kg başına maliyet");
         h += '<div class="hk-karar"><b>' + k1 + "</b><span>" + k2 + "</span>" + (tn ? "<span>" + tn + "</span>" : "") + "</div>"; ozetYaz(k1);
-      } else if (B.hepsiBos) { h += '<div class="hk-karar"><span>Karşılaştırmak için Rulo B\'yi de yazın.</span></div>'; ozetYaz("Rulo A'nın metre fiyatı " + tl(a.metreFiyati, bs.metre) + "."); }
+      } else if (B.hepsiBos) { h += '<div class="hk-karar"><span>Karşılaştırmak için Rulo B\'yi de yazın.</span></div>'; ozetYaz("Rulo A'nın metre fiyatı " + tl(a.tam.metreFiyati, bs.metre) + "."); }
       else {
         var bNeden = B.netHata ? "Rulo B: " + B.netHata : B.gobekBos ? "Rulo B için boş karton göbeği tartın; göbek bilinmeden karşılaştırma yapılmaz." : "Rulo B'de eksik ya da hatalı alan var; karşılaştırma yapılmadı.";
         h += '<div class="hk-karar"><span>' + bNeden + "</span></div>"; ozetYaz(bNeden);
@@ -253,9 +266,9 @@
         [["A", pa], ["B", pb]].forEach(function (x) {
           if (!x[1]) return;
           if (x[1].hata) { h += '<div class="hk-satir"><b>Rulo ' + x[0] + ":</b> " + x[1].hata + (x[1].oneri ? " " + x[1].oneri : "") + "</div>"; return; }
-          h += '<div class="hk-satir"><b>Rulo ' + x[0] + ":</b> " + O.sayiYazEsnek(x[1].toplamTur, 2) + " tur · paletteki film " + m(x[1].sarilmisM, 1) +
-               " · rulodan " + m(x[1].fireDahilM) + (P.p.fire != null ? " (fire dahil)" : " (fire hariç)") +
-               "<br>Bir rulo <b>" + O.asagiYaz(x[1].paletRulo, 1) + " palet</b> (tam " + x[1].tamPalet + ") · palet başı film <b>" + tl(x[1].paletBasiMaliyet, bs.palet) + "</b></div>";
+          h += '<div class="hk-satir"><b>Rulo ' + x[0] + ":</b> " + T.yazEsnek(x[1].tam.toplamTur, 2) + " tur · paletteki film " + m(x[1].tam.sarilmis, 1) +
+               " · rulodan " + m(x[1].tam.fireDahil) + (P.p.fire != null ? " (fire dahil)" : " (fire hariç)") +
+               "<br>Bir rulo <b>" + asagiYaz(x[1].tam.paletRulo, 1) + " palet</b> (tam " + T.adetYaz(x[1].tamPalet) + ") · palet başı film <b>" + tl(x[1].tam.maliyet, bs.palet) + "</b></div>";
         });
         if (k && k.palet) h += '<div class="hk-karar"><b>' + O.kararCumlesi(k.palet, "Palet başına film maliyeti") + "</b></div>";
         h += "</div>";
@@ -287,5 +300,5 @@
   }
 
   return { SINIR: SINIR, ORNEK: ORNEK, alanDenetle: alanDenetle, ruloHesapla: ruloHesapla, paletHesapla: paletHesapla, karsilastir: karsilastir,
-           toleransCumlesi: toleransCumlesi, basamaklar: basamaklar, paletNotlari: paletNotlari, mesajMetni: mesajMetni, baslat: baslat };
+           toleransCumlesi: toleransCumlesi, basamaklar: basamaklar, asagiYaz: asagiYaz, paletNotlari: paletNotlari, mesajMetni: mesajMetni, baslat: baslat };
 });

@@ -6,6 +6,7 @@
   if (typeof module !== "undefined" && module.exports) module.exports = api;
 })(typeof window !== "undefined" ? window : globalThis, function (O) {
   "use strict";
+  var T = O.tam;   // tam kesir aritmetiği (çekirdek; 2. dalganın tam_kesir.js'iyle aynı)
 
   var SINIR = {
     koliFiyati: { max: 1000000 }, ruloSayisi: { max: 500, tamSayi: true }, ruloMetre: { max: 5000 },
@@ -13,22 +14,36 @@
   };
   function alanDenetle(ad, metin) { return O.alanDenetle(SINIR[ad], metin); }
 
+  /* Gösterilen her sayı ve karar nesnenin görünmeyen "tam" alanındaki kesirden (çekirdek: tam kesir aritmetiği);
+     kayan nokta alanları yalnız bilgi içindir. */
   function urunHesapla(koliFiyati, ruloSayisi, ruloMetre) {
-    var toplamMetre = ruloSayisi * ruloMetre, metreFiyati = koliFiyati / toplamMetre;
-    return { koliFiyati: koliFiyati, ruloSayisi: ruloSayisi, ruloMetre: ruloMetre,
-             toplamMetre: toplamMetre, metreFiyati: metreFiyati, yuzMetreFiyati: metreFiyati * 100 };
+    var toplam = T.kCarp(ruloSayisi, ruloMetre), metre = T.kBol(koliFiyati, toplam), yuz = T.kCarp(metre, 100);
+    var u = { koliFiyati: koliFiyati, ruloSayisi: ruloSayisi, ruloMetre: ruloMetre,
+              toplamMetre: T.kSayi(toplam), metreFiyati: T.kSayi(metre), yuzMetreFiyati: T.kSayi(yuz) };
+    Object.defineProperty(u, "tam", { value: { koli: T.kesir(koliFiyati), toplam: toplam, metre: metre, yuz: yuz } });
+    return u;
   }
   function hedefHesapla(urun, hedefMetre) {   // oransal maliyet ve tam koli alımı ayrı; tam koli yukarı yuvarlanır
-    var koliAdet = Math.max(1, Math.ceil(hedefMetre / urun.toplamMetre - 1e-9));
-    return { hedefMetre: hedefMetre, oransalMaliyet: hedefMetre * urun.metreFiyati, koliAdet: koliAdet,
-             tamKoliMaliyet: koliAdet * urun.koliFiyati, eldeMetre: koliAdet * urun.toplamMetre,
-             fazlaMetre: koliAdet * urun.toplamMetre - hedefMetre };
+    var koliAdet = Math.max(1, Number(T.tavan(T.kBol(hedefMetre, urun.tam.toplam))));
+    var oransal = T.kCarp(hedefMetre, urun.tam.metre), tamKoli = T.kCarp(koliAdet, urun.tam.koli), elde = T.kCarp(koliAdet, urun.tam.toplam);
+    var fazla = T.kCikar(elde, hedefMetre);
+    var h = { hedefMetre: hedefMetre, oransalMaliyet: T.kSayi(oransal), koliAdet: koliAdet,
+              tamKoliMaliyet: T.kSayi(tamKoli), eldeMetre: T.kSayi(elde), fazlaMetre: T.kSayi(fazla) };
+    Object.defineProperty(h, "tam", { value: { oransal: oransal, tamKoli: tamKoli, elde: elde, fazla: fazla } });
+    return h;
   }
-  var metreBasamak = O.birimBasamak;
+  var metreBasamak = T.birimTaban;
   function karsilastir(a, b) {   // k.basamak: metre fiyatının gösterileceği ondalık (kazanan varsa iki değer ayrı görünür)
-    var k = O.karsilastir(a.metreFiyati, b.metreFiyati, metreBasamak([a.metreFiyati, b.metreFiyati]));
-    k.binMetreFarki = k.fark * 1000;
+    var k = O.karsilastirTam(a.tam.metre, b.tam.metre, metreBasamak([a.tam.metre, b.tam.metre]));
+    k.tam.bin = T.kCarp(k.tam.fark, 1000);
+    k.binMetreFarki = T.kSayi(k.tam.bin);
     return k;
+  }
+  /* Ekranın, mesajın ve testlerin kullandığı tek gösterim kuralı: { k, basamak (metre fiyatı), yuzBasamak (100 m) } */
+  function gosterim(a, b) {
+    var k = b ? karsilastir(a, b) : null;
+    return { k: k, basamak: k ? k.basamak : T.anlamliBasamak([a.tam.metre], metreBasamak([a.tam.metre])),
+             yuzBasamak: T.anlamliBasamak(b ? [a.tam.yuz, b.tam.yuz] : [a.tam.yuz], 2) };
   }
   /* Kat / gramaj: yalnız karşılaştırılabilirlik notu; üstünlük iddiası üretmez. B teklifi tam değilse not yok. */
   function notlar(g) {
@@ -45,11 +60,11 @@
     } else if (gA != null || gB != null) n.push("Gramaj yalnız bir üründe girildi; karşılaştırmak için ikisinde de aynı esasla yazın.");
     return n;
   }
-  function mesajMetni(s) {
+  function mesajMetni(s) {   // s.basamak / s.yuzBasamak: ekrandaki tabloyla aynı ondalıklar (gosterim)
     var b = s.basamak, satir = ["Merhaba, Bakırcılar havlu hesap sayfasında hesap yaptım:"];
     function urunSatiri(ad, u) {
-      return ad + ": koli " + O.tlYaz(u.koliFiyati) + " TL, " + u.ruloSayisi + " rulo × " + O.sayiYazEsnek(u.ruloMetre) + " m = " +
-             O.sayiYazEsnek(u.toplamMetre) + " m → metre " + O.sayiYaz(u.metreFiyati, b) + " TL (100 m: " + O.sayiYaz(u.yuzMetreFiyati, 2) + " TL)";
+      return ad + ": koli " + T.girdiTlYaz(u.koliFiyati) + " TL, " + T.adetYaz(u.ruloSayisi) + " rulo × " + O.sayiYazEsnek(u.ruloMetre) + " m = " +
+             T.yazEsnek(u.tam.toplam, 3) + " m → metre " + T.yaz(u.tam.metre, b) + " TL (100 m: " + T.yaz(u.tam.yuz, s.yuzBasamak) + " TL)";
     }
     function kagitSatiri(ad, g) {
       if (!g || (g.kat == null && g.gramaj == null)) return null;
@@ -65,19 +80,18 @@
       if (s.k.ayni) satir.push("Metre fiyatları aynı.");
       else if (s.k.esit) satir.push("Metre fiyatları neredeyse aynı (" + O.ESIK_METNI + ").");
       else {
-        satir.push("Metre başına maliyet " + O.ekDe(s.k.dusuk) + " %" + O.yuzdeYaz(s.k.farkYuzde) + " daha düşük (1.000 m'de " + O.sayiYaz(s.k.binMetreFarki, 2) + " TL fark).");
+        satir.push("Metre başına maliyet " + O.ekDe(s.k.dusuk) + " %" + T.yuzdeYaz(s.k.tam.farkYuzde) + " daha düşük (1.000 m'de " + T.tutarYaz(s.k.tam.bin) + " TL fark).");
         if (s.k.toleransNotu) satir.push("Fark %" + O.TOLERANS_YUZDE + "'nin altında; etiketteki metre toleransı bu farkı değiştirebilir.");
       }
     }
     if (s.hedef) {
       satir.push("İhtiyaç: " + O.sayiYazEsnek(s.hedef.metre) + " m");
       s.hedef.sonuc.forEach(function (h) {
-        satir.push("- " + h.ad + ": oransal " + O.sayiYaz(h.oransalMaliyet, 2) + " TL; tam koli " + h.koliAdet + " koli = " +
-                   O.sayiYaz(h.tamKoliMaliyet, 2) + " TL (" + O.sayiYazEsnek(h.eldeMetre) + " m)");
+        satir.push("- " + h.ad + ": oransal " + T.tutarYaz(h.tam.oransal) + " TL; tam koli " + T.adetYaz(h.koliAdet) + " koli = " +
+                   T.tutarYaz(h.tam.tamKoli) + " TL (" + T.yazEsnek(h.tam.elde, 3) + " m)");
       });
     }
-    satir.push("Fiyatlar benim girdiğim değerlerdir (" + (s.kdv === "haric" ? "KDV hariç" : "KDV dahil") + (s.b ? ", iki üründe aynı kabul edildi" : "") + ")" +
-               (s.ornek ? "; sayfadaki örnek değerlerle denendi." : "."));
+    satir.push(O.fiyatCumlesi(!!s.b, s.kdv, s.ornek));
     satir.push("Rulo metreleri etiketteki değerdir; hesap kaliteyi ölçmez.");
     return satir.join("\n");
   }
@@ -126,8 +140,8 @@
       return { tamam: tamam, hepsiBos: bosSay === 3, urun: tamam ? urunHesapla(f.koliFiyati, f.ruloSayisi, f.ruloMetre) : null,
                kat: kat.hata || kat.bos ? null : kat.deger, gramaj: gr.hata || gr.bos ? null : gr.deger, esas: d("esas" + u) };
     }
-    function metre(x) { return O.sayiYazEsnek(x) + NB + "m"; }
-    function tl(x, b) { return O.sayiYaz(x, b == null ? 2 : b) + NB + "TL"; }
+    function metre(x) { return T.yazEsnek(x, 3) + NB + "m"; }
+    function tl(x, b) { return (b == null ? T.tutarYaz(x) : T.yaz(x, b)) + NB + "TL"; }
 
     function hesapla() {
       var A = urunOku("A"), B = urunOku("B");
@@ -138,24 +152,23 @@
         sonucEl.innerHTML = '<h2 id="hk-sonuc-baslik">Sonuç</h2><p class="hk-bos">Sonucu görmek için A teklifinin üç alanını doldurun: koli fiyatı, rulo sayısı ve rulo uzunluğu.</p>';
         O.waAyarla(wa, null); kokEl.querySelector(".hk-mesaj").textContent = "—"; ozetYaz("Sonuç için A teklifinin üç alanını doldurun."); return;
       }
-      var a = A.urun, b = B.tamam ? B.urun : null;
-      var k = b ? karsilastir(a, b) : null, dusuk = k && !k.esit ? k.dusuk : null;
-      var basamak = k ? k.basamak : metreBasamak([a.metreFiyati]);
+      var a = A.urun, b = B.tamam ? B.urun : null, gs = gosterim(a, b);
+      var k = gs.k, dusuk = k && !k.esit ? k.dusuk : null, basamak = gs.basamak, yuzBasamak = gs.yuzBasamak;
       function hucre(u, x) { return '<td class="hk-sayi' + (dusuk === u ? ' hk-dusuk" title="Metre başına daha düşük' : "") + '">' + x + "</td>"; }
       function satirBasi(x) { return '<th scope="row">' + x + "</th>"; }
       var h = '<h2 id="hk-sonuc-baslik">Sonuç</h2><span class="hk-ornek-rozet">Örnek değerlerle hesaplandı</span>' +
         '<table class="hk-tablo"><thead><tr><th scope="col"><span class="hk-gizli">Ölçü</span></th><th scope="col">A</th>' + (b ? '<th scope="col">B</th>' : "") + "</tr></thead><tbody>" +
-        "<tr>" + satirBasi("Kolideki toplam metre") + hucre("", metre(a.toplamMetre)) + (b ? hucre("", metre(b.toplamMetre)) : "") + "</tr>" +
-        '<tr class="hk-vurgu">' + satirBasi("Metre fiyatı") + hucre("A", tl(a.metreFiyati, basamak)) + (b ? hucre("B", tl(b.metreFiyati, basamak)) : "") + "</tr>" +
-        "<tr>" + satirBasi("100 metresi") + hucre("", tl(a.yuzMetreFiyati)) + (b ? hucre("", tl(b.yuzMetreFiyati)) : "") + "</tr></tbody></table>";
+        "<tr>" + satirBasi("Kolideki toplam metre") + hucre("", metre(a.tam.toplam)) + (b ? hucre("", metre(b.tam.toplam)) : "") + "</tr>" +
+        '<tr class="hk-vurgu">' + satirBasi("Metre fiyatı") + hucre("A", tl(a.tam.metre, basamak)) + (b ? hucre("B", tl(b.tam.metre, basamak)) : "") + "</tr>" +
+        "<tr>" + satirBasi("100 metresi") + hucre("", tl(a.tam.yuz, yuzBasamak)) + (b ? hucre("", tl(b.tam.yuz, yuzBasamak)) : "") + "</tr></tbody></table>";
       if (k) {
         var karar = O.kararCumlesi(k, "Metre başına maliyet");
         h += '<div class="hk-karar"><b>' + (k.ayni ? "Metre fiyatları aynı." : k.esit ? "Metre fiyatları neredeyse aynı." : karar) + "</b>" +
              (k.ayni ? "" : k.esit ? "<span>Fark %" + O.sayiYaz(O.ESIK_YUZDE, 1) + "'i geçmiyor; bu yüzden biri öne çıkarılmadı.</span>" :
-              "<span>Aynı 1.000 metre için fark " + tl(k.binMetreFarki) + "." + (k.toleransNotu ? " Fark %" + O.TOLERANS_YUZDE + "'nin altında; etiketteki metre toleransı bu farkı değiştirebilir." : "") + "</span>") + "</div>";
+              "<span>Aynı 1.000 metre için fark " + tl(k.tam.bin) + "." + (k.toleransNotu ? " Fark %" + O.TOLERANS_YUZDE + "'nin altında; etiketteki metre toleransı bu farkı değiştirebilir." : "") + "</span>") + "</div>";
         ozetYaz(karar);
       } else if (B.hepsiBos) {
-        h += '<div class="hk-karar"><span>Karşılaştırmak için B teklifini de yazın.</span></div>'; ozetYaz("A teklifinin metre fiyatı " + tl(a.metreFiyati, basamak) + ".");
+        h += '<div class="hk-karar"><span>Karşılaştırmak için B teklifini de yazın.</span></div>'; ozetYaz("A teklifinin metre fiyatı " + tl(a.tam.metre, basamak) + ".");
       } else {
         h += '<div class="hk-karar"><span>B teklifinde eksik ya da hatalı alan var; karşılaştırma yapılmadı.</span></div>'; ozetYaz("B teklifinde eksik ya da hatalı alan var.");
       }
@@ -164,8 +177,9 @@
         var liste = [{ ad: "A", u: a }]; if (b) liste.push({ ad: "B", u: b });
         var sonuclar = liste.map(function (x) { var r = hedefHesapla(x.u, hedefR.deger); r.ad = x.ad; return r; });
         h += '<div class="hk-hedef"><h3>' + metre(hedefR.deger) + " için</h3>" + sonuclar.map(function (r) {
-          return '<div class="hk-satir"><b>' + r.ad + ":</b> tam ihtiyaç kadar (oransal) <b>" + tl(r.oransalMaliyet) + "</b><br>Tam koli alırsanız <b>" + r.koliAdet + " koli = " +
-                 tl(r.tamKoliMaliyet) + "</b> (" + metre(r.eldeMetre) + (r.fazlaMetre > 1e-9 ? ", " + metre(r.fazlaMetre) + " artar" : "") + ")</div>";
+          var artan = T.yazEsnek(r.tam.fazla, 3) !== "0";   // artan metre ekranda görünecek kadarsa yazılır
+          return '<div class="hk-satir"><b>' + r.ad + ":</b> tam ihtiyaç kadar (oransal) <b>" + tl(r.tam.oransal) + "</b><br>Tam koli alırsanız <b>" + T.adetYaz(r.koliAdet) + " koli = " +
+                 tl(r.tam.tamKoli) + "</b> (" + metre(r.tam.elde) + (artan ? ", " + metre(r.tam.fazla) + " artar" : "") + ")</div>";
         }).join("") + "</div>";
         hedefVeri = { metre: hedefR.deger, sonuc: sonuclar };
       }
@@ -174,7 +188,7 @@
       h += '<ul class="hk-notlar">' + n.map(function (x) { return "<li>" + x + "</li>"; }).join("") + "</ul>";
       sonucEl.innerHTML = h;
       var kagit = { A: { kat: A.kat, gramaj: A.gramaj, esas: A.esas }, B: b ? { kat: B.kat, gramaj: B.gramaj, esas: B.esas } : null };
-      var metin = mesajMetni({ a: a, b: b, k: k, basamak: basamak, kdv: kdv, hedef: hedefVeri, ornek: ornek, kagit: kagit });
+      var metin = mesajMetni({ a: a, b: b, k: k, basamak: basamak, yuzBasamak: yuzBasamak, kdv: kdv, hedef: hedefVeri, ornek: ornek, kagit: kagit });
       kokEl.querySelector(".hk-mesaj").textContent = metin; O.waAyarla(wa, metin);
     }
     function ornekDoldur() {
@@ -189,6 +203,6 @@
   }
 
   return { SINIR: SINIR, ORNEK: ORNEK, ESIK_YUZDE: O.ESIK_YUZDE, TOLERANS_YUZDE: O.TOLERANS_YUZDE, sayiOku: O.sayiOku, alanDenetle: alanDenetle,
-           urunHesapla: urunHesapla, hedefHesapla: hedefHesapla, karsilastir: karsilastir, notlar: notlar, metreBasamak: metreBasamak,
+           urunHesapla: urunHesapla, hedefHesapla: hedefHesapla, karsilastir: karsilastir, gosterim: gosterim, notlar: notlar, metreBasamak: metreBasamak,
            sayiYaz: O.sayiYaz, sayiYazEsnek: O.sayiYazEsnek, tlYaz: O.tlYaz, mesajMetni: mesajMetni, waBaglanti: O.waBaglanti, baslat: baslat };
 });

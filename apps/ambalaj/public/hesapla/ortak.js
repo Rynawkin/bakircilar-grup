@@ -61,6 +61,115 @@
     return r;
   }
 
+  /* ---------- Tam kesir aritmetiği: HesapOrtak.tam ----------
+     2. dalganın kaynak/tam_kesir.js dosyasıyla aynı kod (16.10.2026 13:25 sürümü; TamKesir ile aynı adlar ve davranış).
+     Kayan nokta işlemlerinde artık kalabilir (1 − 0,9885 = 0,0114999…; 3 × 0,175 = 0,5249999…) ve "yarım yukarı" yuvarlamayı
+     bozar; tam değerle hesaplayan araçlar gösterdikleri her sayıyı ve kararı buradan alır. Aşağıdaki eski işlevler değişmedi. */
+  var tam = (function () {
+    function on(n) { var r = 1n; for (var i = 0; i < n; i++) r *= 10n; return r; }
+    /* sayı ya da kesir → { p, q } (BigInt). Sayı en kısa ondalık yazımından okunur: 1250.5 → 12505/10; 1e-7 → 1/10⁷ */
+    function kesir(x) {
+      if (x && typeof x === "object") return x;
+      var m = /^(\d+)(?:\.(\d+))?(?:e([+-]?\d+))?$/.exec(String(x));
+      if (!m) throw new Error("Sayı kesre çevrilemedi: " + x);
+      var rakam = BigInt(m[1] + (m[2] || "")), olcek = (m[2] || "").length - (m[3] ? parseInt(m[3], 10) : 0);
+      return olcek >= 0 ? { p: rakam, q: on(olcek) } : { p: rakam * on(-olcek), q: 1n };
+    }
+    function kCarp(a, b) { a = kesir(a); b = kesir(b); return { p: a.p * b.p, q: a.q * b.q }; }
+    function kBol(a, b) { a = kesir(a); b = kesir(b); return { p: a.p * b.q, q: a.q * b.p }; }
+    function kTopla(a, b) { a = kesir(a); b = kesir(b); return { p: a.p * b.q + b.p * a.q, q: a.q * b.q }; }
+    function kCikar(a, b) { a = kesir(a); b = kesir(b); return { p: a.p * b.q - b.p * a.q, q: a.q * b.q }; }
+    function kKiyas(a, b) { a = kesir(a); b = kesir(b); var f = a.p * b.q - b.p * a.q; return f > 0n ? 1 : f < 0n ? -1 : 0; }
+    function kSayi(a) { a = kesir(a); return Number(a.p) / Number(a.q); }
+    var SIFIR = { p: 0n, q: 1n }, YARIM = { p: 1n, q: 2n }, BIR = { p: 1n, q: 1n }, IKI = { p: 2n, q: 1n }, YUZ = { p: 100n, q: 1n };
+    function sadele(x) {   // en sade kesir (ortak bölen atılır)
+      var r = kesir(x), a = r.p < 0n ? -r.p : r.p, b = r.q;
+      while (b) { var t = a % b; a = b; b = t; }
+      return a > 1n ? { p: r.p / a, q: r.q / a } : r;
+    }
+    function tavan(x) { var r = kesir(x); return (r.p + r.q - 1n) / r.q; }   // sıfır ya da pozitif kesrin yukarı yuvarlanmışı (BigInt)
+
+    /* Yuvarlama yarım yukarı (değerler sıfır ya da pozitif); sonuç: değerin 10^d katı, tam sayı (BigInt) */
+    function yuvarla(x, d) { var r = kesir(x), k = on(d); return (r.p * k * 2n + r.q) / (2n * r.q); }
+    function trBicim(n, d, esnek) {   // BigInt (değer × 10^d) → Türkçe yazım: binlik nokta, ondalık virgül
+      var s = n.toString(); while (s.length <= d) s = "0" + s;
+      var tam = s.slice(0, s.length - d), ond = d ? s.slice(s.length - d) : "";
+      if (esnek) ond = ond.replace(/0+$/, "");
+      tam = tam.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+      return ond ? tam + "," + ond : tam;
+    }
+    function yaz(x, d) { return trBicim(yuvarla(x, d), d, false); }          // tam d ondalık
+    function yazEsnek(x, d) { return trBicim(yuvarla(x, d), d, true); }      // en çok d ondalık, gereksiz sıfırsız
+    function adetYaz(n) { return trBicim(BigInt(n), 0, false); }              // tam sayı, binlik noktalı (1.500)
+    function girdiYaz(x) { var r = kesir(x); return yazEsnek(r, r.q.toString().length - 1); }   // yazıldığı gibi (65 · 65,25 · 0,0005)
+    /* Ondalığı sonlu bir değer yuvarlamadan, gereksiz sıfırsız (18,75 · 1.200 · 888,84). Ondalığı sonsuzsa 10 ondalığa yuvarlanır
+       (girdilerden çarpma ve 10'un kuvvetlerine bölmeyle çıkan değerlerde olmaz). */
+    function ondalikYaz(x) {
+      var r = sadele(x), q = r.q, iki = 0, bes = 0;
+      while (q % 2n === 0n) { q /= 2n; iki++; }
+      while (q % 5n === 0n) { q /= 5n; bes++; }
+      return yazEsnek(r, q === 1n ? Math.max(iki, bes) : 10);
+    }
+
+    /* Sıfırdan büyük bir değer ekranda hiçbir zaman "0,000" görünmez: ilk anlamlı rakam görünene kadar ondalık artar (en çok 10). */
+    function anlamliBasamak(degerler, taban) {
+      var d = taban;
+      while (d < 10 && degerler.some(function (v) { return kKiyas(v, SIFIR) > 0 && yuvarla(v, d) === 0n; })) d++;
+      return d;
+    }
+    function ayirt(x, y, d) { while (d < 10 && yaz(x, d) === yaz(y, d)) d++; return d; }   // kazanan varsa iki değer ekranda da ayrı
+    /* Gösterim ondalığı: sıfırdan büyük değer 0 görünmez VE (ayir doğruysa, yani kazanan varken) iki değer ekranda ayrı görünür; iki koşul
+       BİRLİKTE sağlanana dek taban'dan artar (en çok 10). Önce ayırt sonra anlamlı yapmak çok küçük değerlerde ikisini yeniden aynı
+       gösterebilir (0,00049 / 0,00051: 3 ondalıkta ayrı, 4'te ikisi de 0,0005); bu yüzden ikisi sabitlenene dek sırayla uygulanır. */
+    function ayirtAnlamli(x, y, taban, ayir) {
+      var d = taban, onceki = -1;
+      while (d !== onceki && d < 10) { onceki = d; d = anlamliBasamak([x, y], d); if (ayir) d = ayirt(x, y, d); }
+      return d;
+    }
+    function birimTaban(degerler) { return degerler.some(function (v) { return kKiyas(v, BIR) < 0; }) ? 3 : 2; }   // 1 TL altı varsa 3 ondalık
+    function tutarYaz(x) { return yaz(x, anlamliBasamak([kesir(x)], 2)); }   // TL tutarı: 2 ondalık; çok küçükse anlamlı rakama kadar
+    function girdiTlYaz(x) {   // girilen fiyat: tamsa ondalıksız, kuruşluysa 2 ondalık; daha incelikli yazıldıysa yazıldığı gibi
+      var r = kesir(x);
+      if ((r.p * 100n) % r.q !== 0n) return girdiYaz(r);
+      return yaz(r, r.p % r.q === 0n ? 0 : 2);
+    }
+
+    /* n × birim tutarı, birim ekrandaki d ondalığa yuvarlanıp çarpılınca farklı bir TL tutarı veriyorsa doğru: ekranda ve mesajda
+       "oransal tutar yuvarlanmamış fiyatla hesaplandı" notu çıkar (kullanıcı tablodaki fiyatla çarpınca farkı görüp şaşırmasın). */
+    function yuvarlamaCarpimFarki(birim, d, n) {
+      var y = { p: yuvarla(birim, d), q: on(d) };
+      return tutarYaz(kCarp(birim, n)) !== tutarYaz(kCarp(y, n));
+    }
+
+    /* A/B karşılaştırması (simetrik, tam kesirle). Kural çekirdekle aynı: fark %0,5'i geçmiyorsa (tam %0,5 dahil) kazanan yok.
+       ta, tb: iki birim maliyetin tam değeri. Dönüş: karar + farklar (tam ve bilgi amaçlı kayan nokta) */
+    function karsilastir(ta, tb) {
+      var sira = kKiyas(ta, tb), pahali = sira >= 0 ? ta : tb, ucuz = sira >= 0 ? tb : ta;
+      var fark = kCikar(pahali, ucuz), farkYuzde = kCarp(kBol(fark, pahali), YUZ);
+      var ayni = sira === 0, esit = ayni || kKiyas(farkYuzde, YARIM) <= 0;
+      return { esit: esit, ayni: ayni, dusuk: esit ? null : (sira < 0 ? "A" : "B"), farkTam: fark, farkYuzdeTam: farkYuzde,
+               fark: kSayi(fark), farkYuzde: kSayi(farkYuzde) };
+    }
+    /* Yüzde: bir ondalık. Yuvarlanan değer eşiğin yanlış tarafına düşecekse (%0,5'in üstü ≤ 0,5; %2'nin altı ≥ 2; %100'ün altı ≥ 100
+       görünürse) 2–4 ondalık; 4'te de düşüyorsa gerçek tarafa (0,5 < p < 1 ise yukarı, değilse aşağı). %100 eşiği: %99,99… fark
+       "%100,0 daha düşük" (bedava gibi) görünmez. */
+    function yuzdeYaz(p) {
+      var ust = kKiyas(p, YARIM) > 0, altIki = kKiyas(p, IKI) < 0, altYuz = kKiyas(p, YUZ) < 0;
+      for (var b = 1; b <= 4; b++) {
+        var n = yuvarla(p, b), r = { p: n, q: on(b) };
+        if (!((ust && kKiyas(r, YARIM) <= 0) || (altIki && kKiyas(r, IKI) >= 0) || (altYuz && kKiyas(r, YUZ) >= 0))) return trBicim(n, b, false);
+      }
+      var t = kesir(p), k4 = on(4), alt = t.p * k4 / t.q, tamMi = (t.p * k4) % t.q === 0n;
+      return trBicim(ust && kKiyas(p, BIR) < 0 && !tamMi ? alt + 1n : alt, 4, false);
+    }
+
+    return { on: on, kesir: kesir, kCarp: kCarp, kBol: kBol, kTopla: kTopla, kCikar: kCikar, kKiyas: kKiyas, kSayi: kSayi,
+             SIFIR: SIFIR, YARIM: YARIM, BIR: BIR, IKI: IKI, YUZ: YUZ, sadele: sadele, tavan: tavan, yuvarla: yuvarla, trBicim: trBicim,
+             yaz: yaz, yazEsnek: yazEsnek, adetYaz: adetYaz, girdiYaz: girdiYaz, ondalikYaz: ondalikYaz,
+             anlamliBasamak: anlamliBasamak, ayirt: ayirt, ayirtAnlamli: ayirtAnlamli, birimTaban: birimTaban,
+             tutarYaz: tutarYaz, girdiTlYaz: girdiTlYaz, yuvarlamaCarpimFarki: yuvarlamaCarpimFarki, karsilastir: karsilastir, yuzdeYaz: yuzdeYaz };
+  })();
+
   /* ---------- Gösterim ---------- */
   function sayiYaz(x, basamak) {
     return new Intl.NumberFormat("tr-TR", { minimumFractionDigits: basamak, maximumFractionDigits: basamak }).format(x);
@@ -103,12 +212,30 @@
     return { esit: esit, ayni: ayni, farkYuzde: farkYuzde, dusuk: esit ? null : (aDeger < bDeger ? "A" : "B"), fark: pahali - ucuz,
              toleransNotu: !esit && farkYuzde < TOLERANS_YUZDE - 1e-9, basamak: esit ? t : ayirtBasamak(aDeger, bDeger, t) };
   }
+  /* Tam kesirle A/B karşılaştırması: eski karsilastir'la aynı alanlar (esit, ayni, farkYuzde, dusuk, fark, toleransNotu, basamak);
+     tam değerler görünmeyen "tam" alanında (JSON'a girmez). ta, tb: tam değerler. Karar ve ondalık 2. dalga araçlarıyla aynı kural:
+     fark %0,5'i geçmiyorsa (tam %0,5 dahil) kazanan yok; sıfırdan büyük değer 0 görünmez ve kazanan varsa iki değer ekranda ayrı
+     görünür (iki koşul birlikte sağlanana dek ondalık artar: tam.ayirtAnlamli). */
+  function karsilastirTam(ta, tb, taban) {
+    var t = taban == null ? 2 : taban, k = tam.karsilastir(ta, tb);
+    var sonuc = { esit: k.esit, ayni: k.ayni, farkYuzde: k.farkYuzde, dusuk: k.dusuk, fark: k.fark,
+                  toleransNotu: !k.esit && tam.kKiyas(k.farkYuzdeTam, TOLERANS_YUZDE) < 0,
+                  basamak: tam.ayirtAnlamli(ta, tb, t, !k.esit) };
+    Object.defineProperty(sonuc, "tam", { value: { fark: k.farkTam, farkYuzde: k.farkYuzdeTam } });
+    return sonuc;
+  }
   var ESIK_METNI = "fark %" + sayiYaz(ESIK_YUZDE, 1) + "'i geçmiyor";
   function ekDe(harf) { return harf === "A" ? "A'da" : "B'de"; }
-  function kararCumlesi(k, olcuAdi) {   // "Metre başına maliyet B'de %6,7 daha düşük."
+  function kararCumlesi(k, olcuAdi) {   // "Metre başına maliyet B'de %6,7 daha düşük." (karsilastirTam sonucunda yüzde tam değerden)
     if (k.ayni) return olcuAdi + " aynı.";
     if (k.esit) return olcuAdi + " neredeyse aynı (" + ESIK_METNI + ").";
-    return olcuAdi + " " + ekDe(k.dusuk) + " %" + yuzdeYaz(k.farkYuzde) + " daha düşük.";
+    return olcuAdi + " " + ekDe(k.dusuk) + " %" + (k.tam ? tam.yuzdeYaz(k.tam.farkYuzde) : yuzdeYaz(k.farkYuzde)) + " daha düşük.";
+  }
+  /* Mesajın fiyat cümlesi (çöp poşeti aracıyla aynı): örnek fiyatlar kaldıysa bunu açıkça söyler; KDV kapsamı iki teklif için birlikte */
+  function fiyatCumlesi(ikiTeklif, kdv, ornek) {
+    var kapsam = "(" + (ikiTeklif ? "iki teklif de " : "") + (kdv === "haric" ? "KDV hariç" : "KDV dahil") + ")";
+    return ornek ? "Bu hesapta sayfadaki hayali örnek fiyatlar var; gerçek teklif değildir " + kapsam + "."
+                 : (ikiTeklif ? "Fiyatlar benim girdiğim değerlerdir " : "Fiyat benim girdiğim değerdir ") + kapsam + ".";
   }
 
   function waBaglanti(numara, metin) { return "https://wa.me/" + numara + "?text=" + encodeURIComponent(metin); }
@@ -181,7 +308,7 @@
   return { WA_NUMARA: WA_NUMARA, ESIK_YUZDE: ESIK_YUZDE, TOLERANS_YUZDE: TOLERANS_YUZDE, ESIK_METNI: ESIK_METNI, NB: NB,
            sayiOku: sayiOku, alanDenetle: alanDenetle, sayiYaz: sayiYaz, sayiYazEsnek: sayiYazEsnek, tlYaz: tlYaz, asagiYaz: asagiYaz,
            yuzdeYaz: yuzdeYaz, birimBasamak: birimBasamak, ayirtBasamak: ayirtBasamak, karsilastir: karsilastir, ekDe: ekDe,
-           kararCumlesi: kararCumlesi, waBaglanti: waBaglanti,
+           kararCumlesi: kararCumlesi, waBaglanti: waBaglanti, tam: tam, karsilastirTam: karsilastirTam, fiyatCumlesi: fiyatCumlesi,
            kacir: kacir, alanHTML: alanHTML, secimHTML: secimHTML, deger: deger, secili: secili, alanYaz: alanYaz,
            ozetYazici: ozetYazici, waAyarla: waAyarla, paylasHTML: paylasHTML, girisHTML: girisHTML, kdvHTML: kdvHTML,
            olaylariBagla: olaylariBagla };
