@@ -82,6 +82,8 @@
 .hk-hedef h3 { font: 600 15px/1.3 var(--hk-sans); color: #fff; }
 .hk-satir { margin-top: 8px; padding: 10px 12px; border-radius: 12px; background: rgba(255,255,255,.06); font: 400 14px/1.5 var(--hk-sans); color: #D7DEE9; }
 .hk-satir b { color: #fff; font-weight: 600; }
+/* İhtiyaç kutusundaki açıklama notu (oransal tutar yuvarlanmamış fiyatla); 2. dalganın hesapla_ek.css'iyle aynı kural */
+.hk .hk-hedef-not { margin-top: 8px; font: 400 13px/1.45 var(--hk-sans); color: #D7DEE9; }
 .hk-notlar { margin-top: 14px !important; padding-left: 18px !important; list-style: disc outside; font: 400 13.5px/1.5 var(--hk-sans); color: #D7DEE9; }
 .hk-notlar li { margin-top: 4px; }
 

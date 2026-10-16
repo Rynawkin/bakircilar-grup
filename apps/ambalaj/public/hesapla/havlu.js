@@ -39,6 +39,12 @@
     k.binMetreFarki = T.kSayi(k.tam.bin);
     return k;
   }
+  /* İhtiyaç tutarı yuvarlanmamış metre fiyatıyla hesaplanır. Tablodaki (yuvarlanmış) fiyat × ihtiyaç farklı bir TL tutarı veriyorsa
+     bunu tek cümleyle söyler; 2. dalga araçlarıyla aynı kural ve metin. urunler: [A, B]; hs: hedefHesapla sonuçları; basamak: tablodaki ondalık */
+  var ORANSAL_NOTU = "Oransal tutar, metre fiyatının yuvarlanmamış değeriyle hesaplandı; tablodaki yuvarlanmış fiyatla çarpılırsa farklı bir tutar çıkar.";
+  function oransalNotu(urunler, hs, basamak) {
+    return hs.some(function (h, i) { return T.yuvarlamaCarpimFarki(urunler[i].tam.metre, basamak, h.hedefMetre); }) ? ORANSAL_NOTU : null;
+  }
   /* Ekranın, mesajın ve testlerin kullandığı tek gösterim kuralı: { k, basamak (metre fiyatı), yuzBasamak (100 m) } */
   function gosterim(a, b) {
     var k = b ? karsilastir(a, b) : null;
@@ -55,7 +61,7 @@
     if (gA != null && gB != null) {
       if (eA === "bilinmiyor" || eB === "bilinmiyor") n.push("Gramajın kat başına mı, toplam mı yazıldığı belli değil. Bu hâliyle karşılaştırılamaz.");
       else if (eA !== eB) n.push("Gramajlardan biri kat başına, diğeri toplam yazılmış. Bu hâliyle karşılaştırılamaz.");
-      else if (gA !== gB) n.push("Gramajlar farklı (A: " + O.sayiYazEsnek(gA, 1) + " g/m², B: " + O.sayiYazEsnek(gB, 1) + " g/m², " +
+      else if (gA !== gB) n.push("Gramajlar farklı (A: " + T.girdiYaz(gA) + " g/m², B: " + T.girdiYaz(gB) + " g/m², " +   // yazıldığı gibi: 18,04 / 18,03 aynı görünmez
                                  (eA === "kat" ? "kat başına" : "toplam") + "). Gramaj kalınlık değildir; tek başına kaliteyi göstermez.");
     } else if (gA != null || gB != null) n.push("Gramaj yalnız bir üründe girildi; karşılaştırmak için ikisinde de aynı esasla yazın.");
     return n;
@@ -70,7 +76,7 @@
       if (!g || (g.kat == null && g.gramaj == null)) return null;
       var p = [];
       if (g.kat != null) p.push(g.kat + " kat");
-      if (g.gramaj != null) p.push(O.sayiYazEsnek(g.gramaj, 1) + " g/m² (" + (g.esas === "kat" ? "kat başına" : g.esas === "toplam" ? "toplam" : "esası belirtilmedi") + ")");
+      if (g.gramaj != null) p.push(T.girdiYaz(g.gramaj) + " g/m² (" + (g.esas === "kat" ? "kat başına" : g.esas === "toplam" ? "toplam" : "esası belirtilmedi") + ")");
       return ad + " kâğıt bilgisi: " + p.join(", ");
     }
     satir.push(urunSatiri("A", s.a));
@@ -87,9 +93,10 @@
     if (s.hedef) {
       satir.push("İhtiyaç: " + O.sayiYazEsnek(s.hedef.metre) + " m");
       s.hedef.sonuc.forEach(function (h) {
-        satir.push("- " + h.ad + ": oransal " + T.tutarYaz(h.tam.oransal) + " TL; tam koli " + T.adetYaz(h.koliAdet) + " koli = " +
+        satir.push("- " + h.ad + ": tam ihtiyaç kadar " + T.tutarYaz(h.tam.oransal) + " TL; " + T.adetYaz(h.koliAdet) + " tam koli = " +
                    T.tutarYaz(h.tam.tamKoli) + " TL (" + T.yazEsnek(h.tam.elde, 3) + " m)");
       });
+      var not = oransalNotu([s.a, s.b], s.hedef.sonuc, b); if (not) satir.push(not);
     }
     satir.push(O.fiyatCumlesi(!!s.b, s.kdv, s.ornek));
     satir.push("Rulo metreleri etiketteki değerdir; hesap kaliteyi ölçmez.");
@@ -176,11 +183,12 @@
       if (!hedefR.bos && !hedefR.hata) {
         var liste = [{ ad: "A", u: a }]; if (b) liste.push({ ad: "B", u: b });
         var sonuclar = liste.map(function (x) { var r = hedefHesapla(x.u, hedefR.deger); r.ad = x.ad; return r; });
+        var orNot = oransalNotu([a, b], sonuclar, basamak);
         h += '<div class="hk-hedef"><h3>' + metre(hedefR.deger) + " için</h3>" + sonuclar.map(function (r) {
           var artan = T.yazEsnek(r.tam.fazla, 3) !== "0";   // artan metre ekranda görünecek kadarsa yazılır
-          return '<div class="hk-satir"><b>' + r.ad + ":</b> tam ihtiyaç kadar (oransal) <b>" + tl(r.tam.oransal) + "</b><br>Tam koli alırsanız <b>" + T.adetYaz(r.koliAdet) + " koli = " +
+          return '<div class="hk-satir"><b>' + r.ad + ":</b> tam ihtiyaç kadar <b>" + tl(r.tam.oransal) + "</b><br>Tam koli alırsanız <b>" + T.adetYaz(r.koliAdet) + " koli = " +
                  tl(r.tam.tamKoli) + "</b> (" + metre(r.tam.elde) + (artan ? ", " + metre(r.tam.fazla) + " artar" : "") + ")</div>";
-        }).join("") + "</div>";
+        }).join("") + (orNot ? '<p class="hk-hedef-not">' + orNot + "</p>" : "") + "</div>";
         hedefVeri = { metre: hedefR.deger, sonuc: sonuclar };
       }
       var n = notlar({ katA: A.kat, katB: B.kat, gramajA: A.gramaj, gramajB: B.gramaj, esasA: A.esas, esasB: B.esas, karsilastirma: !!b });
@@ -203,6 +211,7 @@
   }
 
   return { SINIR: SINIR, ORNEK: ORNEK, ESIK_YUZDE: O.ESIK_YUZDE, TOLERANS_YUZDE: O.TOLERANS_YUZDE, sayiOku: O.sayiOku, alanDenetle: alanDenetle,
-           urunHesapla: urunHesapla, hedefHesapla: hedefHesapla, karsilastir: karsilastir, gosterim: gosterim, notlar: notlar, metreBasamak: metreBasamak,
+           urunHesapla: urunHesapla, hedefHesapla: hedefHesapla, karsilastir: karsilastir, gosterim: gosterim, oransalNotu: oransalNotu,
+           ORANSAL_NOTU: ORANSAL_NOTU, notlar: notlar, metreBasamak: metreBasamak,
            sayiYaz: O.sayiYaz, sayiYazEsnek: O.sayiYazEsnek, tlYaz: O.tlYaz, mesajMetni: mesajMetni, waBaglanti: O.waBaglanti, baslat: baslat };
 });
